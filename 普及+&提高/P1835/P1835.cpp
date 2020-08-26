@@ -4,37 +4,48 @@
 *	Time: 2020/8/25 13:08:38
 */
 
-#include <bits/stdc++.h>
-
+#include <bits/stdc++.h> 
 using namespace std;
+typedef long long ll;
 
-bitset<10000000>numlist;
-int prime[10000000];
-
-void work(int n) {
-	int cnt = 0;
-	for (int i = 2; i < n; i++)
-	{
-		if (!numlist[i])
-			prime[cnt++] = i;
-		for (int j = 0; j < cnt && i * prime[j] < n; j++)
-		{
-			numlist[i * prime[j]] = 1;
-			if (i % prime[j] == 0)
-				break;
+void simpleSieve(ll limit, vector<ll> &prime) {
+	bool mark[limit + 1];
+	memset(mark, 0, sizeof(mark));
+	for (ll i = 2; i <= limit; ++i) {
+		if (mark[i] == false) {
+			prime.push_back(i);
+			for (ll j = i; j <= limit; j += i)
+				mark[j] = true;
 		}
 	}
 }
 
-int main() {
-	int L, R;
-	ios::sync_with_stdio(0);
-	cin >> L >> R;
-	int ans = 0;
-	work(R);
-	for (int i = L; i <= R; i++) {
-		if (numlist[i]) ans++;
+void primesInRange(ll low, ll high) {
+	ll limit = floor(sqrt(high)) + 1;
+	vector<ll> prime;
+	simpleSieve(limit, prime);
+	int n = high - low + 1;
+	bool mark[n + 1];
+	memset(mark, 0, sizeof(mark));
+	for (ll i = 0; i < prime.size(); i++) {
+		int loLim = floor(low / prime[i]) * prime[i];
+		if (loLim < low)
+			loLim += prime[i];
+		if (loLim == prime[i])
+			loLim += prime[i];
+		for (ll j = loLim; j <= high; j += prime[i])
+			mark[j - low] = true;
 	}
+	ll ans = 0;
+	for (ll i = low; i <= high; i++)
+		if (!mark[i - low])
+			ans++;
 	cout << ans << endl;
-    return 0;
+}
+
+int main() {
+	ll low, high;
+	scanf("%lld %lld", &low, &high);
+	primesInRange(low, high);
+	return 0;
 }
