@@ -3,6 +3,7 @@
 ## About Template
 
 The `root.cpp` is for Visual Studio.
+
 The `template.cpp` is for CPEdit.
 
 ### Template for Visual Studio
