@@ -1,4 +1,4 @@
-# Online Judge Solution Repository
+# My Online Judge Solution Repository
 
 ## About Template
 
