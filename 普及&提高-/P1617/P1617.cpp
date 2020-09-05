@@ -2,7 +2,7 @@
 *  Problem: P1617
 *  Author: Insouciant21
 *  Time: 2020/9/5 13:53:43
-*  Status: NULL
+*  Status: Accepted
 */
 
 #include <bits/stdc++.h>
