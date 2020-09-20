@@ -1,8 +1,9 @@
-/* 
-*  Problem: P2293
-*  Author: Insouciant21
-*  Status: Accepted
-*/
+# 
+#  Problem: P2293
+#  Author: Insouciant21
+#  Status: Accepted
+#
+
 a = int(input())
 b = int(input())
 p: int = 0
