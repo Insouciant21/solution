@@ -1,9 +1,9 @@
-﻿/* 
-*  Problem: P1209
-*  Author: Insouciant21
-*  Time: 2020/9/12 12:56:42
-*  Status: Accepted
-*/
+﻿/*
+ *  Problem: P1209
+ *  Author: Insouciant21
+ *  Time: 2020/9/12 12:56:42
+ *  Status: Accepted
+ */
 
 #include <bits/stdc++.h>
 
@@ -11,8 +11,8 @@ using namespace std;
 
 int m, s, c;
 
-vector<int>cow;
-vector<int>dist;
+vector<int> cow;
+vector<int> dist;
 
 int main() {
     cin >> m >> s >> c;
@@ -23,8 +23,7 @@ int main() {
         return 0;
     }
     int ans = cow.back() - cow.front() + 1;
-    for (int i = 0; i < c - 1; i++) 
-        dist.push_back(cow[i + 1] - cow[i]);
+    for (int i = 0; i < c - 1; i++) dist.push_back(cow[i + 1] - cow[i]);
     sort(dist.begin(), dist.end());
     for (int i = 1; i < m; i++) {
         ans = ans - dist.back() + 1;

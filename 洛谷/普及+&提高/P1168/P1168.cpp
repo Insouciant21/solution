@@ -1,16 +1,16 @@
-﻿/* 
-*  Problem: P1168
-*  Author: Insouciant21
-*  Time: 2020/9/20 10:29:29
-*  Status: Accepted
-*/
+﻿/*
+ *  Problem: P1168
+ *  Author: Insouciant21
+ *  Time: 2020/9/20 10:29:29
+ *  Status: Accepted
+ */
 
 #include <bits/stdc++.h>
 
 using namespace std;
 
 int n;
-vector<int>vec;
+vector<int> vec;
 
 int main() {
     ios::sync_with_stdio(false);

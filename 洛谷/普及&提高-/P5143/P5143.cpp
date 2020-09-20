@@ -1,8 +1,8 @@
 ﻿/*
-*	Problem: P5143
-*	Author: Insouciant21
-*	Time: 2020/8/25 11:15:09
-*/
+ *	Problem: P5143
+ *	Author: Insouciant21
+ *	Time: 2020/8/25 11:15:09
+ */
 
 #include <bits/stdc++.h>
 
@@ -14,15 +14,13 @@ struct Position {
     Position(int a, int b, int c) { x = a, y = b, z = c; }
 };
 
-inline bool cmp(Position x, Position y) {
-    return x.z < y.z;
-}
+inline bool cmp(Position x, Position y) { return x.z < y.z; }
 
-inline double distance(Position x,Position y) {
+inline double distance(Position x, Position y) {
     return sqrt(pow(x.x - y.x, 2) + pow(x.y - y.y, 2) + pow(x.z - y.z, 2));
 }
 
-vector<Position>point;
+vector<Position> point;
 int n;
 
 int main() {

@@ -3,7 +3,7 @@
 using namespace std;
 
 int n;
-vector<int>p;
+vector<int> p;
 
 int main() {
     cin >> n;
@@ -18,9 +18,14 @@ int main() {
         for (int i = 0; i < n; i++) {
             is = 0;
             for (int j = i + 1; j < n; j++) {
-                if (p[m] == p[i] + p[j]) { ans++; is = 1; break; }
+                if (p[m] == p[i] + p[j]) {
+                    ans++;
+                    is = 1;
+                    break;
+                }
             }
-            if (is) break;
+            if (is)
+                break;
         }
     }
     cout << ans << endl;

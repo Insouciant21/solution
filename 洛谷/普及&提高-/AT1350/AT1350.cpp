@@ -1,9 +1,9 @@
-﻿/* 
-*  Problem: AT1350
-*  Author: Insouciant21
-*  Time: 2020/9/15 20:09:33
-*  Status: AtCoder()
-*/
+﻿/*
+ *  Problem: AT1350
+ *  Author: Insouciant21
+ *  Time: 2020/9/15 20:09:33
+ *  Status: AtCoder()
+ */
 
 #include <bits/stdc++.h>
 
@@ -14,13 +14,8 @@ struct Point {
     int step;
 };
 
-queue<Point>q;
-Point d[4]{
-    -1,0,0,
-    1,0,0,
-    0,1,0,
-    0,-1,0
-};
+queue<Point> q;
+Point d[4]{ -1, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1, 0 };
 
 bool maze[510][510];
 bool vis[510][510];
@@ -35,9 +30,12 @@ int main() {
         for (int j = 1; j <= m; j++) {
             char x;
             cin >> x;
-            if (x == '#') maze[i][j] = true;
-            if (x == 's') start.x = i, start.y = j, start.step = 0;
-            if (x == 'g') end.x = i, end.y = j, end.step = 0;
+            if (x == '#')
+                maze[i][j] = true;
+            if (x == 's')
+                start.x = i, start.y = j, start.step = 0;
+            if (x == 'g')
+                end.x = i, end.y = j, end.step = 0;
         }
     }
     q.push(start);
@@ -52,9 +50,12 @@ int main() {
         for (int i = 0; i < 4; i++) {
             Point p = now;
             p.x += d[i].x, p.y += d[i].y, p.step++;
-            if (p.x < 1 || p.y < 1 || p.x > n || p.y > m) continue;
-            if (maze[p.x][p.y]) continue;
-            if (vis[p.x][p.y]) continue;
+            if (p.x < 1 || p.y < 1 || p.x > n || p.y > m)
+                continue;
+            if (maze[p.x][p.y])
+                continue;
+            if (vis[p.x][p.y])
+                continue;
             vis[p.x][p.y] = true;
             q.push(p);
         }

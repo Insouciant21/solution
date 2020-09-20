@@ -1,9 +1,9 @@
-﻿/* 
-*  Problem: P1134
-*  Author: Insouciant21
-*  Time: 2020/9/5 16:26:47
-*  Status: Accepted
-*/
+﻿/*
+ *  Problem: P1134
+ *  Author: Insouciant21
+ *  Time: 2020/9/5 16:26:47
+ *  Status: Accepted
+ */
 
 #include <bits/stdc++.h>
 

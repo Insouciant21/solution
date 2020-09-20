@@ -1,8 +1,8 @@
 ﻿/*
-*	Problem: P1598
-*	Author: Insouciant21
-*	Time: 2020/8/22 20:37:45
-*/
+ *	Problem: P1598
+ *	Author: Insouciant21
+ *	Time: 2020/8/22 20:37:45
+ */
 
 #include <bits/stdc++.h>
 
@@ -28,8 +28,7 @@ int main() {
             histo[j][i] = " ";
         }
     }
-    for (int i = 0; i < 26; i++) 
-        histo[n][i] = char(i + 65);
+    for (int i = 0; i < 26; i++) histo[n][i] = char(i + 65);
     for (int i = 0; i < 26; i++) {
         for (int j = n - 1; j >= n - fre[i]; j--) {
             histo[j][i] = "*";

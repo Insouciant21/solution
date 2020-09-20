@@ -1,31 +1,36 @@
 ﻿/*
-*	Problem: P1575
-*	Author: Insouciant21
-*	Time: 2020/8/26 17:11:03
-*	Unaccepted 80
-*/
+ *	Problem: P1575
+ *	Author: Insouciant21
+ *	Time: 2020/8/26 17:11:03
+ *	Unaccepted 80
+ */
 
 #include <bits/stdc++.h>
 
 using namespace std;
 
 inline string opposite(string x) {
-    if (x == "true") return "false";
-    else return "true";
+    if (x == "true")
+        return "false";
+    else
+        return "true";
 }
 
-inline string both(string x,string y) {
-    if (x == "true" && y == "true") return "true";
+inline string both(string x, string y) {
+    if (x == "true" && y == "true")
+        return "true";
     return "false";
 }
 
 inline string either(string x, string y) {
-    if (x == "false" && y == "false") return "false";
+    if (x == "false" && y == "false")
+        return "false";
     return "true";
 }
 
 inline bool validate(string x, string y) {
-    if ((x == "true" || x == "false") && (y == "true" || y == "false")) return true;
+    if ((x == "true" || x == "false") && (y == "true" || y == "false"))
+        return true;
     return false;
 }
 
@@ -34,23 +39,21 @@ int main() {
     string t;
     getline(cin, t);
     ss << t;
-    vector<string>x;
+    vector<string> x;
     while (ss >> t) {
         x.push_back(t);
     }
-    for (auto iter=x.begin(); iter!=x.end(); iter++) {
+    for (auto iter = x.begin(); iter != x.end(); iter++) {
         if (*iter == "not") {
             if (iter != x.end() - 1) {
                 if (*(iter + 1) == "true" || *(iter + 1) == "false") {
                     *(iter + 1) = opposite(*(iter + 1));
                     iter = x.erase(iter);
-                }
-                else {
+                } else {
                     cout << "error" << endl;
                     return 0;
                 }
-            }
-            else {
+            } else {
                 cout << "error" << endl;
                 return 0;
             }
@@ -61,15 +64,13 @@ int main() {
             if (iter == x.begin() || iter == x.end() - 1) {
                 cout << "error" << endl;
                 return 0;
-            }
-            else {
+            } else {
                 if (validate(*(iter - 1), *(iter + 1))) {
                     t = either(*(iter - 1), *(iter + 1));
                     iter = x.erase(iter - 1);
                     x.erase(iter + 1);
                     *iter = t;
-                }
-                else {
+                } else {
                     cout << "error" << endl;
                     return 0;
                 }
@@ -81,15 +82,13 @@ int main() {
             if (iter == x.begin() || iter == x.end() - 1) {
                 cout << "error" << endl;
                 return 0;
-            }
-            else {
+            } else {
                 if (validate(*(iter - 1), *(iter + 1))) {
                     t = either(*(iter - 1), *(iter + 1));
                     iter = x.erase(iter - 1);
                     x.erase(iter + 1);
                     *iter = t;
-                }
-                else {
+                } else {
                     cout << "error" << endl;
                     return 0;
                 }

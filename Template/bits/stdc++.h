@@ -1,8 +1,9 @@
 // Copyright (c) Microsoft Corporation.
 // SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
 
-// This file is intended as a test resource for tools that want to verify that they can parse all MSVC++ standard
-// library headers without warnings. This file disables deprecations, so it should not be included in programs directly.
+// This file is intended as a test resource for tools that want to verify that they can parse all MSVC++
+// standard library headers without warnings. This file disables deprecations, so it should not be included in
+// programs directly.
 //
 // This file may be changed, renamed, or removed at any time.
 
@@ -14,7 +15,8 @@
 #define _MSVC_ALL_PUBLIC_HEADERS_HPP
 
 #pragma warning(push)
-#pragma warning(1 : 4668) // 'MEOW' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+#pragma warning( \
+    1 : 4668)  // 'MEOW' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
 
 // All STL headers should protect themselves from macroized new.
 #pragma push_macro("new")
@@ -24,17 +26,17 @@
 // VSO-768746: mbctype.h macroizes _MS, _MP, _M1, and _M2. Include it first for test coverage.
 #ifndef _MSVC_TESTING_NVCC
 #include <mbctype.h>
-#endif // _MSVC_TESTING_NVCC
+#endif  // _MSVC_TESTING_NVCC
 
-#if 1 // TRANSITION, OS-17090155 (UCRT)
+#if 1  // TRANSITION, OS-17090155 (UCRT)
 #define _CRT_DECLARE_NONSTDC_NAMES 0
 #ifndef _MSVC_TESTING_NVCC
 #include <sys/stat.h>
 #include <sys/timeb.h>
 #include <sys/utime.h>
-#endif // _MSVC_TESTING_NVCC
+#endif  // _MSVC_TESTING_NVCC
 #undef _CRT_DECLARE_NONSTDC_NAMES
-#endif // TRANSITION, OS-17090155 (UCRT)
+#endif  // TRANSITION, OS-17090155 (UCRT)
 
 #define _SILENCE_CXX17_C_HEADER_DEPRECATION_WARNING
 #define _SILENCE_CXX17_STRSTREAM_DEPRECATION_WARNING
@@ -107,7 +109,7 @@
 
 #ifndef _M_CEE_PURE
 #include <atomic>
-#endif // _M_CEE_PURE
+#endif  // _M_CEE_PURE
 
 #ifndef _M_CEE
 #include <condition_variable>
@@ -116,7 +118,7 @@
 #include <mutex>
 #include <shared_mutex>
 #include <thread>
-#endif // _M_CEE
+#endif  // _M_CEE
 
 #include <cassert>
 #include <ccomplex>
@@ -207,11 +209,11 @@
 
 #ifndef _M_CEE_PURE
 #include <fpieee.h>
-#endif // _M_CEE_PURE
-#endif // _MSVC_TESTING_NVCC
+#endif  // _M_CEE_PURE
+#endif  // _MSVC_TESTING_NVCC
 
 #pragma pop_macro("new")
 
 #pragma warning(pop)
 
-#endif // _MSVC_ALL_PUBLIC_HEADERS_HPP
+#endif  // _MSVC_ALL_PUBLIC_HEADERS_HPP
