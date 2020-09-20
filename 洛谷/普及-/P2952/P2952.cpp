@@ -1,15 +1,15 @@
-﻿/* 
-*  Problem: P2952
-*  Author: Insouciant21
-*  Time: 2020/9/7 18:11:36
-*  Status: Accepted
-*/
+﻿/*
+ *  Problem: P2952
+ *  Author: Insouciant21
+ *  Time: 2020/9/7 18:11:36
+ *  Status: Accepted
+ */
 
 #include <bits/stdc++.h>
 
 using namespace std;
 
-deque<int>cow;
+deque<int> cow;
 int n;
 
 int main() {
@@ -26,15 +26,12 @@ int main() {
             else
                 cow.push_back(cnt);
             cnt++;
-        }
-        else {
+        } else {
             cin >> k;
             if (o2 == 'L')
-                for (int j = 1; j <= k; j++)
-                    cow.pop_front();
+                for (int j = 1; j <= k; j++) cow.pop_front();
             else
-                for (int j = 1; j <= k; j++)
-                    cow.pop_back();
+                for (int j = 1; j <= k; j++) cow.pop_back();
         }
     }
     while (!cow.empty()) {

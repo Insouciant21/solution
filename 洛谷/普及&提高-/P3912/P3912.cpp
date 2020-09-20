@@ -1,15 +1,15 @@
-﻿/* 
-*  Problem: P3912
-*  Author: Insouciant21
-*  Time: 2020/9/5 15:23:20
-*  Status: Accepted
-*/
+﻿/*
+ *  Problem: P3912
+ *  Author: Insouciant21
+ *  Time: 2020/9/5 15:23:20
+ *  Status: Accepted
+ */
 
 #include <bits/stdc++.h>
 
 using namespace std;
 
-bitset<100000001>numlist;
+bitset<100000001> numlist;
 int cnt;
 
 void work(int n) {

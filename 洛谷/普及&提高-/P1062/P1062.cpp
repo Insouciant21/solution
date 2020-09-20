@@ -1,9 +1,9 @@
-﻿/* 
-*  Problem: P1062
-*  Author: Insouciant21
-*  Time: 2020/9/13 19:26:55
-*  Status: Accepted
-*/
+﻿/*
+ *  Problem: P1062
+ *  Author: Insouciant21
+ *  Time: 2020/9/13 19:26:55
+ *  Status: Accepted
+ */
 
 #include <bits/stdc++.h>
 
@@ -24,8 +24,7 @@ string toBin(long long n) {
 long long toDex(string m) {
     long long dex = 0;
     reverse(m.begin(), m.end());
-    for (unsigned i = 0; i < m.length(); i++)
-        dex += (m[i] - '0') * pow(k, i);
+    for (unsigned i = 0; i < m.length(); i++) dex += (m[i] - '0') * pow(k, i);
     return dex;
 }
 

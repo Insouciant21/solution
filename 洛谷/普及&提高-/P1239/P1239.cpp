@@ -1,9 +1,9 @@
-﻿/* 
-*  Problem: P1239
-*  Author: Insouciant21
-*  Time: 2020/9/5 16:03:52
-*  Status: Accepted
-*/
+﻿/*
+ *  Problem: P1239
+ *  Author: Insouciant21
+ *  Time: 2020/9/5 16:03:52
+ *  Status: Accepted
+ */
 
 #include <bits/stdc++.h>
 

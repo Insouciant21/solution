@@ -12,8 +12,7 @@ int main() {
         reverse(x.begin(), x.end());
         ans = stoi(x);
         ans = -ans;
-    }
-    else {
+    } else {
         reverse(s.begin(), s.end());
         ans = stoi(s);
     }

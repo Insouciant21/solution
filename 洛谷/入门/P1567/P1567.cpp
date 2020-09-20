@@ -3,8 +3,8 @@
 using namespace std;
 
 int n;
-vector<int>temper;
-vector<int>cnt;
+vector<int> temper;
+vector<int> cnt;
 
 int main() {
     cin >> n;
@@ -14,8 +14,10 @@ int main() {
         cin >> t;
         temper.push_back(t);
         if (i >= 1) {
-            if (temper[i] < temper[i - 1]) cnt.push_back(1);
-            else cnt.back()++;
+            if (temper[i] < temper[i - 1])
+                cnt.push_back(1);
+            else
+                cnt.back()++;
         }
     }
     cout << *max_element(cnt.begin(), cnt.end());

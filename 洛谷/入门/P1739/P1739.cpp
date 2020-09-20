@@ -11,8 +11,10 @@ int main() {
     }
     int cnt = 0;
     for (int i = 0; i < x.length(); i++) {
-        if (x[i] == '(') cnt++;
-        if (x[i] == ')') cnt--;
+        if (x[i] == '(')
+            cnt++;
+        if (x[i] == ')')
+            cnt--;
         if (cnt < 0) {
             cout << "NO\n";
             return 0;
@@ -20,8 +22,7 @@ int main() {
     }
     if (cnt != 0) {
         cout << "NO\n";
-    }
-    else {
+    } else {
         cout << "YES\n";
     }
     return 0;

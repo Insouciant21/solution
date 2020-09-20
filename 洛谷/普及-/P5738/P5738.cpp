@@ -1,8 +1,8 @@
 ﻿/*
-*	Problem: P5738
-*	Author: Insouciant21
-*	Time: 2020/8/22 22:29:41
-*/
+ *	Problem: P5738
+ *	Author: Insouciant21
+ *	Time: 2020/8/22 22:29:41
+ */
 
 #include <bits/stdc++.h>
 
@@ -14,7 +14,7 @@ int main() {
     int t;
     int *s = new int[m];
     double sum = 0;
-    vector<double>x;
+    vector<double> x;
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
             cin >> t;

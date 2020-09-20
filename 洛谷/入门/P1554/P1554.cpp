@@ -22,6 +22,6 @@ int main() {
         cnt[9] += count(con.begin(), con.end(), '9');
     }
     cout << cnt[0];
-    for (int i = 1; i <= 9; i++)cout << " " << cnt[i];
+    for (int i = 1; i <= 9; i++) cout << " " << cnt[i];
     return 0;
 }

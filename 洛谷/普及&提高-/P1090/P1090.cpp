@@ -1,14 +1,14 @@
 ﻿/*
-*	Problem: P1090
-*	Author: Insouciant21
-*	Time: 2020/8/24 15:50:44
-*/
+ *	Problem: P1090
+ *	Author: Insouciant21
+ *	Time: 2020/8/24 15:50:44
+ */
 
 #include <bits/stdc++.h>
 
 using namespace std;
 
-priority_queue<int, vector<int>, greater<int>>fruit;
+priority_queue<int, vector<int>, greater<int>> fruit;
 int n;
 
 int main() {

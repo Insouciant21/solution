@@ -33,13 +33,14 @@ int main() {
         }
     }
     int ans = 0;
-	for (int i = 1; i <= w; i++) {
-		for (int j = 1; j <= x; j++) {
-			for (int y = 1; y <= h; y++) {
-                if (cube[i][j][y]) ans++;
-			}
-		}
-	}
+    for (int i = 1; i <= w; i++) {
+        for (int j = 1; j <= x; j++) {
+            for (int y = 1; y <= h; y++) {
+                if (cube[i][j][y])
+                    ans++;
+            }
+        }
+    }
     cout << ans << endl;
     return 0;
 }

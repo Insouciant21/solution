@@ -1,9 +1,9 @@
-﻿/* 
-*  Problem: P3395
-*  Author: Insouciant21
-*  Time: 2020/9/10 18:02:15
-*  Status: Accepted
-*/
+﻿/*
+ *  Problem: P3395
+ *  Author: Insouciant21
+ *  Time: 2020/9/10 18:02:15
+ *  Status: Accepted
+ */
 
 #include <bits/stdc++.h>
 
@@ -16,15 +16,10 @@ struct Node {
     int step;
 };
 
-queue<Node>q;
+queue<Node> q;
 Node man;
 
-Node mov[4]{
-	0,-1,0,
-	0,1,0,
-	1,0,0,
-	-1,0,0
-};
+Node mov[4]{ 0, -1, 0, 0, 1, 0, 1, 0, 0, -1, 0, 0 };
 
 int chess[1010][1010];
 bool viewed[1010][1010];
@@ -39,8 +34,7 @@ int main() {
         memset(viewed, 0, sizeof(viewed));
         cin >> n;
         for (int i = 1; i <= n; i++)
-            for (int j = 1; j <= n; j++)
-                chess[i][j] = inf;
+            for (int j = 1; j <= n; j++) chess[i][j] = inf;
         for (int j = 1; j <= 2 * n - 2; j++) {
             int x, y;
             cin >> x >> y;
@@ -51,10 +45,10 @@ int main() {
         viewed[1][1] = true;
         while (q.size()) {
             man = q.front(), q.pop();
-			if (man.x == n && man.y == n) {
-				can = true;
-				break;
-			}
+            if (man.x == n && man.y == n) {
+                can = true;
+                break;
+            }
             for (int i = 0; i < 4; i++) {
                 Node p;
                 p.x = man.x + mov[i].x, p.y = man.y + mov[i].y, p.step = man.step + 1;
