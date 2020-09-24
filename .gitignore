@@ -3,3 +3,4 @@
 !*.h
 !.clang-format
 !*.md
+!*.py
