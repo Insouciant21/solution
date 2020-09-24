@@ -29,9 +29,9 @@
 #define MAX_LOADSTRING 100
 
     // $loctext_sourcecomment1$
-    HINSTANCE hInst;                  // $loctext_sourcecomment2$
-WCHAR szTitle[MAX_LOADSTRING];        // $loctext_sourcecomment3$
-WCHAR szWindowClass[MAX_LOADSTRING];  // $loctext_sourcecomment4$
+    HINSTANCE hInst;                 // $loctext_sourcecomment2$
+WCHAR szTitle[MAX_LOADSTRING];       // $loctext_sourcecomment3$
+WCHAR szWindowClass[MAX_LOADSTRING]; // $loctext_sourcecomment4$
 
 // $loctext_sourcecomment5$
 ATOM MyRegisterClass(HINSTANCE hInstance);
@@ -39,8 +39,7 @@ BOOL InitInstance(HINSTANCE, int);
 LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
 INT_PTR CALLBACK About(HWND, UINT, WPARAM, LPARAM);
 
-int APIENTRY wWinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _In_ LPWSTR lpCmdLine,
-                      _In_ int nCmdShow) {
+int APIENTRY wWinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _In_ LPWSTR lpCmdLine, _In_ int nCmdShow) {
     UNREFERENCED_PARAMETER(hPrevInstance);
     UNREFERENCED_PARAMETER(lpCmdLine);
 
@@ -107,10 +106,9 @@ ATOM MyRegisterClass(HINSTANCE hInstance) {
 //        $loctext_sourcecomment13_line2$
 //
 BOOL InitInstance(HINSTANCE hInstance, int nCmdShow) {
-    hInst = hInstance;  // $loctext_sourcecomment14$
+    hInst = hInstance; // $loctext_sourcecomment14$
 
-    HWND hWnd = CreateWindowW(szWindowClass, szTitle, WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, 0, CW_USEDEFAULT, 0,
-                              nullptr, nullptr, hInstance, nullptr);
+    HWND hWnd = CreateWindowW(szWindowClass, szTitle, WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, 0, CW_USEDEFAULT, 0, nullptr, nullptr, hInstance, nullptr);
 
     if (!hWnd) {
         return FALSE;
@@ -201,10 +199,12 @@ int main() {
             // TODO: $loctext_sourcecomment24$
             wprintf(L"$loctext_sourcestring1$\n");
             nRetCode = 1;
-        } else {
+        }
+        else {
             // TODO: $loctext_sourcecomment24$
         }
-    } else {
+    }
+    else {
         // TODO: $loctext_sourcecomment25$
         wprintf(L"$loctext_sourcestring2$\n");
         nRetCode = 1;
@@ -219,14 +219,20 @@ int main() {
     $safercprojectname$_API int n$safeprojectname$ = 0;
 
 // $loctext_sourcecomment27$
-$safercprojectname$_API int fn$safeprojectname$(void) { return 0; }
+$safercprojectname$_API int fn$safeprojectname$(void) {
+    return 0;
+}
 
 // $loctext_sourcecomment28$
-C$safeprojectname$::C$safeprojectname$() { return; }
+C$safeprojectname$::C$safeprojectname$() {
+    return;
+}
 [!endif][!endif][!if CONSOLE_APP] using namespace std;
 
-int main() { return 0; }
+int main() {
+    return 0;
+}
 [!endif][!endif][!if LIB_APP]
     // TODO: $loctext_sourcecomment31$
     void
-    fn$safeprojectname$(){}[!endif]
+    fn$safeprojectname$() {}[!endif]
