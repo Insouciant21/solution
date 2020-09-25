@@ -53,7 +53,7 @@ int main() {
         cin >> ex;
         Node r, e;
         r.x = p[sx[0]], r.y = sx[1] - '0', r.step = 0;
-        e.x = p[ex[0]], e.y = ex[1] - '0', e.step = 0;
+        e.x = p[ex[0]], e.y = ex[1] - '0',e.step = 0;
         bfs(r, e);
     }
     return 0;

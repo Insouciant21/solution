@@ -1,6 +1,0 @@
-*.*
-!*.cpp
-!*.h
-!.clang-format
-!*.md
-!*.py
