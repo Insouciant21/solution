@@ -2,7 +2,7 @@
   Problem: UVA10539
   Time: 2020/09/27 21:16:56
   Author: Insouciant21
-  Status: NULL
+  Status: Accepted
 */
 
 #include <bits/stdc++.h>
@@ -10,7 +10,7 @@
 using namespace std;
 
 const long long maxn = int(1e6) + 10;
-const long long maxp = (long long)(1e12) + 1;
+const long long maxp = (long long)(1e12) + 10;
 
 bitset<maxn> numlist;
 vector<long long> num;
@@ -31,12 +31,11 @@ void prework() {
 int main() {
     prework();
     sort(num.begin(), num.end());
-    ios::sync_with_stdio(false);
-    cin >> t;
+    scanf("%d", &t);
     while (t--) {
-        cin >> l >> r;
-        int x = lower_bound(num.begin(), num.end(), l) - num.begin();
-        int y = lower_bound(num.begin(), num.end(), r) - num.begin();
-        cout << y - x << endl;
+        scanf("%lld%lld", &l, &r);
+        long long x = lower_bound(num.begin(), num.end(), l) - num.begin();
+        long long y = lower_bound(num.begin(), num.end(), r) - num.begin();
+        printf("%lld\n", y - x);
     }
 }

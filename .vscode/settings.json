@@ -1,6 +1,9 @@
 {
     "debug.internalConsoleOptions": "neverOpen",
     "files.associations": {
-        "numeric": "cpp"
+        "numeric": "cpp",
+        "iostream": "cpp",
+        "cctype": "cpp",
+        "charconv": "cpp"
     }
 }
