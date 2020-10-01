@@ -9,7 +9,9 @@
 
 using namespace std;
 
-bitset<100000001> numlist;
+const int maxn = int(1e8) + 1;
+
+bitset<maxn> numlist;
 int cnt;
 
 void work(int n) {
