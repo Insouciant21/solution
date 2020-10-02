@@ -15,7 +15,7 @@ struct Node {
 
 char maze[1010][1010];
 int vis[1010][1010];
-int ans[5100000];
+int ans[500010];
 
 int dx[4] = {0, 0, 1, -1};
 int dy[4] = {1, -1, 0, 0};
@@ -70,7 +70,7 @@ int main() {
         for (int j = 1; j <= m; j++) {
             if (maze[i][j] == '*') {
                 long long block = 1;
-                long long id[4] = {0x3f3f3f, 0x3f3f3f, 0x3f3f3f, 0x3f3f3f};
+                int id[4] = {-1, -1, -1, -1};
                 for (int k = 0; k < 4; k++) {
                     Node ftr;
                     ftr.x = i, ftr.y = j;
