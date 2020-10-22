@@ -2,7 +2,7 @@
   Problem: CF991B
   Time: 2020/10/22 20:16:20
   Author: Insouciant21
-  Status: NULL
+  Status: Accepted
 */
 
 #include <bits/stdc++.h>
