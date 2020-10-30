@@ -2,7 +2,7 @@
  *  Problem: AT1350
  *  Author: Insouciant21
  *  Time: 2020/9/15 20:09:33
- *  Status: AtCoder()
+ *  Status: Accepted
  */
 #include <bits/stdc++.h>
 

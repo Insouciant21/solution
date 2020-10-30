@@ -2,3 +2,5 @@ test.*
 *.exe
 tmp.*
 temp*
+*.in
+*.out
