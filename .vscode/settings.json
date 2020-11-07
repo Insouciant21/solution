@@ -76,9 +76,9 @@
         "typeindex": "cpp",
         "typeinfo": "cpp",
         "valarray": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "ccomplex": "cpp"
     },
-    "editor.defaultFormatter": "ms-vscode.cpptools",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
@@ -90,10 +90,11 @@
     "code-runner.saveFileBeforeRun": true,
     "code-runner.executorMap": {
 
+
         "javascript": "node",
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
         "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "cpp": "cd $dir && cls && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && cls && g++ $fileName -O2 -std=c++14 -o $fileNameWithoutExt.exe && $dir$fileNameWithoutExt.exe",
         "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "php": "php",
         "python": "python3 -u",
@@ -140,5 +141,12 @@
         "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
-    }
+    },
+    "C_Cpp.default.intelliSenseMode": "gcc-x64",
+    "C_Cpp.experimentalFeatures": "Enabled",
+    "oneDarkPro.editorTheme": "oneDarkProFlat",
+    "oneDarkPro.italic": false,
+    "oneDarkPro.vivid": true,
+    "python.formatting.provider": "yapf",
+    "python.pythonPath": "C:\\Users\\Insouciant21\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe"
 }

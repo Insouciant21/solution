@@ -2,7 +2,7 @@
   Problem: SP4141
   Time: 2020/10/23 22:04:23
   Author: Insouciant21
-  Status: NULL
+  Status: Accepted
 */
 
 #include <bits/stdc++.h>
