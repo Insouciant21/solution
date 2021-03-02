@@ -144,9 +144,10 @@
     },
     "C_Cpp.default.intelliSenseMode": "gcc-x64",
     "C_Cpp.experimentalFeatures": "Enabled",
-    "oneDarkPro.editorTheme": "oneDarkProFlat",
+    "oneDarkPro.editorTheme": "vscode",
     "oneDarkPro.italic": false,
     "oneDarkPro.vivid": true,
     "python.formatting.provider": "yapf",
-    "python.pythonPath": "C:\\Users\\Insouciant21\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe"
+    "python.pythonPath": "C:\\Users\\Insouciant21\\anaconda3\\python.exe",
+    "editor.defaultFormatter": "ms-vscode.cpptools"
 }

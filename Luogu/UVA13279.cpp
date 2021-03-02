@@ -10,30 +10,35 @@
 using namespace std;
 
 const int MOD = 100000007;
-const int maxn = 5000001;
-int n;
-map<int, long long> p[5000001];
-bitset<5000001> numlist;
 
-void prepare() {
-    numlist[0] = numlist[1] = 1;
-    for (int i = 2; i < maxn; i++) {
-        if (!numlist[i]) {
-            for (int j = 1; i * j < maxn; j++) {
-                if (j != 1)
-                    numlist[i * j] = 1;
-                p[i * j][i] = j;
+map<int, long long> p;
+
+int n;
+
+void factor(int x) {
+    for (int i = 2; i * i <= x; i++) {
+        if (x % i == 0) {
+            int cnt = 0;
+            while (x % i == 0) {
+                x /= i;
+                cnt++;
             }
+            p[i] += cnt * (n - x + 1LL);
         }
     }
+    if (x > 1)
+        p[x] += (n - x + 1LL);
 }
 
 int main() {
-    freopen("UVA13279.out", "w", stdout);
-    clock_t start, end;
-    start = clock();
-    prepare();
-    end = clock();
-    cout << end - start << endl;
+    while (~scanf("%d", &n)) {
+        for (int i = 1; i <= n; i++)
+            factor(i);
+        long long ans = 1;
+        for (auto iter = p.begin(); iter != p.end(); iter++)
+            ans = ans * (iter->second + 1) % MOD;
+        printf("%lld\n", ans);
+        p.clear();
+    }
     return 0;
 }
