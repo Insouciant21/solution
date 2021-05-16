@@ -148,6 +148,6 @@
     "oneDarkPro.italic": false,
     "oneDarkPro.vivid": true,
     "python.formatting.provider": "yapf",
-    "python.pythonPath": "C:\\Users\\Insouciant21\\anaconda3\\python.exe",
+    "python.pythonPath": "C:\\Users\\Insouciant21\\AppData\\Local\\Microsoft\\WindowsApps\\python3.9.exe",
     "editor.defaultFormatter": "ms-vscode.cpptools"
 }
