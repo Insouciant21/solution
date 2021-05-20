@@ -21,25 +21,25 @@ bool vis[310][310];
 int n, l;
 
 void bfs(Node start, Node end) {
-    while (q.size()) q.pop();
+    while (!q.empty()) q.pop();
     memset(vis, 0, sizeof(vis));
     q.push(start);
-    vis[start.x][start.y] = 1;
-    while (q.size()) {
+    vis[start.x][start.y] = true;
+    while (!q.empty()) {
         Node now = q.front();
         q.pop();
         if (now.x == end.x && now.y == end.y) {
             cout << now.step << endl;
             return;
         }
-        for (int i = 0; i < 8; i++) {
+        for (auto &i : mov) {
             Node p = now;
-            p.x += mov[i].x, p.y += mov[i].y, p.step++;
+            p.x += i.x, p.y += i.y, p.step++;
             if (p.x < 0 || p.y < 0 || p.x >= l || p.y >= l)
                 continue;
             if (vis[p.x][p.y])
                 continue;
-            vis[p.x][p.y] = 1;
+            vis[p.x][p.y] = true;
             q.push(p);
         }
     }

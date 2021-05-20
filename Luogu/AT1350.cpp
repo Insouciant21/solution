@@ -39,7 +39,7 @@ int main() {
     }
     q.push(start);
     vis[start.x][start.y] = true;
-    while (q.size()) {
+    while (!q.empty()) {
         Point now = q.front();
         q.pop();
         if (now.x == end.x && now.y == end.y) {

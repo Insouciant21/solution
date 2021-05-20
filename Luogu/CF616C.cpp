@@ -29,7 +29,7 @@ void bfs(Node st) {
     int block = 1;
     cnt++;
     vis[st.x][st.y] = cnt;
-    while (q.size()) {
+    while (!q.empty()) {
         Node prs = q.front();
         q.pop();
         for (int i = 0; i < 4; i++) {
@@ -58,7 +58,6 @@ int main() {
             cin >> maze[i][j];
         }
     }
-    int now = 1;
     for (int i = 1; i <= n; i++) {
         for (int j = 1; j <= m; j++) {
             if (maze[i][j] == '.' && !vis[i][j]) {
