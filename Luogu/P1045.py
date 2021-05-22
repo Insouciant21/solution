@@ -4,6 +4,7 @@
   Author: Insouciant21
   Status: Accepted
 """
+
 import math
 
 p = int(input())
