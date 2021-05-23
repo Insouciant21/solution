@@ -2,7 +2,7 @@
   Problem: CF1062B
   Time: 2020/11/04 20:42:25
   Author: Insouciant21
-  Status: NULL
+  Status: Accepted
 */
 
 #include <bits/stdc++.h>
