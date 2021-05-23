@@ -24,7 +24,7 @@ int n, m;
 int main() {
     ios::sync_with_stdio(false);
     cin >> n >> m;
-    Point start, end;
+    Point start {}, end {};
     for (int i = 1; i <= n; i++) {
         for (int j = 1; j <= m; j++) {
             char x;
