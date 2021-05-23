@@ -46,9 +46,9 @@ int main() {
             cout << "Yes" << endl;
             return 0;
         }
-        for (int i = 0; i < 4; i++) {
+        for (auto &i : d) {
             Point p = now;
-            p.x += d[i].x, p.y += d[i].y, p.step++;
+            p.x += i.x, p.y += i.y, p.step++;
             if (p.x < 1 || p.y < 1 || p.x > n || p.y > m)
                 continue;
             if (maze[p.x][p.y])
