@@ -15,7 +15,7 @@ int main() {
     cin >> q;
     int len = q.size();
     int rem = 0;
-    while (q.size() && q.front() != '[') {
+    while (!q.empty() && q.front() != '[') {
         q.erase(0, 1);
         rem++;
     }
@@ -23,7 +23,7 @@ int main() {
         puts("-1");
         return 0;
     }
-    while (q.size() && q.back() != ']') {
+    while (!q.empty() && q.back() != ']') {
         q.pop_back();
         rem++;
     }
