@@ -9,29 +9,26 @@
 using namespace std;
 
 bool validate(char x, char y) {
-    if ('0' <= x && x <= '9' && '0' <= y && y <= '9')
-        return 1;
-    else if ('a' <= x && x <= 'z' && 'a' <= y && y <= 'z')
-        return 1;
-    else if ('A' <= x && x <= 'Z' && 'A' <= y && y <= 'Z')
-        return 1;
-    return 0;
+    if (('0' <= x && x <= '9' && '0' <= y && y <= '9') || ('a' <= x && x <= 'z' && 'a' <= y && y <= 'z') || ('A' <= x && x <= 'Z' && 'A' <= y && y <= 'Z'))
+        return true;
+    return false;
 }
 
-int typeof(char x) {
+int type(char x) {
     if (x >= 'a' && x <= 'z')
         return 0;
     if (x >= 'A' && x <= 'Z')
         return 1;
     if (x >= '0' && x <= '9')
         return 2;
+    return 0;
 }
 
 string generate(string x, int a, int b, int c) {
     string ans;
     char filled;
     for (char i = x.front() + 1; i < x.back(); i++) {
-        switch (typeof(i)) {
+        switch (type(i)) {
             case 0:
                 if (a == 1)
                     filled = i;

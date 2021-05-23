@@ -178,9 +178,8 @@ add_executable(OJ_Solution
         Luogu/UVA572.cpp
         Template/bits/stdc++.h
         Template/Template.cpp
-        tempCodeRunnerFile.cpp
         "tempInvwithO(n).cpp"
         tempMillerRabin.cpp
-        test.cpp Luogu/P1015.cpp Luogu/P1028.cpp Luogu/P1012.cpp Luogu/P1010.cpp Luogu/P1011.cpp NOIOJ/1007.cpp Luogu/P1051.cpp Luogu/P1036.cpp Luogu/P1003.cpp)
+        test.cpp Luogu/P1015.cpp Luogu/P1028.cpp Luogu/P1012.cpp Luogu/P1010.cpp Luogu/P1011.cpp NOIOJ/1007.cpp Luogu/P1051.cpp Luogu/P1036.cpp Luogu/P1003.cpp Luogu/P1079.cpp)
 
 # add_executable(P2026 Luogu/P2026.cpp)
