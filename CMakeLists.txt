@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.19)
 project(OJ_Solution)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 11)
 
 add_executable(OJ_Solution
         Algorithm/BigInteger.cpp
@@ -180,6 +180,6 @@ add_executable(OJ_Solution
         Template/Template.cpp
         "tempInvwithO(n).cpp"
         tempMillerRabin.cpp
-        test.cpp Luogu/P1015.cpp Luogu/P1028.cpp Luogu/P1012.cpp Luogu/P1010.cpp Luogu/P1011.cpp NOIOJ/1007.cpp Luogu/P1051.cpp Luogu/P1036.cpp Luogu/P1003.cpp Luogu/P1079.cpp Luogu/P1024.cpp Luogu/P1100.cpp)
+        test.cpp Luogu/P1015.cpp Luogu/P1028.cpp Luogu/P1012.cpp Luogu/P1010.cpp Luogu/P1011.cpp NOIOJ/1007.cpp Luogu/P1051.cpp Luogu/P1036.cpp Luogu/P1003.cpp Luogu/P1079.cpp Luogu/P1024.cpp Luogu/P1100.cpp Luogu/P1147.cpp Luogu/P1157.cpp Luogu/P1149.cpp Luogu/P1162.cpp)
 
 # add_executable(P2026 Luogu/P2026.cpp)
