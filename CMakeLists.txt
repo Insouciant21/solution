@@ -180,6 +180,6 @@ add_executable(OJ_Solution
         Template/Template.cpp
         "tempInvwithO(n).cpp"
         tempMillerRabin.cpp
-        test.cpp Luogu/P1015.cpp Luogu/P1028.cpp Luogu/P1012.cpp Luogu/P1010.cpp Luogu/P1011.cpp NOIOJ/1007.cpp Luogu/P1051.cpp Luogu/P1036.cpp Luogu/P1003.cpp Luogu/P1079.cpp Luogu/P1024.cpp Luogu/P1100.cpp Luogu/P1147.cpp Luogu/P1157.cpp Luogu/P1149.cpp Luogu/P1162.cpp Luogu/P3926.cpp Luogu/P1579.cpp Luogu/P2692.cpp Luogu/P2548.cpp Luogu/P1927.cpp Luogu/P4710.cpp Luogu/CF1139A.cpp Luogu/CF519B.cpp)
+        test.cpp Luogu/P1015.cpp Luogu/P1028.cpp Luogu/P1012.cpp Luogu/P1010.cpp Luogu/P1011.cpp NOIOJ/1007.cpp Luogu/P1051.cpp Luogu/P1036.cpp Luogu/P1003.cpp Luogu/P1079.cpp Luogu/P1024.cpp Luogu/P1100.cpp Luogu/P1147.cpp Luogu/P1157.cpp Luogu/P1149.cpp Luogu/P1162.cpp Luogu/P3926.cpp Luogu/P1579.cpp Luogu/P2692.cpp Luogu/P2548.cpp Luogu/P1927.cpp Luogu/P4710.cpp Luogu/CF1139A.cpp Luogu/CF519B.cpp Luogu/P1105.cpp Luogu/B2001.cpp Luogu/B2002.cpp Luogu/B2003.cpp Luogu/B2004.cpp Luogu/B2005.cpp Luogu/B2006.cpp Luogu/B2007.cpp Luogu/B2008.cpp Luogu/B2009.cpp Luogu/B2010.cpp)
 
 # add_executable(P2026 Luogu/P2026.cpp)
