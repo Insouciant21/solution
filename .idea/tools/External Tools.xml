@@ -2,7 +2,7 @@
   <tool name="C++ Compiler" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="true" showConsoleOnStdErr="true" synchronizeAfterRun="true">
     <exec>
       <option name="COMMAND" value="C:\TDM-GCC-64\bin\g++.exe" />
-      <option name="PARAMETERS" value="&quot;$FileName$&quot; -o $ProjectFileDir$\tempRun.exe" />
+      <option name="PARAMETERS" value="&quot;$FileName$&quot; -o $ProjectFileDir$\tempRun.exe -g" />
       <option name="WORKING_DIRECTORY" value="$FilePath$" />
     </exec>
   </tool>
