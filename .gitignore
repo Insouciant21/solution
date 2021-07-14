@@ -4,3 +4,4 @@ tmp.*
 temp*
 *.in
 *.out
+/x.py
