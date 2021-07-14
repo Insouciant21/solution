@@ -4,3 +4,4 @@ tmp.*
 temp*
 *.in
 *.out
+/cmake-build-debug/

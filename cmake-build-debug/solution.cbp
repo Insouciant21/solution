@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="solution"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="solution">
+				<Option output="C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/solution.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++/backward"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/include"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/include-fixed"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 solution"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="solution/fast">
+				<Option output="C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/solution.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++/backward"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/include"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/include-fixed"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 solution/fast"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/AtCoder/AT1350.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/AtCoder/AT176.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/AtCoder/AT4242.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF1062B.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF1101B.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF1139A.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF1146B.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF121A.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF14C.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF171B.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF192A.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF260A.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF26B.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF34C.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF377A.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF399B.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF45D.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF485A.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF490B.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF496A.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF4C.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF519B.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF550A.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF585B.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF616C.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF675A.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF70A.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF762A.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF762B.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF807A.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF858A.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF864D.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF866A.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF870C.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF897B.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF900B.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF92B.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF977D.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF988C.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF989C.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Codeforces/CF991B.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/LOJ/10018.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/LOJ/10028.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/LOJ/2653.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/B2001.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/B2002.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/B2003.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/B2004.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/B2005.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/B2006.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/B2007.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/B2008.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/B2009.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/B2010.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1003.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1010.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1011.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1012.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1013.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1015.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1017.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1022.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1024.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1025.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1028.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1036.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1051.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1062.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1079.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1080.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1088.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1090.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1093.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1098.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1100.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1102.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1105.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1106.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1124.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1126.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1134.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1135.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1145.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1147.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1149.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1154.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1157.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1159.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1160.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1162.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1163.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1164.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1167.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1168.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1175.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1189.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1205.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1209.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1219.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1230.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1238.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1239.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1332.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1363.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1434.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1440.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1443.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1509.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1510.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1512.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1530.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1531.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1549.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1571.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1572.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1579.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1617.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1619.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1627.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1631.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1678.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1729.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1746.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1747.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1776.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1786.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1801.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1825.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1832.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1833.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1835.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1836.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1851.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1865.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1877.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1886.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P1927.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P2026.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P2032.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P2074.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P2085.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P2094.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P2104.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P2158.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P2199.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P2240.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P2249.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P2261.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P2298.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P2386.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P2388.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P2397.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P2399.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P2424.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P2548.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P2563.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P2655.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P2692.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P2699.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P2759.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P2777.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P2895.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P2947.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P3167.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P3395.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P3456.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P3719.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P3818.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P3912.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P3926.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P3935.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P3956.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P4446.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P4447.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P4710.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P4772.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P4863.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P4994.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P4995.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P5143.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P5461.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P5535.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P5635.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P5682.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P5730.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P5788.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P6850.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P7257.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P7573.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Luogu/P7588.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/NOIOJ/1007.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/SPOJ/SP22403.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/SPOJ/SP245.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/SPOJ/SP288.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/SPOJ/SP3442.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/SPOJ/SP4141.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/SPOJ/SP4942.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/SPOJ/SP6471.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA10140.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA10179.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA10299.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA10340.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA10474.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA10539.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA10763.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA1152.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA11526.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA12100.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA1225.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA12412.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA13279.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA133.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA1339.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA1368.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA1585.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA1586.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA1644.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA213.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA220.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA227.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA232.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA253.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA294.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA439.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA455.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA489.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA495.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA512.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA524.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA572.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
