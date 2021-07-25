@@ -1,173 +1,129 @@
+/*
+  Problem: test
+  Time: 2020/11/18 20:23:20
+  Author: Insouciant21
+  Status: NULL
+*/
+
+// #include "Algorithm/BigInteger.h"
 #include <bits/stdc++.h>
 
 using namespace std;
 
-const int LEN = 10000;
+int n, m;
 
-class BigInteger {
-   private:
-    int digit[10001] {};
-
-   public:
-    BigInteger() {
-        for (int i = 0; i <= LEN; i++)
-            digit[i] = 0;
+struct BigInteger {
+    static const int BASE = 100000000;
+    int width = 9;
+    vector<int> num;
+    bool nega {};
+    BigInteger &operator=(string p) {
+        num.clear();
+        if (p[0] == '-') {
+            nega = true;
+            p.erase(0, 1);
+        }
+        int len = int(p.length() - 1) / width + 1;
+        for (int i = 0; i < len; i++) {
+            int k = 0;
+            int ed = int(p.length()) - i * width;
+            int st = max(0, ed - width);
+            sscanf(p.substr(st, ed - st).c_str(), "%d", &k);
+            num.push_back(k);
+        }
+        return *this;
     }
-    int getLength() {
-        for (int i = LEN; i >= 0; i--)
-            if (digit[i] != 0)
-                return i;
-        return 0;
-    }
-    friend BigInteger operator+(BigInteger x, BigInteger y);
-    friend BigInteger operator-(BigInteger x, BigInteger y);
-    friend BigInteger operator*(BigInteger x, int y);
-    friend BigInteger operator*(BigInteger x, BigInteger y);
-    friend istream &operator>>(istream &in, BigInteger &r);
-    friend ostream &operator<<(ostream &out, BigInteger &res);
-    friend ostream &operator<<(ostream &out, BigInteger &&res);
 };
 
-BigInteger operator+(BigInteger x, BigInteger y) {
-    BigInteger res;
-    for (int i = 0; i <= LEN; i++) {
-        res.digit[i] += x.digit[i] + y.digit[i];
-        if (res.digit[i] > 10) {
-            res.digit[i + 1]++;
-            res.digit[i] -= 10;
-        }
-    }
-    return res;
-}
-
-BigInteger operator-(BigInteger x, BigInteger y) {
-    BigInteger res;
-    bool nega = false;
-    for (int i = LEN; i >= 0; i--) {
-        if (x.digit[i] < y.digit[i]) {
-            nega = true;
-            swap(x, y);
-            break;
-        }
-        if (x.digit[i] > y.digit[i])
-            break;
-    }
-    for (int i = 0; i <= LEN; i++) {
-        res.digit[i] += x.digit[i] - y.digit[i];
-        if (res.digit[i] < 0) {
-            res.digit[i + 1]--;
-            res.digit[i] += 10;
-        }
-    }
-    if (nega) {
-        for (int i = LEN; i >= 0; i--) {
-            if (res.digit[i] != 0) {
-                res.digit[i] = -res.digit[i];
-                break;
-            }
-        }
-    }
-    return res;
-}
-
-BigInteger operator*(BigInteger x, int y) {
-    BigInteger res;
-    bool nega = false;
-    for (int i = 0; i <= LEN; i++) {
-        res.digit[i] += x.digit[i] * y;
-        if (res.digit[i] >= 10) {
-            res.digit[i + 1] = res.digit[i] / 10;
-            res.digit[i] %= 10;
-        }
-        if (res.digit[i] < 0) {
-            res.digit[i] = abs(res.digit[i]);
-            nega = true;
-        }
-    }
-    if (nega) {
-        for (int i = LEN; i >= 0; i--) {
-            if (res.digit[i] != 0) {
-                res.digit[i] = -res.digit[i];
-                break;
-            }
-        }
-    }
-    return res;
-}
-
-BigInteger operator*(BigInteger x, BigInteger y) {
-    BigInteger res;
-    bool nega = false;
-    for (int i = 0; i <= LEN; i++) {
-        for (int j = 0; j <= i; j++)
-            res.digit[i] += x.digit[j] * y.digit[i - j];
-        if (res.digit[i] >= 10) {
-            res.digit[i + 1] += res.digit[i] / 10;
-            res.digit[i] %= 10;
-        }
-        if (res.digit[i] < 0) {
-            res.digit[i] = abs(res.digit[i]);
-            nega = true;
-        }
-    }
-    if (nega) {
-        for (int i = LEN; i >= 0; i--) {
-            if (res.digit[i] != 0) {
-                res.digit[i] = -res.digit[i];
-                break;
-            }
-        }
-    }
-    return res;
-}
-
-istream &operator>>(istream &in, BigInteger &r) {
-    string res;
-    in >> res;
-    bool nega = false;
-    if (res[0] == '-') {
-        res.erase(0, 1);
-        nega = true;
-    }
-    int x = res.length() - 1, y = res.length() - 1;
-    for (char re : res)
-        r.digit[x--] = re - '0';
-    if (nega)
-        r.digit[y] = -r.digit[y];
+istream &operator>>(istream &in, BigInteger &x) {
+    string p;
+    if (!(in >> p))
+        return in;
+    x = p;
     return in;
 }
 
-ostream &operator<<(ostream &out, BigInteger &res) {
-    int len = res.getLength();
-    for (int i = len; i >= 0; i--)
-        out << res.digit[i];
+ostream &operator<<(ostream &out, const BigInteger &x) {
+    string res;
+    if (x.nega)
+        out << '-';
+    for (int i = int(x.num.size() - 1); i >= 0; i--) res += to_string(x.num[i]);
+    out << res;
     return out;
 }
 
-ostream &operator<<(ostream &out, BigInteger &&res) {
-    int len = res.getLength();
-    for (int i = len; i >= 0; i--)
-        out << res.digit[i];
-    return out;
+bool operator<(const BigInteger &a, const BigInteger &b) {
+    if (a.num.size() < b.num.size())
+        return true;
+    else if (a.num.size() > b.num.size())
+        return false;
+    for (int i = int(a.num.size() - 1); i >= 0; i--)
+        if (a.num[i] != b.num[i])
+            return a.num[i] < b.num[i];
+    return false;
+}
+
+bool operator>(const BigInteger &a, const BigInteger &b) {
+    return b < a;
+}
+bool operator!=(const BigInteger &a, const BigInteger &b) {
+    return a < b || a > b;
+}
+bool operator<=(const BigInteger &a, const BigInteger &b) {
+    return !(a > b);
+}
+bool operator>=(const BigInteger &a, const BigInteger &b) {
+    return !(a < b);
+}
+bool operator==(const BigInteger &a, const BigInteger &b) {
+    return a <= b && a >= b;
+}
+
+BigInteger operator+(BigInteger a, BigInteger b) {
+    BigInteger res;
+    if (a.nega && b.nega)
+        res.nega = true;
+    a.num.resize(max(a.num.size(), b.num.size()));
+    b.num.resize(max(a.num.size(), b.num.size()));
+    for (int i = 0; i < max(a.num.size(), b.num.size()); i++) res.num.push_back(a.num[i] + b.num[i]);
+    for (int i = 0; i < res.num.size(); i++) {
+        if (res.num[i] < BigInteger::BASE * 10)
+            continue;
+        if (i != res.num.size() - 1)
+            res.num[i + 1] += res.num[i] % (BigInteger::BASE * 10);
+        else
+            res.num.push_back(res.num[i] % (BigInteger::BASE * 10));
+        res.num[i] %= (BigInteger::BASE * 10);
+    }
+    return res;
+}
+
+BigInteger operator-(BigInteger a, BigInteger b) {
+    BigInteger res;
+    if (a < b) {
+        swap(a, b);
+        res.nega = true;
+    }
+    for (int i = 0; i < b.num.size(); i++) {
+        int k = a.num[i] - b.num[i];
+        if (k < 0) {
+            k = a.num[i] * 10 - b.num[i];
+            a.num[i + 1]--;
+        }
+        res.num.push_back(k);
+    }
+    return res;
 }
 
 int main() {
-    /*
-    BigInteger in1, in2, ot1, ot2;
-    cin >> in1 >> in2;
-    cout << in1 + in2 << endl;
-    cout << in1 - in2 << endl;
-    cout << in1 * in2 << endl;
-    ot1 = in1, ot2 = in2;
-    for (int i = 0; i < 512; i++)
-        ot1 = ot1 * ot1, ot2 = ot2 * ot2;
-    cout << ot1 << endl;
-    cout << ot2 << endl;
-     */
-    BigInteger in, ot;
-    cin >> in;
-    ot = in;
-    for (int i = 0; i < 64; i++)
-        ot = in * ot;
-    cout << ot << endl;
+    BigInteger a, b, c;
+    while (cin >> a >> b >> c) {
+        BigInteger k = a + b;
+        if (k != c) {
+            cout << a << endl << b << endl;
+            cout << c << endl << k << endl;
+            return 0;
+        }
+    }
+    return 0;
 }

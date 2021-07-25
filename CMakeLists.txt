@@ -231,4 +231,4 @@ add_executable(solution ./AtCoder/AT1350.cpp
         ./UVa/UVA512.cpp
         ./UVa/UVA524.cpp
         ./UVa/UVA572.cpp
-        )
+        UVa/UVA101.cpp UVa/UVA10815.cpp UVa/UVA165.cpp UVa/UVA12096.cpp UVa/UVA540.cpp UVa/UVA136.cpp Algorithm/BigInteger.h Algorithm/BigInteger.cpp UVa/UVA400.cpp UVa/UVA1592.cpp UVa/UVA207.cpp temp.cpp dataGenerate_uva207.cpp)

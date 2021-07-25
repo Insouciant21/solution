@@ -141,6 +141,33 @@ solution/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/build
 .PHONY : solution/fast
 
+Algorithm/BigInteger.obj: Algorithm/BigInteger.cpp.obj
+
+.PHONY : Algorithm/BigInteger.obj
+
+# target to build an object file
+Algorithm/BigInteger.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/Algorithm/BigInteger.cpp.obj
+.PHONY : Algorithm/BigInteger.cpp.obj
+
+Algorithm/BigInteger.i: Algorithm/BigInteger.cpp.i
+
+.PHONY : Algorithm/BigInteger.i
+
+# target to preprocess a source file
+Algorithm/BigInteger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/Algorithm/BigInteger.cpp.i
+.PHONY : Algorithm/BigInteger.cpp.i
+
+Algorithm/BigInteger.s: Algorithm/BigInteger.cpp.s
+
+.PHONY : Algorithm/BigInteger.s
+
+# target to generate assembly for a file
+Algorithm/BigInteger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/Algorithm/BigInteger.cpp.s
+.PHONY : Algorithm/BigInteger.cpp.s
+
 AtCoder/AT1350.obj: AtCoder/AT1350.cpp.obj
 
 .PHONY : AtCoder/AT1350.obj
@@ -5487,6 +5514,33 @@ SPOJ/SP6471.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/SPOJ/SP6471.cpp.s
 .PHONY : SPOJ/SP6471.cpp.s
 
+UVa/UVA101.obj: UVa/UVA101.cpp.obj
+
+.PHONY : UVa/UVA101.obj
+
+# target to build an object file
+UVa/UVA101.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA101.cpp.obj
+.PHONY : UVa/UVA101.cpp.obj
+
+UVa/UVA101.i: UVa/UVA101.cpp.i
+
+.PHONY : UVa/UVA101.i
+
+# target to preprocess a source file
+UVa/UVA101.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA101.cpp.i
+.PHONY : UVa/UVA101.cpp.i
+
+UVa/UVA101.s: UVa/UVA101.cpp.s
+
+.PHONY : UVa/UVA101.s
+
+# target to generate assembly for a file
+UVa/UVA101.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA101.cpp.s
+.PHONY : UVa/UVA101.cpp.s
+
 UVa/UVA10140.obj: UVa/UVA10140.cpp.obj
 
 .PHONY : UVa/UVA10140.obj
@@ -5676,6 +5730,33 @@ UVa/UVA10763.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA10763.cpp.s
 .PHONY : UVa/UVA10763.cpp.s
 
+UVa/UVA10815.obj: UVa/UVA10815.cpp.obj
+
+.PHONY : UVa/UVA10815.obj
+
+# target to build an object file
+UVa/UVA10815.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA10815.cpp.obj
+.PHONY : UVa/UVA10815.cpp.obj
+
+UVa/UVA10815.i: UVa/UVA10815.cpp.i
+
+.PHONY : UVa/UVA10815.i
+
+# target to preprocess a source file
+UVa/UVA10815.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA10815.cpp.i
+.PHONY : UVa/UVA10815.cpp.i
+
+UVa/UVA10815.s: UVa/UVA10815.cpp.s
+
+.PHONY : UVa/UVA10815.s
+
+# target to generate assembly for a file
+UVa/UVA10815.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA10815.cpp.s
+.PHONY : UVa/UVA10815.cpp.s
+
 UVa/UVA1152.obj: UVa/UVA1152.cpp.obj
 
 .PHONY : UVa/UVA1152.obj
@@ -5729,6 +5810,33 @@ UVa/UVA11526.s: UVa/UVA11526.cpp.s
 UVa/UVA11526.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA11526.cpp.s
 .PHONY : UVa/UVA11526.cpp.s
+
+UVa/UVA12096.obj: UVa/UVA12096.cpp.obj
+
+.PHONY : UVa/UVA12096.obj
+
+# target to build an object file
+UVa/UVA12096.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA12096.cpp.obj
+.PHONY : UVa/UVA12096.cpp.obj
+
+UVa/UVA12096.i: UVa/UVA12096.cpp.i
+
+.PHONY : UVa/UVA12096.i
+
+# target to preprocess a source file
+UVa/UVA12096.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA12096.cpp.i
+.PHONY : UVa/UVA12096.cpp.i
+
+UVa/UVA12096.s: UVa/UVA12096.cpp.s
+
+.PHONY : UVa/UVA12096.s
+
+# target to generate assembly for a file
+UVa/UVA12096.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA12096.cpp.s
+.PHONY : UVa/UVA12096.cpp.s
 
 UVa/UVA12100.obj: UVa/UVA12100.cpp.obj
 
@@ -5892,6 +6000,33 @@ UVa/UVA1339.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA1339.cpp.s
 .PHONY : UVa/UVA1339.cpp.s
 
+UVa/UVA136.obj: UVa/UVA136.cpp.obj
+
+.PHONY : UVa/UVA136.obj
+
+# target to build an object file
+UVa/UVA136.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA136.cpp.obj
+.PHONY : UVa/UVA136.cpp.obj
+
+UVa/UVA136.i: UVa/UVA136.cpp.i
+
+.PHONY : UVa/UVA136.i
+
+# target to preprocess a source file
+UVa/UVA136.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA136.cpp.i
+.PHONY : UVa/UVA136.cpp.i
+
+UVa/UVA136.s: UVa/UVA136.cpp.s
+
+.PHONY : UVa/UVA136.s
+
+# target to generate assembly for a file
+UVa/UVA136.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA136.cpp.s
+.PHONY : UVa/UVA136.cpp.s
+
 UVa/UVA1368.obj: UVa/UVA1368.cpp.obj
 
 .PHONY : UVa/UVA1368.obj
@@ -5973,6 +6108,33 @@ UVa/UVA1586.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA1586.cpp.s
 .PHONY : UVa/UVA1586.cpp.s
 
+UVa/UVA1592.obj: UVa/UVA1592.cpp.obj
+
+.PHONY : UVa/UVA1592.obj
+
+# target to build an object file
+UVa/UVA1592.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA1592.cpp.obj
+.PHONY : UVa/UVA1592.cpp.obj
+
+UVa/UVA1592.i: UVa/UVA1592.cpp.i
+
+.PHONY : UVa/UVA1592.i
+
+# target to preprocess a source file
+UVa/UVA1592.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA1592.cpp.i
+.PHONY : UVa/UVA1592.cpp.i
+
+UVa/UVA1592.s: UVa/UVA1592.cpp.s
+
+.PHONY : UVa/UVA1592.s
+
+# target to generate assembly for a file
+UVa/UVA1592.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA1592.cpp.s
+.PHONY : UVa/UVA1592.cpp.s
+
 UVa/UVA1644.obj: UVa/UVA1644.cpp.obj
 
 .PHONY : UVa/UVA1644.obj
@@ -5999,6 +6161,60 @@ UVa/UVA1644.s: UVa/UVA1644.cpp.s
 UVa/UVA1644.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA1644.cpp.s
 .PHONY : UVa/UVA1644.cpp.s
+
+UVa/UVA165.obj: UVa/UVA165.cpp.obj
+
+.PHONY : UVa/UVA165.obj
+
+# target to build an object file
+UVa/UVA165.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA165.cpp.obj
+.PHONY : UVa/UVA165.cpp.obj
+
+UVa/UVA165.i: UVa/UVA165.cpp.i
+
+.PHONY : UVa/UVA165.i
+
+# target to preprocess a source file
+UVa/UVA165.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA165.cpp.i
+.PHONY : UVa/UVA165.cpp.i
+
+UVa/UVA165.s: UVa/UVA165.cpp.s
+
+.PHONY : UVa/UVA165.s
+
+# target to generate assembly for a file
+UVa/UVA165.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA165.cpp.s
+.PHONY : UVa/UVA165.cpp.s
+
+UVa/UVA207.obj: UVa/UVA207.cpp.obj
+
+.PHONY : UVa/UVA207.obj
+
+# target to build an object file
+UVa/UVA207.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA207.cpp.obj
+.PHONY : UVa/UVA207.cpp.obj
+
+UVa/UVA207.i: UVa/UVA207.cpp.i
+
+.PHONY : UVa/UVA207.i
+
+# target to preprocess a source file
+UVa/UVA207.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA207.cpp.i
+.PHONY : UVa/UVA207.cpp.i
+
+UVa/UVA207.s: UVa/UVA207.cpp.s
+
+.PHONY : UVa/UVA207.s
+
+# target to generate assembly for a file
+UVa/UVA207.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA207.cpp.s
+.PHONY : UVa/UVA207.cpp.s
 
 UVa/UVA213.obj: UVa/UVA213.cpp.obj
 
@@ -6162,6 +6378,33 @@ UVa/UVA294.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA294.cpp.s
 .PHONY : UVa/UVA294.cpp.s
 
+UVa/UVA400.obj: UVa/UVA400.cpp.obj
+
+.PHONY : UVa/UVA400.obj
+
+# target to build an object file
+UVa/UVA400.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA400.cpp.obj
+.PHONY : UVa/UVA400.cpp.obj
+
+UVa/UVA400.i: UVa/UVA400.cpp.i
+
+.PHONY : UVa/UVA400.i
+
+# target to preprocess a source file
+UVa/UVA400.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA400.cpp.i
+.PHONY : UVa/UVA400.cpp.i
+
+UVa/UVA400.s: UVa/UVA400.cpp.s
+
+.PHONY : UVa/UVA400.s
+
+# target to generate assembly for a file
+UVa/UVA400.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA400.cpp.s
+.PHONY : UVa/UVA400.cpp.s
+
 UVa/UVA439.obj: UVa/UVA439.cpp.obj
 
 .PHONY : UVa/UVA439.obj
@@ -6324,6 +6567,33 @@ UVa/UVA524.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA524.cpp.s
 .PHONY : UVa/UVA524.cpp.s
 
+UVa/UVA540.obj: UVa/UVA540.cpp.obj
+
+.PHONY : UVa/UVA540.obj
+
+# target to build an object file
+UVa/UVA540.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA540.cpp.obj
+.PHONY : UVa/UVA540.cpp.obj
+
+UVa/UVA540.i: UVa/UVA540.cpp.i
+
+.PHONY : UVa/UVA540.i
+
+# target to preprocess a source file
+UVa/UVA540.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA540.cpp.i
+.PHONY : UVa/UVA540.cpp.i
+
+UVa/UVA540.s: UVa/UVA540.cpp.s
+
+.PHONY : UVa/UVA540.s
+
+# target to generate assembly for a file
+UVa/UVA540.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA540.cpp.s
+.PHONY : UVa/UVA540.cpp.s
+
 UVa/UVA572.obj: UVa/UVA572.cpp.obj
 
 .PHONY : UVa/UVA572.obj
@@ -6351,6 +6621,60 @@ UVa/UVA572.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/UVa/UVA572.cpp.s
 .PHONY : UVa/UVA572.cpp.s
 
+dataGenerate_uva207.obj: dataGenerate_uva207.cpp.obj
+
+.PHONY : dataGenerate_uva207.obj
+
+# target to build an object file
+dataGenerate_uva207.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/dataGenerate_uva207.cpp.obj
+.PHONY : dataGenerate_uva207.cpp.obj
+
+dataGenerate_uva207.i: dataGenerate_uva207.cpp.i
+
+.PHONY : dataGenerate_uva207.i
+
+# target to preprocess a source file
+dataGenerate_uva207.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/dataGenerate_uva207.cpp.i
+.PHONY : dataGenerate_uva207.cpp.i
+
+dataGenerate_uva207.s: dataGenerate_uva207.cpp.s
+
+.PHONY : dataGenerate_uva207.s
+
+# target to generate assembly for a file
+dataGenerate_uva207.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/dataGenerate_uva207.cpp.s
+.PHONY : dataGenerate_uva207.cpp.s
+
+temp.obj: temp.cpp.obj
+
+.PHONY : temp.obj
+
+# target to build an object file
+temp.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/temp.cpp.obj
+.PHONY : temp.cpp.obj
+
+temp.i: temp.cpp.i
+
+.PHONY : temp.i
+
+# target to preprocess a source file
+temp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/temp.cpp.i
+.PHONY : temp.cpp.i
+
+temp.s: temp.cpp.s
+
+.PHONY : temp.s
+
+# target to generate assembly for a file
+temp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/temp.cpp.s
+.PHONY : temp.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -6360,6 +6684,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... solution
+	@echo ... Algorithm/BigInteger.obj
+	@echo ... Algorithm/BigInteger.i
+	@echo ... Algorithm/BigInteger.s
 	@echo ... AtCoder/AT1350.obj
 	@echo ... AtCoder/AT1350.i
 	@echo ... AtCoder/AT1350.s
@@ -6954,6 +7281,9 @@ help:
 	@echo ... SPOJ/SP6471.obj
 	@echo ... SPOJ/SP6471.i
 	@echo ... SPOJ/SP6471.s
+	@echo ... UVa/UVA101.obj
+	@echo ... UVa/UVA101.i
+	@echo ... UVa/UVA101.s
 	@echo ... UVa/UVA10140.obj
 	@echo ... UVa/UVA10140.i
 	@echo ... UVa/UVA10140.s
@@ -6975,12 +7305,18 @@ help:
 	@echo ... UVa/UVA10763.obj
 	@echo ... UVa/UVA10763.i
 	@echo ... UVa/UVA10763.s
+	@echo ... UVa/UVA10815.obj
+	@echo ... UVa/UVA10815.i
+	@echo ... UVa/UVA10815.s
 	@echo ... UVa/UVA1152.obj
 	@echo ... UVa/UVA1152.i
 	@echo ... UVa/UVA1152.s
 	@echo ... UVa/UVA11526.obj
 	@echo ... UVa/UVA11526.i
 	@echo ... UVa/UVA11526.s
+	@echo ... UVa/UVA12096.obj
+	@echo ... UVa/UVA12096.i
+	@echo ... UVa/UVA12096.s
 	@echo ... UVa/UVA12100.obj
 	@echo ... UVa/UVA12100.i
 	@echo ... UVa/UVA12100.s
@@ -6999,6 +7335,9 @@ help:
 	@echo ... UVa/UVA1339.obj
 	@echo ... UVa/UVA1339.i
 	@echo ... UVa/UVA1339.s
+	@echo ... UVa/UVA136.obj
+	@echo ... UVa/UVA136.i
+	@echo ... UVa/UVA136.s
 	@echo ... UVa/UVA1368.obj
 	@echo ... UVa/UVA1368.i
 	@echo ... UVa/UVA1368.s
@@ -7008,9 +7347,18 @@ help:
 	@echo ... UVa/UVA1586.obj
 	@echo ... UVa/UVA1586.i
 	@echo ... UVa/UVA1586.s
+	@echo ... UVa/UVA1592.obj
+	@echo ... UVa/UVA1592.i
+	@echo ... UVa/UVA1592.s
 	@echo ... UVa/UVA1644.obj
 	@echo ... UVa/UVA1644.i
 	@echo ... UVa/UVA1644.s
+	@echo ... UVa/UVA165.obj
+	@echo ... UVa/UVA165.i
+	@echo ... UVa/UVA165.s
+	@echo ... UVa/UVA207.obj
+	@echo ... UVa/UVA207.i
+	@echo ... UVa/UVA207.s
 	@echo ... UVa/UVA213.obj
 	@echo ... UVa/UVA213.i
 	@echo ... UVa/UVA213.s
@@ -7029,6 +7377,9 @@ help:
 	@echo ... UVa/UVA294.obj
 	@echo ... UVa/UVA294.i
 	@echo ... UVa/UVA294.s
+	@echo ... UVa/UVA400.obj
+	@echo ... UVa/UVA400.i
+	@echo ... UVa/UVA400.s
 	@echo ... UVa/UVA439.obj
 	@echo ... UVa/UVA439.i
 	@echo ... UVa/UVA439.s
@@ -7047,9 +7398,18 @@ help:
 	@echo ... UVa/UVA524.obj
 	@echo ... UVa/UVA524.i
 	@echo ... UVa/UVA524.s
+	@echo ... UVa/UVA540.obj
+	@echo ... UVa/UVA540.i
+	@echo ... UVa/UVA540.s
 	@echo ... UVa/UVA572.obj
 	@echo ... UVa/UVA572.i
 	@echo ... UVa/UVA572.s
+	@echo ... dataGenerate_uva207.obj
+	@echo ... dataGenerate_uva207.i
+	@echo ... dataGenerate_uva207.s
+	@echo ... temp.obj
+	@echo ... temp.i
+	@echo ... temp.s
 .PHONY : help
 
 

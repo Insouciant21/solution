@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Algorithm/BigInteger.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/Algorithm/BigInteger.h">
+			<Option target="solution"/>
+		</Unit>
 		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/AtCoder/AT1350.cpp">
 			<Option target="solution"/>
 		</Unit>
@@ -676,6 +682,9 @@
 		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/SPOJ/SP6471.cpp">
 			<Option target="solution"/>
 		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA101.cpp">
+			<Option target="solution"/>
+		</Unit>
 		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA10140.cpp">
 			<Option target="solution"/>
 		</Unit>
@@ -697,10 +706,16 @@
 		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA10763.cpp">
 			<Option target="solution"/>
 		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA10815.cpp">
+			<Option target="solution"/>
+		</Unit>
 		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA1152.cpp">
 			<Option target="solution"/>
 		</Unit>
 		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA11526.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA12096.cpp">
 			<Option target="solution"/>
 		</Unit>
 		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA12100.cpp">
@@ -721,6 +736,9 @@
 		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA1339.cpp">
 			<Option target="solution"/>
 		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA136.cpp">
+			<Option target="solution"/>
+		</Unit>
 		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA1368.cpp">
 			<Option target="solution"/>
 		</Unit>
@@ -730,7 +748,16 @@
 		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA1586.cpp">
 			<Option target="solution"/>
 		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA1592.cpp">
+			<Option target="solution"/>
+		</Unit>
 		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA1644.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA165.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA207.cpp">
 			<Option target="solution"/>
 		</Unit>
 		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA213.cpp">
@@ -751,6 +778,9 @@
 		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA294.cpp">
 			<Option target="solution"/>
 		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA400.cpp">
+			<Option target="solution"/>
+		</Unit>
 		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA439.cpp">
 			<Option target="solution"/>
 		</Unit>
@@ -769,7 +799,19 @@
 		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA524.cpp">
 			<Option target="solution"/>
 		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA540.cpp">
+			<Option target="solution"/>
+		</Unit>
 		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/UVa/UVA572.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/dataGenerate_uva207.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/temp.cpp">
+			<Option target="solution"/>
+		</Unit>
+		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/temp.in">
 			<Option target="solution"/>
 		</Unit>
 		<Unit filename="C:/Users/Insouciant21/source/OJ_Solution/CMakeLists.txt">

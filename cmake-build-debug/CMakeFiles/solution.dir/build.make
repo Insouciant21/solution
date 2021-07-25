@@ -3065,6 +3065,162 @@ CMakeFiles/solution.dir/UVa/UVA572.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/solution.dir/UVa/UVA572.cpp.s"
 	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Insouciant21\source\OJ_Solution\UVa\UVA572.cpp -o CMakeFiles\solution.dir\UVa\UVA572.cpp.s
 
+CMakeFiles/solution.dir/UVa/UVA101.cpp.obj: CMakeFiles/solution.dir/flags.make
+CMakeFiles/solution.dir/UVa/UVA101.cpp.obj: ../UVa/UVA101.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Insouciant21\source\OJ_Solution\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_231) "Building CXX object CMakeFiles/solution.dir/UVa/UVA101.cpp.obj"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\solution.dir\UVa\UVA101.cpp.obj -c C:\Users\Insouciant21\source\OJ_Solution\UVa\UVA101.cpp
+
+CMakeFiles/solution.dir/UVa/UVA101.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/solution.dir/UVa/UVA101.cpp.i"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Insouciant21\source\OJ_Solution\UVa\UVA101.cpp > CMakeFiles\solution.dir\UVa\UVA101.cpp.i
+
+CMakeFiles/solution.dir/UVa/UVA101.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/solution.dir/UVa/UVA101.cpp.s"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Insouciant21\source\OJ_Solution\UVa\UVA101.cpp -o CMakeFiles\solution.dir\UVa\UVA101.cpp.s
+
+CMakeFiles/solution.dir/UVa/UVA10815.cpp.obj: CMakeFiles/solution.dir/flags.make
+CMakeFiles/solution.dir/UVa/UVA10815.cpp.obj: ../UVa/UVA10815.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Insouciant21\source\OJ_Solution\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_232) "Building CXX object CMakeFiles/solution.dir/UVa/UVA10815.cpp.obj"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\solution.dir\UVa\UVA10815.cpp.obj -c C:\Users\Insouciant21\source\OJ_Solution\UVa\UVA10815.cpp
+
+CMakeFiles/solution.dir/UVa/UVA10815.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/solution.dir/UVa/UVA10815.cpp.i"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Insouciant21\source\OJ_Solution\UVa\UVA10815.cpp > CMakeFiles\solution.dir\UVa\UVA10815.cpp.i
+
+CMakeFiles/solution.dir/UVa/UVA10815.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/solution.dir/UVa/UVA10815.cpp.s"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Insouciant21\source\OJ_Solution\UVa\UVA10815.cpp -o CMakeFiles\solution.dir\UVa\UVA10815.cpp.s
+
+CMakeFiles/solution.dir/UVa/UVA165.cpp.obj: CMakeFiles/solution.dir/flags.make
+CMakeFiles/solution.dir/UVa/UVA165.cpp.obj: ../UVa/UVA165.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Insouciant21\source\OJ_Solution\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_233) "Building CXX object CMakeFiles/solution.dir/UVa/UVA165.cpp.obj"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\solution.dir\UVa\UVA165.cpp.obj -c C:\Users\Insouciant21\source\OJ_Solution\UVa\UVA165.cpp
+
+CMakeFiles/solution.dir/UVa/UVA165.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/solution.dir/UVa/UVA165.cpp.i"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Insouciant21\source\OJ_Solution\UVa\UVA165.cpp > CMakeFiles\solution.dir\UVa\UVA165.cpp.i
+
+CMakeFiles/solution.dir/UVa/UVA165.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/solution.dir/UVa/UVA165.cpp.s"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Insouciant21\source\OJ_Solution\UVa\UVA165.cpp -o CMakeFiles\solution.dir\UVa\UVA165.cpp.s
+
+CMakeFiles/solution.dir/UVa/UVA12096.cpp.obj: CMakeFiles/solution.dir/flags.make
+CMakeFiles/solution.dir/UVa/UVA12096.cpp.obj: ../UVa/UVA12096.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Insouciant21\source\OJ_Solution\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_234) "Building CXX object CMakeFiles/solution.dir/UVa/UVA12096.cpp.obj"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\solution.dir\UVa\UVA12096.cpp.obj -c C:\Users\Insouciant21\source\OJ_Solution\UVa\UVA12096.cpp
+
+CMakeFiles/solution.dir/UVa/UVA12096.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/solution.dir/UVa/UVA12096.cpp.i"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Insouciant21\source\OJ_Solution\UVa\UVA12096.cpp > CMakeFiles\solution.dir\UVa\UVA12096.cpp.i
+
+CMakeFiles/solution.dir/UVa/UVA12096.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/solution.dir/UVa/UVA12096.cpp.s"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Insouciant21\source\OJ_Solution\UVa\UVA12096.cpp -o CMakeFiles\solution.dir\UVa\UVA12096.cpp.s
+
+CMakeFiles/solution.dir/UVa/UVA540.cpp.obj: CMakeFiles/solution.dir/flags.make
+CMakeFiles/solution.dir/UVa/UVA540.cpp.obj: ../UVa/UVA540.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Insouciant21\source\OJ_Solution\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_235) "Building CXX object CMakeFiles/solution.dir/UVa/UVA540.cpp.obj"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\solution.dir\UVa\UVA540.cpp.obj -c C:\Users\Insouciant21\source\OJ_Solution\UVa\UVA540.cpp
+
+CMakeFiles/solution.dir/UVa/UVA540.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/solution.dir/UVa/UVA540.cpp.i"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Insouciant21\source\OJ_Solution\UVa\UVA540.cpp > CMakeFiles\solution.dir\UVa\UVA540.cpp.i
+
+CMakeFiles/solution.dir/UVa/UVA540.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/solution.dir/UVa/UVA540.cpp.s"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Insouciant21\source\OJ_Solution\UVa\UVA540.cpp -o CMakeFiles\solution.dir\UVa\UVA540.cpp.s
+
+CMakeFiles/solution.dir/UVa/UVA136.cpp.obj: CMakeFiles/solution.dir/flags.make
+CMakeFiles/solution.dir/UVa/UVA136.cpp.obj: ../UVa/UVA136.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Insouciant21\source\OJ_Solution\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_236) "Building CXX object CMakeFiles/solution.dir/UVa/UVA136.cpp.obj"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\solution.dir\UVa\UVA136.cpp.obj -c C:\Users\Insouciant21\source\OJ_Solution\UVa\UVA136.cpp
+
+CMakeFiles/solution.dir/UVa/UVA136.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/solution.dir/UVa/UVA136.cpp.i"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Insouciant21\source\OJ_Solution\UVa\UVA136.cpp > CMakeFiles\solution.dir\UVa\UVA136.cpp.i
+
+CMakeFiles/solution.dir/UVa/UVA136.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/solution.dir/UVa/UVA136.cpp.s"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Insouciant21\source\OJ_Solution\UVa\UVA136.cpp -o CMakeFiles\solution.dir\UVa\UVA136.cpp.s
+
+CMakeFiles/solution.dir/Algorithm/BigInteger.cpp.obj: CMakeFiles/solution.dir/flags.make
+CMakeFiles/solution.dir/Algorithm/BigInteger.cpp.obj: ../Algorithm/BigInteger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Insouciant21\source\OJ_Solution\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_237) "Building CXX object CMakeFiles/solution.dir/Algorithm/BigInteger.cpp.obj"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\solution.dir\Algorithm\BigInteger.cpp.obj -c C:\Users\Insouciant21\source\OJ_Solution\Algorithm\BigInteger.cpp
+
+CMakeFiles/solution.dir/Algorithm/BigInteger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/solution.dir/Algorithm/BigInteger.cpp.i"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Insouciant21\source\OJ_Solution\Algorithm\BigInteger.cpp > CMakeFiles\solution.dir\Algorithm\BigInteger.cpp.i
+
+CMakeFiles/solution.dir/Algorithm/BigInteger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/solution.dir/Algorithm/BigInteger.cpp.s"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Insouciant21\source\OJ_Solution\Algorithm\BigInteger.cpp -o CMakeFiles\solution.dir\Algorithm\BigInteger.cpp.s
+
+CMakeFiles/solution.dir/UVa/UVA400.cpp.obj: CMakeFiles/solution.dir/flags.make
+CMakeFiles/solution.dir/UVa/UVA400.cpp.obj: ../UVa/UVA400.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Insouciant21\source\OJ_Solution\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_238) "Building CXX object CMakeFiles/solution.dir/UVa/UVA400.cpp.obj"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\solution.dir\UVa\UVA400.cpp.obj -c C:\Users\Insouciant21\source\OJ_Solution\UVa\UVA400.cpp
+
+CMakeFiles/solution.dir/UVa/UVA400.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/solution.dir/UVa/UVA400.cpp.i"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Insouciant21\source\OJ_Solution\UVa\UVA400.cpp > CMakeFiles\solution.dir\UVa\UVA400.cpp.i
+
+CMakeFiles/solution.dir/UVa/UVA400.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/solution.dir/UVa/UVA400.cpp.s"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Insouciant21\source\OJ_Solution\UVa\UVA400.cpp -o CMakeFiles\solution.dir\UVa\UVA400.cpp.s
+
+CMakeFiles/solution.dir/UVa/UVA1592.cpp.obj: CMakeFiles/solution.dir/flags.make
+CMakeFiles/solution.dir/UVa/UVA1592.cpp.obj: ../UVa/UVA1592.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Insouciant21\source\OJ_Solution\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_239) "Building CXX object CMakeFiles/solution.dir/UVa/UVA1592.cpp.obj"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\solution.dir\UVa\UVA1592.cpp.obj -c C:\Users\Insouciant21\source\OJ_Solution\UVa\UVA1592.cpp
+
+CMakeFiles/solution.dir/UVa/UVA1592.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/solution.dir/UVa/UVA1592.cpp.i"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Insouciant21\source\OJ_Solution\UVa\UVA1592.cpp > CMakeFiles\solution.dir\UVa\UVA1592.cpp.i
+
+CMakeFiles/solution.dir/UVa/UVA1592.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/solution.dir/UVa/UVA1592.cpp.s"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Insouciant21\source\OJ_Solution\UVa\UVA1592.cpp -o CMakeFiles\solution.dir\UVa\UVA1592.cpp.s
+
+CMakeFiles/solution.dir/UVa/UVA207.cpp.obj: CMakeFiles/solution.dir/flags.make
+CMakeFiles/solution.dir/UVa/UVA207.cpp.obj: ../UVa/UVA207.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Insouciant21\source\OJ_Solution\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_240) "Building CXX object CMakeFiles/solution.dir/UVa/UVA207.cpp.obj"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\solution.dir\UVa\UVA207.cpp.obj -c C:\Users\Insouciant21\source\OJ_Solution\UVa\UVA207.cpp
+
+CMakeFiles/solution.dir/UVa/UVA207.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/solution.dir/UVa/UVA207.cpp.i"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Insouciant21\source\OJ_Solution\UVa\UVA207.cpp > CMakeFiles\solution.dir\UVa\UVA207.cpp.i
+
+CMakeFiles/solution.dir/UVa/UVA207.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/solution.dir/UVa/UVA207.cpp.s"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Insouciant21\source\OJ_Solution\UVa\UVA207.cpp -o CMakeFiles\solution.dir\UVa\UVA207.cpp.s
+
+CMakeFiles/solution.dir/temp.cpp.obj: CMakeFiles/solution.dir/flags.make
+CMakeFiles/solution.dir/temp.cpp.obj: ../temp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Insouciant21\source\OJ_Solution\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_241) "Building CXX object CMakeFiles/solution.dir/temp.cpp.obj"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\solution.dir\temp.cpp.obj -c C:\Users\Insouciant21\source\OJ_Solution\temp.cpp
+
+CMakeFiles/solution.dir/temp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/solution.dir/temp.cpp.i"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Insouciant21\source\OJ_Solution\temp.cpp > CMakeFiles\solution.dir\temp.cpp.i
+
+CMakeFiles/solution.dir/temp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/solution.dir/temp.cpp.s"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Insouciant21\source\OJ_Solution\temp.cpp -o CMakeFiles\solution.dir\temp.cpp.s
+
+CMakeFiles/solution.dir/dataGenerate_uva207.cpp.obj: CMakeFiles/solution.dir/flags.make
+CMakeFiles/solution.dir/dataGenerate_uva207.cpp.obj: ../dataGenerate_uva207.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Insouciant21\source\OJ_Solution\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_242) "Building CXX object CMakeFiles/solution.dir/dataGenerate_uva207.cpp.obj"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\solution.dir\dataGenerate_uva207.cpp.obj -c C:\Users\Insouciant21\source\OJ_Solution\dataGenerate_uva207.cpp
+
+CMakeFiles/solution.dir/dataGenerate_uva207.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/solution.dir/dataGenerate_uva207.cpp.i"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Insouciant21\source\OJ_Solution\dataGenerate_uva207.cpp > CMakeFiles\solution.dir\dataGenerate_uva207.cpp.i
+
+CMakeFiles/solution.dir/dataGenerate_uva207.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/solution.dir/dataGenerate_uva207.cpp.s"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Insouciant21\source\OJ_Solution\dataGenerate_uva207.cpp -o CMakeFiles\solution.dir\dataGenerate_uva207.cpp.s
+
 # Object files for target solution
 solution_OBJECTS = \
 "CMakeFiles/solution.dir/AtCoder/AT1350.cpp.obj" \
@@ -3296,7 +3452,19 @@ solution_OBJECTS = \
 "CMakeFiles/solution.dir/UVa/UVA495.cpp.obj" \
 "CMakeFiles/solution.dir/UVa/UVA512.cpp.obj" \
 "CMakeFiles/solution.dir/UVa/UVA524.cpp.obj" \
-"CMakeFiles/solution.dir/UVa/UVA572.cpp.obj"
+"CMakeFiles/solution.dir/UVa/UVA572.cpp.obj" \
+"CMakeFiles/solution.dir/UVa/UVA101.cpp.obj" \
+"CMakeFiles/solution.dir/UVa/UVA10815.cpp.obj" \
+"CMakeFiles/solution.dir/UVa/UVA165.cpp.obj" \
+"CMakeFiles/solution.dir/UVa/UVA12096.cpp.obj" \
+"CMakeFiles/solution.dir/UVa/UVA540.cpp.obj" \
+"CMakeFiles/solution.dir/UVa/UVA136.cpp.obj" \
+"CMakeFiles/solution.dir/Algorithm/BigInteger.cpp.obj" \
+"CMakeFiles/solution.dir/UVa/UVA400.cpp.obj" \
+"CMakeFiles/solution.dir/UVa/UVA1592.cpp.obj" \
+"CMakeFiles/solution.dir/UVa/UVA207.cpp.obj" \
+"CMakeFiles/solution.dir/temp.cpp.obj" \
+"CMakeFiles/solution.dir/dataGenerate_uva207.cpp.obj"
 
 # External object files for target solution
 solution_EXTERNAL_OBJECTS =
@@ -3531,11 +3699,23 @@ solution.exe: CMakeFiles/solution.dir/UVa/UVA495.cpp.obj
 solution.exe: CMakeFiles/solution.dir/UVa/UVA512.cpp.obj
 solution.exe: CMakeFiles/solution.dir/UVa/UVA524.cpp.obj
 solution.exe: CMakeFiles/solution.dir/UVa/UVA572.cpp.obj
+solution.exe: CMakeFiles/solution.dir/UVa/UVA101.cpp.obj
+solution.exe: CMakeFiles/solution.dir/UVa/UVA10815.cpp.obj
+solution.exe: CMakeFiles/solution.dir/UVa/UVA165.cpp.obj
+solution.exe: CMakeFiles/solution.dir/UVa/UVA12096.cpp.obj
+solution.exe: CMakeFiles/solution.dir/UVa/UVA540.cpp.obj
+solution.exe: CMakeFiles/solution.dir/UVa/UVA136.cpp.obj
+solution.exe: CMakeFiles/solution.dir/Algorithm/BigInteger.cpp.obj
+solution.exe: CMakeFiles/solution.dir/UVa/UVA400.cpp.obj
+solution.exe: CMakeFiles/solution.dir/UVa/UVA1592.cpp.obj
+solution.exe: CMakeFiles/solution.dir/UVa/UVA207.cpp.obj
+solution.exe: CMakeFiles/solution.dir/temp.cpp.obj
+solution.exe: CMakeFiles/solution.dir/dataGenerate_uva207.cpp.obj
 solution.exe: CMakeFiles/solution.dir/build.make
 solution.exe: CMakeFiles/solution.dir/linklibs.rsp
 solution.exe: CMakeFiles/solution.dir/objects1.rsp
 solution.exe: CMakeFiles/solution.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Insouciant21\source\OJ_Solution\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_231) "Linking CXX executable solution.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Insouciant21\source\OJ_Solution\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_243) "Linking CXX executable solution.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\solution.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
