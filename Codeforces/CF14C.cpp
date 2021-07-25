@@ -10,7 +10,7 @@
 using namespace std;
 
 struct Point {
-    int p, h;
+    int x, y;
 };
 
 struct Line {
