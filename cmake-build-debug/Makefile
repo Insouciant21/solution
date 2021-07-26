@@ -4650,6 +4650,33 @@ Luogu/P3456.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/Luogu/P3456.cpp.s
 .PHONY : Luogu/P3456.cpp.s
 
+Luogu/P3693.obj: Luogu/P3693.cpp.obj
+
+.PHONY : Luogu/P3693.obj
+
+# target to build an object file
+Luogu/P3693.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/Luogu/P3693.cpp.obj
+.PHONY : Luogu/P3693.cpp.obj
+
+Luogu/P3693.i: Luogu/P3693.cpp.i
+
+.PHONY : Luogu/P3693.i
+
+# target to preprocess a source file
+Luogu/P3693.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/Luogu/P3693.cpp.i
+.PHONY : Luogu/P3693.cpp.i
+
+Luogu/P3693.s: Luogu/P3693.cpp.s
+
+.PHONY : Luogu/P3693.s
+
+# target to generate assembly for a file
+Luogu/P3693.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\solution.dir\build.make CMakeFiles/solution.dir/Luogu/P3693.cpp.s
+.PHONY : Luogu/P3693.cpp.s
+
 Luogu/P3719.obj: Luogu/P3719.cpp.obj
 
 .PHONY : Luogu/P3719.obj
@@ -7185,6 +7212,9 @@ help:
 	@echo ... Luogu/P3456.obj
 	@echo ... Luogu/P3456.i
 	@echo ... Luogu/P3456.s
+	@echo ... Luogu/P3693.obj
+	@echo ... Luogu/P3693.i
+	@echo ... Luogu/P3693.s
 	@echo ... Luogu/P3719.obj
 	@echo ... Luogu/P3719.i
 	@echo ... Luogu/P3719.s

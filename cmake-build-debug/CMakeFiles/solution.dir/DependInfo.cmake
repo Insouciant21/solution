@@ -171,6 +171,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Insouciant21/source/OJ_Solution/Luogu/P3167.cpp" "C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/CMakeFiles/solution.dir/Luogu/P3167.cpp.obj"
   "C:/Users/Insouciant21/source/OJ_Solution/Luogu/P3395.cpp" "C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/CMakeFiles/solution.dir/Luogu/P3395.cpp.obj"
   "C:/Users/Insouciant21/source/OJ_Solution/Luogu/P3456.cpp" "C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/CMakeFiles/solution.dir/Luogu/P3456.cpp.obj"
+  "C:/Users/Insouciant21/source/OJ_Solution/Luogu/P3693.cpp" "C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/CMakeFiles/solution.dir/Luogu/P3693.cpp.obj"
   "C:/Users/Insouciant21/source/OJ_Solution/Luogu/P3719.cpp" "C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/CMakeFiles/solution.dir/Luogu/P3719.cpp.obj"
   "C:/Users/Insouciant21/source/OJ_Solution/Luogu/P3818.cpp" "C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/CMakeFiles/solution.dir/Luogu/P3818.cpp.obj"
   "C:/Users/Insouciant21/source/OJ_Solution/Luogu/P3912.cpp" "C:/Users/Insouciant21/source/OJ_Solution/cmake-build-debug/CMakeFiles/solution.dir/Luogu/P3912.cpp.obj"

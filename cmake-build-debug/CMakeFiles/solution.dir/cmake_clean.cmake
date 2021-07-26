@@ -166,6 +166,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/solution.dir/Luogu/P3167.cpp.obj"
   "CMakeFiles/solution.dir/Luogu/P3395.cpp.obj"
   "CMakeFiles/solution.dir/Luogu/P3456.cpp.obj"
+  "CMakeFiles/solution.dir/Luogu/P3693.cpp.obj"
   "CMakeFiles/solution.dir/Luogu/P3719.cpp.obj"
   "CMakeFiles/solution.dir/Luogu/P3818.cpp.obj"
   "CMakeFiles/solution.dir/Luogu/P3912.cpp.obj"
