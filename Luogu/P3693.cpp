@@ -296,7 +296,6 @@ void makeRoof() {
     iceBlocks -= neededIceBlocks;
     if (roof < 2 || (H_X - 2) * (H_Y - 2) * roof < 2) {
         cout << "SORRY CIRNO,HOUSE IS TOO SMALL" << endl;
-        // printf("%d %d %d %d\n", roof, H_X, H_Y, (H_X - 2) * (H_Y - 2) * roof);
         return;
     }
     bool removed = removeExtraBlocks();
@@ -362,7 +361,6 @@ void makeRoof() {
         cout << "CORNER IS OK" << endl;
     else {
         cout << "CORNER NEED TO BE FIXED" << endl;
-        // iceBlocks -= g;
         iceBlocks = max(0, iceBlocks);
     }
     cout << "CIRNO FINALLY HAS " << iceBlocks << " ICE_BLOCK(S)" << endl;
@@ -377,7 +375,6 @@ void makeRoof() {
 }
 
 int main() {
-    // ios::sync_with_stdio(false);
     memset(snow, 0, sizeof snow);
     cin >> n;
     cin >> H_M;
@@ -390,12 +387,6 @@ int main() {
             int R, C, D, S;
             cin >> R >> C >> D >> S;
             iceBarrage(R, C, D, S);
-            /*
-            for (int i = 0; i < n; i++) {
-                for (int j = 0; j < n; j++)
-                    cout << snow[i][j];
-                cout << endl;
-            }*/
         }
         if (operation[0] == 'M' && operation.size() == 14) makeIceBlock();
         if (operation[0] == 'P') {
