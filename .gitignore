@@ -5,3 +5,4 @@ temp*
 *.in
 *.out
 /cmake-build-debug/
+/cmake-build-debug/
