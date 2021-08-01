@@ -1,10 +1,3 @@
-/*
-  Problem: SP6471
-  Time: 2020/11/14 09:38:21
-  Author: Insouciant21
-  Status: Accepted
-*/
-
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -22,7 +15,6 @@ void prepare() {
 }
 
 int main() {
-    freopen("t.out", "w", stdout);
     prepare();
     int cnt = 0;
     for (int i = 2; i < n; i++) {
