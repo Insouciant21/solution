@@ -67,7 +67,7 @@ int main() {
             for (int j = 1; j <= n; j++) {
                 char tmp;
                 cin >> tmp;
-                oil[i][j] = (tmp == '*') ? true : false;
+                oil[i][j] = (tmp == '*');
             }
         }
         search();

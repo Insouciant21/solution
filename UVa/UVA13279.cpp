@@ -32,11 +32,9 @@ void factor(int x) {
 
 int main() {
     while (~scanf("%d", &n)) {
-        for (int i = 1; i <= n; i++)
-            factor(i);
+        for (int i = 1; i <= n; i++) factor(i);
         long long ans = 1;
-        for (auto iter = p.begin(); iter != p.end(); iter++)
-            ans = ans * (iter->second + 1) % MOD;
+        for (auto &iter : p) ans = ans * (iter.second + 1) % MOD;
         printf("%lld\n", ans);
         p.clear();
     }

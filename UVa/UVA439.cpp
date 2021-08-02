@@ -1,11 +1,4 @@
-﻿/*
- *  Problem: UVA439
- *  Author: Insouciant21
- *  Time: 2020/9/15 20:29:24
- *  Status: Accepted
- */
-
-#include <bits/stdc++.h>
+﻿#include <bits/stdc++.h>
 
 using namespace std;
 
