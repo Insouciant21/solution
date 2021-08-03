@@ -11,7 +11,7 @@ using namespace std;
 
 struct Node {
     int num;
-    int id;
+    int value;
     bool operator<(const Node &a) const {
         return num < a.num;
     }

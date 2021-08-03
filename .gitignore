@@ -2,7 +2,6 @@ test.*
 *.exe
 tmp.*
 temp*
-*.in
 *.out
 /cmake-build-debug/
 /Temp/
