@@ -3,7 +3,7 @@
 using namespace std;
 
 struct Node {
-    int value;
+    int id;
     Node *left;
     Node *right;
     explicit Node(int a = 0, Node *b = nullptr, Node *c = nullptr) : id(a), left(b), right(c) {};

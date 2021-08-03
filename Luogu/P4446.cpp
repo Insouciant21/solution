@@ -11,16 +11,15 @@ using namespace std;
 using ll = long long;
 
 ll cube[int(1e6) + 2];
-bitset<40001> numlist;
+bitset<40001> numList;
 int prime[40000];
 
 void prepare() {
     int cnt = 0;
     for (int i = 2; i < 40000; i++) {
-        if (!numlist[i])
-            prime[++cnt] = i;
+        if (!numList[i]) prime[++cnt] = i;
         for (int j = 1; j <= cnt && prime[j] * i < 40000; j++) {
-            numlist[i * prime[j]] = 1;
+            numList[i * prime[j]] = 1;
             if (i % prime[j] == 0)
                 break;
         }

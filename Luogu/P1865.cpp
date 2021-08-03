@@ -11,19 +11,20 @@ using namespace std;
 
 const int maxm = int(1e6) + 10;
 int t, m;
-bitset<maxm> numlist;
+bitset<maxm> numList;
 
-void prework() {
-    numlist[0] = numlist[1] = 1;
-    numlist[2] = 0;
+void preWork() {
+    numList[0] = numList[1] = 1;
+    numList[2] = 0;
     for (int i = 2; i <= maxm; i++)
-        if (!numlist[i])
-            for (int j = 2; i * j <= maxm; j++) numlist[i * j] = 1;
+        if (!numList[i])
+            for (int j = 2; i * j <= maxm; j++)
+                numList[i * j] = 1;
     return;
 }
 
 int main() {
-    prework();
+    preWork();
     ios::sync_with_stdio(false);
     cin >> t >> m;
     for (int i = 1; i <= t; i++) {
@@ -35,7 +36,7 @@ int main() {
         }
         int ans = 0;
         for (int i = l; i <= r; i++)
-            if (!numlist[i])
+            if (!numList[i])
                 ans++;
         cout << ans << endl;
     }

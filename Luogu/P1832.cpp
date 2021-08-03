@@ -9,26 +9,26 @@
 
 using namespace std;
 
-bitset<1111> numlist;
+bitset<1111> numList;
 
 long long dp[1001];
 
 int n;
 
-void prework() {
-    numlist[0] = numlist[1] = 1;
+void preWork() {
+    numList[0] = numList[1] = 1;
     for (int i = 2; i <= 1110; i++)
-        if (!numlist[i])
-            for (int j = 2; i * j <= 1110; j++) numlist[i * j] = 1;
+        if (!numList[i])
+            for (int j = 2; i * j <= 1110; j++)
+                numList[i * j] = 1;
 }
 
 int main() {
-    prework();
+    preWork();
     cin >> n;
     dp[0] = 1;
     for (int i = 1; i <= n; i++) {
-        if (numlist[i])
-            continue;
+        if (numList[i]) continue;
         for (int j = i; j <= n; j++) dp[j] += dp[j - i];
     }
     cout << dp[n] << endl;

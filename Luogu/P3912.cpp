@@ -11,15 +11,15 @@ using namespace std;
 
 const int maxn = int(1e8) + 1;
 
-bitset<maxn> numlist;
+bitset<maxn> numList;
 int cnt;
 
 void work(int n) {
     for (int i = 2; i <= n; i++) {
-        if (!numlist[i]) {
+        if (!numList[i]) {
             cnt++;
             for (int j = 2; i * j <= n; j++) {
-                numlist[j * i] = 1;
+                numList[j * i] = 1;
             }
         }
     }

@@ -11,18 +11,19 @@ using namespace std;
 
 const int maxn = int(1e7) * 4 + 1;
 
-bitset<maxn> numlist;
+bitset<maxn> numList;
 map<int, int> q;
 
 int prime[2433655];
 int cnt;
 
 void prepare() {
-    numlist[0] = numlist[1] = 1;
+    numList[0] = numList[1] = 1;
     for (int i = 2; i < maxn; i++) {
-        if (!numlist[i]) {
+        if (!numList[i]) {
             prime[++cnt] = i;
-            for (int j = 2; i * j < maxn; j++) numlist[i * j] = 1;
+            for (int j = 2; i * j < maxn; j++)
+                numList[i * j] = 1;
         }
     }
 }
@@ -57,7 +58,7 @@ int main() {
             cout << "The number is too large!\n" << endl;
             continue;
         }
-        else if (!numlist[num]) {
+        else if (!numList[num]) {
             cout << "Yes!" << endl << endl;
             continue;
         }

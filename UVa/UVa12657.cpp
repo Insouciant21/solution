@@ -3,7 +3,7 @@
 using namespace std;
 
 struct Node {
-    int value;
+    int id;
     Node *prev;
     Node *next;
 };
@@ -31,7 +31,7 @@ struct List {
         tail->prev = g;
         boxes[data] = g;
     }
-    void move(int x, int y, int mode) {
+    static void move(int x, int y, int mode) {
         Node *px = boxes[x], *py = boxes[y];
         if (mode == 1) {
             if (px->next == py)
@@ -76,7 +76,7 @@ int main() {
                 cin >> x >> y;
                 if (g.reversed && (oper == 1 || oper == 2))
                     oper = (oper == 1) ? 2 : 1;
-                g.move(x, y, oper);
+                List::move(x, y, oper);
             }
             else
                 g.reversed = !g.reversed;
