@@ -1,10 +1,3 @@
-/*
-  Problem: UVA11426
-  Time: 2020/10/23 21:27:49
-  Author: Insouciant21
-  Status: Accepted
-*/
-
 #include <bits/stdc++.h>
 
 using namespace std;

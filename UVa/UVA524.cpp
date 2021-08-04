@@ -2,7 +2,7 @@
 
 using namespace std;
 
-bool used[17] = {0, 1};
+bool used[17] = {false, true};
 
 int n;
 
@@ -31,10 +31,10 @@ void dfs(int cnt, int last) {
             continue;
         if (!prime(i + ans[cnt - 1]))
             continue;
-        used[i] = 1;
+        used[i] = true;
         ans[cnt] = i;
         dfs(cnt + 1, (last % 2 == 0) ? 1 : 2);
-        used[i] = 0;
+        used[i] = false;
     }
 }
 

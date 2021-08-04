@@ -1,13 +1,4 @@
-/*
-  Problem: UVA489
-  Time: 2021/7/12 12:41
-  Author: Insouciant21
-  Status: Accepted
-*/
-
 #include <bits/stdc++.h>
-
-// using namespace std;
 
 std::string s, t;
 bool win, lose;

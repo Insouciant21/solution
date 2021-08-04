@@ -1,10 +1,3 @@
-/*
-  Problem: UVA12096
-  Time: 2021/7/14 20:57
-  Author: Insouciant21
-  Status: AC
-*/
-
 #include <bits/stdc++.h>
 
 std::vector<std::set<int>> set;

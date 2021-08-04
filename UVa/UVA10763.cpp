@@ -1,10 +1,3 @@
-/*
-  Problem: UVA10763
-  Time: 2020/11/07 12:28:36
-  Author: Insouciant21
-  Status: Accepted
-*/
-
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -12,7 +5,7 @@ using namespace std;
 int n;
 
 int main() {
-    ios::sync_with_stdio(0);
+    ios::sync_with_stdio(false);
     while (true) {
         cin >> n;
         if (!n)

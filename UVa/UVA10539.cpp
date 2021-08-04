@@ -1,10 +1,3 @@
-/*
-  Problem: UVA10539
-  Time: 2020/09/27 21:16:56
-  Author: Insouciant21
-  Status: Accepted
-*/
-
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -12,18 +5,18 @@ using namespace std;
 const long long maxn = int(1e6) + 10;
 const long long maxp = (long long)(1e12) + 10;
 
-bitset<maxn> numlist;
+bitset<maxn> numList;
 vector<long long> num;
 
 long long l, r;
 int t;
 
-void prework() {
-    numlist[0] = numlist[1] = 1;
+void preWork() {
+    numList[0] = numList[1] = 1;
     for (long long i = 2; i < maxn; i++) {
-        if (!numlist[i]) {
+        if (!numList[i]) {
             for (int j = 2; i * j < maxn; j++)
-                numlist[i * j] = 1;
+                numList[i * j] = 1;
             for (long long x = i * i; x < maxp; x *= i)
                 num.push_back(x);
         }
@@ -31,7 +24,7 @@ void prework() {
 }
 
 int main() {
-    prework();
+    preWork();
     sort(num.begin(), num.end());
     scanf("%d", &t);
     while (t--) {

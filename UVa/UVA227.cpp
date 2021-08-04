@@ -1,10 +1,3 @@
-/*
-  Problem: UVA227
-  Time: 2021/7/11 18:31
-  Author: Insouciant21
-  Status: Accepted
-*/
-
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -28,12 +21,12 @@ int main() {
             i += t;
         }
         int x = 0, y = 0;
-        bool find = 0;
+        bool find = false;
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
                 if (grid[i][j] == ' ') {
                     x = i, y = j;
-                    find = 1;
+                    find = true;
                     break;
                 }
             }
@@ -105,12 +98,3 @@ int main() {
         }
     }
 }
-/*
-ABCDE
-FGHIJ
-KLMNO
-PQRS
-TUVWX
-AAA
-LLLL0
- */

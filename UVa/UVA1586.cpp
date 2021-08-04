@@ -1,10 +1,3 @@
-/*
-  Problem: UVA1586
-  Time: 2021/7/11 16:11
-  Author: Insouciant21
-  Status: NULL
-*/
-
 #include <bits/stdc++.h>
 
 double getMess(char ch) {

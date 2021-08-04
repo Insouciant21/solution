@@ -1,10 +1,3 @@
-/*
-  Problem: UVA495
-  Time: 2020/10/03 22:36:42
-  Author: Insouciant21
-  Status: Accepted
-*/
-
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -13,14 +6,14 @@ const int LEN = 1100;
 
 class BigInteger {
    private:
-    int digit[1101];
+    int digit[1101] {};
 
    public:
     BigInteger() {
         for (int i = 0; i <= LEN; i++)
             digit[i] = 0;
     }
-    BigInteger(int x) {
+    explicit BigInteger(int x) {
         for (int i = 0; i <= LEN; i++)
             digit[i] = 0;
         int t = x;
@@ -45,7 +38,6 @@ class BigInteger {
         return 0;
     }
     friend BigInteger operator+(BigInteger x, BigInteger y);
-    friend bool operator!=(BigInteger x, BigInteger y);
     friend void print(int n, BigInteger &);
 };
 
@@ -68,13 +60,12 @@ void print(int n, BigInteger &res) {
     printf("\n");
 }
 
-pair<int, pair<BigInteger, BigInteger>> mem[5001];
-
 int main() {
     int n;
+    pair<int, pair<BigInteger, BigInteger>> mem[5001];
     while (cin >> n) {
-        BigInteger a(0), b(1), c;
-        int st;
+        BigInteger a(0), b(1);
+        int st = 0;
         for (int i = n; i >= 0; i--) {
             if (mem[i].first == 1) {
                 a = mem[i].second.first;

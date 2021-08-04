@@ -1,11 +1,4 @@
-﻿/*
- *  Problem: UVA572
- *  Author: Insouciant21
- *  Time: 2020/9/17 18:48:21
- *  Status: Accepted
- */
-
-#include <bits/stdc++.h>
+﻿#include <bits/stdc++.h>
 
 using namespace std;
 using pii = pair<int, int>;
@@ -23,8 +16,8 @@ int dy[8] = {1, 0, -1, 1, 0, -1, 1, -1};
 void bfs(int x, int y) {
     queue<pair<int, int>> q;
     q.push(make_pair(x, y));
-    vis[x][y] = 1;
-    while (q.size()) {
+    vis[x][y] = true;
+    while (!q.empty()) {
         pii now = q.front();
         q.pop();
         for (int i = 0; i < 8; i++) {
@@ -36,7 +29,7 @@ void bfs(int x, int y) {
                 continue;
             if (vis[nx][ny])
                 continue;
-            vis[nx][ny] = 1;
+            vis[nx][ny] = true;
             q.push({nx, ny});
         }
     }

@@ -1,31 +1,25 @@
-/*
-  Problem: UVA294
-  Time: 2020/10/22 18:37:32
-  Author: Insouciant21
-  Status: Accepted
-*/
-
 #include <bits/stdc++.h>
 
 using namespace std;
 
 const int test = 25;
-bitset<101> numlist;
+bitset<101> numList;
 int prime[101];
 int cnt = 0;
 
 void prepare() {
-    numlist[0] = numlist[1] = 1;
+    numList[0] = numList[1] = true;
     for (int i = 1; i <= 100; i++) {
-        if (!numlist[i])
+        if (!numList[i])
             prime[++cnt] = i;
         for (int j = 1; j <= cnt && i * prime[j] <= 100; j++) {
-            numlist[i * prime[j]] = 1;
+            numList[i * prime[j]] = true;
             if (i % prime[j] == 0)
                 break;
         }
     }
 }
+
 long long quickPow(long long a, long long b, long long p) {
     long long res = 1;
     for (; b; b >>= 1, a = a * a % p) {
@@ -63,12 +57,12 @@ long long solve(long long n) {
         return 2;
     long long res = 1;
     for (int i = 1; i <= cnt && prime[i] <= n / 2; i++) {
-        long long cnt = 1;
+        long long cntG = 1;
         while (n % prime[i] == 0) {
             n /= prime[i];
-            cnt++;
+            cntG++;
         }
-        res *= cnt;
+        res *= cntG;
     }
     if (n > 1)
         res *= 2;

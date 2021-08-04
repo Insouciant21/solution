@@ -1,38 +1,31 @@
-/*
-  Problem: UVA1644
-  Time: 2020/09/30 18:59:49
-  Author: Insouciant21
-  Status: Accepted
-*/
-
 #include <bits/stdc++.h>
 
 using namespace std;
 
 const int maxn = 1300000;
 
-bitset<maxn> numlist;
+bitset<maxn> numList;
 vector<int> prime;
 
-void prework() {
-    numlist[0] = numlist[1] = 1;
+void preWork() {
+    numList[0] = numList[1] = true;
     for (int i = 2; i < maxn; i++)
-        if (!numlist[i]) {
+        if (!numList[i]) {
             prime.push_back(i);
             for (int j = 2; i * j < maxn; j++)
-                numlist[i * j] = 1;
+                numList[i * j] = true;
         }
 }
 
 int n;
 
 int main() {
-    prework();
+    preWork();
     while (true) {
         scanf("%d", &n);
         if (!n)
             break;
-        if (numlist[n] == 0) {
+        if (numList[n] == 0) {
             printf("0\n");
             continue;
         }

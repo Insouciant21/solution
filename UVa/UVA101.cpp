@@ -1,21 +1,8 @@
-/*
-  Problem: UVA101
-  Time: 2021/7/14 17:43
-  Author: Insouciant21
-  Status: AC
-*/
-
 #include <bits/stdc++.h>
 
 using namespace std;
 
 int n;
-
-struct Order {
-    bool mode;
-    bool way;
-    int a, b;
-};
 
 struct Point {
     int p, h;

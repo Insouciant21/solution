@@ -1,10 +1,3 @@
-/*
-  Problem: UVA1225
-  Time: 2021/7/11 16:33
-  Author: Insouciant21
-  Status: Accepted
-*/
-
 #include <bits/stdc++.h>
 
 int main() {

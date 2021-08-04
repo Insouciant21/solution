@@ -9,7 +9,6 @@ struct Program {
 };
 
 int main() {
-    // freopen("Temp/test.in", "r", stdin);
     int kase;
     cin >> kase;
     for (int ka = 0; ka < kase; ka++) {
