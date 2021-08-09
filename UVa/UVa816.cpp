@@ -118,7 +118,6 @@ void print(Point g) {
         if (g.step == 0) break;
         g = f[g.x][g.y][g.d];
     }
-    int p = int(ans.size());
     cout << name;
     while (!ans.empty()) {
         cout << endl << "  ";
