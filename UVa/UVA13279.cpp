@@ -1,9 +1,4 @@
-/*
-  Problem: UVA13279
-  Time: 2020/10/24 13:25:32
-  Author: Insouciant21
-  Status: NULL
-*/
+// Status: NULL
 
 #include <bits/stdc++.h>
 
