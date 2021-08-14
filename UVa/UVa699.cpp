@@ -17,14 +17,11 @@ struct Tree {
 void build(Node *g, bool right) {
     int v;
     scanf("%d", &v);
-    if (v == -1)
-        return;
+    if (v == -1) return;
     Node *p = new Node;
     p->id = v;
-    if (right)
-        g->right = p;
-    else
-        g->left = p;
+    if (right) g->right = p;
+    else g->left = p;
     build(p, false);
     build(p, true);
 }
@@ -33,15 +30,12 @@ map<int, int> res;
 
 void solve(Node *g, int pos) {
     res[pos] += g->id;
-    if (g->left != nullptr)
-        solve(g->left, pos - 1);
-    if (g->right != nullptr)
-        solve(g->right, pos + 1);
+    if (g->left != nullptr) solve(g->left, pos - 1);
+    if (g->right != nullptr) solve(g->right, pos + 1);
 }
 
 void removeTree(Node *g) {
-    if (g == nullptr)
-        return;
+    if (g == nullptr) return;
     removeTree(g->left);
     removeTree(g->right);
     delete g;
@@ -53,8 +47,7 @@ int main() {
     while (++kase) {
         res.clear();
         scanf("%d", &root);
-        if (root == -1)
-            break;
+        if (root == -1) break;
         Tree g;
         g.root->id = root;
         build(g.root, false);

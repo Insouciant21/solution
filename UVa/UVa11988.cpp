@@ -20,14 +20,11 @@ int main() {
             if (home) {
                 p.insert(next(p.begin(), home++ - 1), i);
             }
-            else
-                p.push_back(i);
+            else p.push_back(i);
         }
         for (auto i : p) cout << i;
-        if (!cin.eof())
-            cout << endl;
-        else
-            break;
+        if (!cin.eof()) cout << endl;
+        else break;
     }
     return 0;
 }

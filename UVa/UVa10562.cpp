@@ -10,8 +10,7 @@ void dfs(int x, int y) {
     if (x + 1 < n && text[x + 1][y] == '|') {
         x += 2;
         int i = y;
-        while (i - 1 >= 0 && text[x][i - 1] == '-')
-            i--;
+        while (i - 1 >= 0 && text[x][i - 1] == '-') i--;
         for (; text[x][i] == '-' && text[x + 1][i] != '\0'; i++)
             if (!isspace(text[x + 1][i])) dfs(x + 1, i);
     }

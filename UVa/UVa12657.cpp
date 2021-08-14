@@ -34,8 +34,7 @@ struct List {
     static void move(int x, int y, int mode) {
         Node *px = boxes[x], *py = boxes[y];
         if (mode == 1) {
-            if (px->next == py)
-                return;
+            if (px->next == py) return;
             px->prev->next = px->next;
             px->next->prev = px->prev;
             py->prev->next = px;
@@ -44,8 +43,7 @@ struct List {
             px->next = py;
         }
         if (mode == 2) {
-            if (py->next == px)
-                return;
+            if (py->next == px) return;
             px->prev->next = px->next;
             px->next->prev = px->prev;
             py->next->prev = px;
@@ -74,12 +72,10 @@ int main() {
             if (oper != 4) {
                 int x, y;
                 cin >> x >> y;
-                if (g.reversed && (oper == 1 || oper == 2))
-                    oper = (oper == 1) ? 2 : 1;
+                if (g.reversed && (oper == 1 || oper == 2)) oper = (oper == 1) ? 2 : 1;
                 List::move(x, y, oper);
             }
-            else
-                g.reversed = !g.reversed;
+            else g.reversed = !g.reversed;
         }
         int pos = 0;
         Node *p = g.head;
@@ -87,10 +83,8 @@ int main() {
         while (true) {
             pos++;
             p = p->next;
-            if (p == g.tail)
-                break;
-            if ((pos % 2 == 1 && (!g.reversed || n % 2 == 1)) || (pos % 2 == 0 && g.reversed && n % 2 == 0))
-                ans += p->id;
+            if (p == g.tail) break;
+            if ((pos % 2 == 1 && (!g.reversed || n % 2 == 1)) || (pos % 2 == 0 && g.reversed && n % 2 == 0)) ans += p->id;
         }
         cout << "Case " << ++kase << ": " << ans << endl;
     }

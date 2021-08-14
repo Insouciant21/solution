@@ -78,8 +78,7 @@ int main() {
         bfsEnd();
         printf("%d\n", d[1]);
         bfsStart();
-        for (int i = 0; i < ans.size(); i++)
-            printf(i == 0 ? "%d" : " %d", ans[i]);
+        for (int i = 0; i < ans.size(); i++) printf(i == 0 ? "%d" : " %d", ans[i]);
         printf("\n");
     }
     return 0;

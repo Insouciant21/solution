@@ -64,8 +64,7 @@ bool input() {
             cin >> k;
             if (k == "*") break;
             int t = getID(k[0], true);
-            for (int i = 1; i < k.length(); i++)
-                mp[x][y][t][getID(k[i], false)] = true;
+            for (int i = 1; i < k.length(); i++) mp[x][y][t][getID(k[i], false)] = true;
         }
     }
     return true;

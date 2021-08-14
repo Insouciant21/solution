@@ -54,10 +54,8 @@ void input() {
     string hex[] = {"0000", "0001", "0010", "0011", "0100", "0101", "0110", "0111", "1000", "1001", "1010", "1011", "1100", "1101", "1110", "1111"};
     for (int i = 1; i <= H; i++) {
         cin >> g;
-        for (int j = 0, point = 1; j < W; j++, point += 4) {
-            for (int k = 0; k < 4; k++)
-                graph[i][k + point] = hex[isdigit(g[j]) ? g[j] - '0' : g[j] - 'a' + 10][k] - '0';
-        }
+        for (int j = 0, point = 1; j < W; j++, point += 4)
+            for (int k = 0; k < 4; k++) graph[i][k + point] = hex[isdigit(g[j]) ? g[j] - '0' : g[j] - 'a' + 10][k] - '0';
     }
     W *= 4;
 }
@@ -72,10 +70,8 @@ void removeBackground() {
         for (int i = 0; i < 4; i++) {
             Point ftr = prs;
             ftr.move(i);
-            if (ftr.x < 0 || ftr.y < 0 || ftr.x > H + 1 || ftr.y > W + 1)
-                continue;
-            if (graph[ftr.x][ftr.y] == 1 || graph[ftr.x][ftr.y] == -1)
-                continue;
+            if (ftr.x < 0 || ftr.y < 0 || ftr.x > H + 1 || ftr.y > W + 1) continue;
+            if (graph[ftr.x][ftr.y] == 1 || graph[ftr.x][ftr.y] == -1) continue;
             graph[ftr.x][ftr.y] = -1;
             q.push(ftr);
         }
@@ -85,10 +81,8 @@ void removeBackground() {
 void detectPixel(int color) {
     for (int i = 1; i <= H; i++) {
         for (int j = 1; j <= W; j++) {
-            if (graph[i][j] != color)
-                continue;
-            if (vis[i][j])
-                continue;
+            if (graph[i][j] != color) continue;
+            if (vis[i][j]) continue;
             mark({i, j}, color);
         }
     }
@@ -99,16 +93,14 @@ void mark(Point g, int mode) {
     q.push(g);
     vis[g.x][g.y] = (mode) ? ++cnt : -1;
     bool marked = false;
-    if (mode)
-        blank.push_back(0);
+    if (mode) blank.push_back(0);
     while (!q.empty()) {
         Point prs = q.front();
         q.pop();
         for (int i = 0; i < 4; i++) {
             Point ftr = prs;
             ftr.move(i);
-            if (ftr.x < 1 || ftr.y < 1 || ftr.x > H || ftr.y > W)
-                continue;
+            if (ftr.x < 1 || ftr.y < 1 || ftr.x > H || ftr.y > W) continue;
             if (graph[ftr.x][ftr.y] != mode) {
                 if (!mode && graph[ftr.x][ftr.y] == 1 && !marked) {
                     marked = true;
@@ -116,8 +108,7 @@ void mark(Point g, int mode) {
                 }
                 continue;
             }
-            if (vis[ftr.x][ftr.y])
-                continue;
+            if (vis[ftr.x][ftr.y]) continue;
             vis[ftr.x][ftr.y] = (mode) ? cnt : -1;
             q.push(ftr);
         }
@@ -127,7 +118,6 @@ void mark(Point g, int mode) {
 void output() {
     cout << "Case " << kase << ": ";
     sort(blank.begin(), blank.end(), [](int a, int b) { return convert[a] < convert[b]; });
-    for (auto i : blank)
-        cout << convert[i];
+    for (auto i : blank) cout << convert[i];
     cout << endl;
 }

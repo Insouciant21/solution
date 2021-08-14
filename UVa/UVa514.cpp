@@ -7,10 +7,8 @@ int main() {
     int kase = 0;
     while (true) {
         cin >> n;
-        if (kase)
-            cout << endl;
-        if (n == 0)
-            break;
+        if (kase) cout << endl;
+        if (n == 0) break;
         kase++;
         while (true) {
             queue<int> a;
@@ -18,8 +16,7 @@ int main() {
             queue<int> b;
             int t;
             cin >> t;
-            if (t == 0)
-                break;
+            if (t == 0) break;
             b.push(t);
             for (int i = 1; i < n; i++) {
                 cin >> t;
@@ -35,18 +32,14 @@ int main() {
                         b.pop();
                         break;
                     }
-                    if (a.empty())
-                        break;
+                    if (a.empty()) break;
                     c.push(a.front());
                     a.pop();
                 }
-                if (!ok)
-                    break;
+                if (!ok) break;
             }
-            if (b.empty())
-                cout << "Yes" << endl;
-            else
-                cout << "No" << endl;
+            if (b.empty()) cout << "Yes" << endl;
+            else cout << "No" << endl;
         }
     }
     return 0;

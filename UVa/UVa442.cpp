@@ -36,11 +36,9 @@ int main() {
                 ans += a.r * a.c * b.c;
                 s.push(Matrix(a.r, b.c));
             }
-            if (isalpha(point))
-                s.push(matrix[point]);
+            if (isalpha(point)) s.push(matrix[point]);
         }
-        if (successful)
-            cout << ans << endl;
+        if (successful) cout << ans << endl;
     }
     return 0;
 }

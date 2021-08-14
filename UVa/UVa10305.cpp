@@ -23,8 +23,7 @@ void bfs() {
         ans.push_back(u);
         for (int i = 1; i <= n; i++)
             if (degree(i) == 1 && edge[u][i]) q.push(i);
-        for (int i = 1; i <= n; i++)
-            edge[u][i] = false;
+        for (int i = 1; i <= n; i++) edge[u][i] = false;
     }
     bool ok = false;
     for (auto i : ans) {

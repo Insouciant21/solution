@@ -84,8 +84,7 @@ int main() {
             }
             if (hasFound) {
                 printf("     DATA\n     354\n");
-                for (const auto &j : data)
-                    printf("     %s\n", j.c_str());
+                for (const auto &j : data) printf("     %s\n", j.c_str());
                 printf("     .\n     250\n");
             }
             printf("     QUIT\n     221\n");
