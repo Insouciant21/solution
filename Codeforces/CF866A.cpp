@@ -28,9 +28,7 @@ int main() {
         int k = accumulate(a.begin(), a.begin() + 3, 0);
         ok = (sum / 2 == k);
     } while (next_permutation(a.begin(), a.end()) && !ok);
-    if (ok)
-        cout << "YES" << endl;
-    else
-        cout << "NO" << endl;
+    if (ok) cout << "YES" << endl;
+    else cout << "NO" << endl;
     return 0;
 }

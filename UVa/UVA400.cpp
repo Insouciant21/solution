@@ -1,10 +1,3 @@
-/*
-  Problem: UVA400
-  Time: 2021/7/18 10:54
-  Author: Insouciant21
-  Status: AC
-*/
-
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -22,14 +15,12 @@ int main() {
         }
         sort(p.begin(), p.end());
         int c = 62 / (m + 2);
-        int r = (p.size() - 1) / c + 1;
+        int r = int(p.size() - 1) / c + 1;
         cout << "------------------------------------------------------------" << endl;
         for (int i = 0; i < r; i++) {
             for (int j = i; j < p.size() && (j - i) / r <= c; j += r) {
-                if ((j - i) / r != c)
-                    cout << left << setw(m + 2) << p[j];
-                else
-                    cout << left << setw(m) << p[j];
+                if ((j - i) / r != c) cout << left << setw(m + 2) << p[j];
+                else cout << left << setw(m) << p[j];
             }
             cout << endl;
         }

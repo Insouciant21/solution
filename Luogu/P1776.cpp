@@ -32,7 +32,8 @@ int main() {
         w[cnt] = t3 * t2;
     }
     for (register int i = 1; i <= cnt; i++)
-        for (register int j = W; j >= w[i]; j--) dp[j] = max(dp[j], dp[j - w[i]] + v[i]);
+        for (register int j = W; j >= w[i]; j--)
+            dp[j] = max(dp[j], dp[j - w[i]] + v[i]);
     printf("%d\n", dp[W]);
     return 0;
 }

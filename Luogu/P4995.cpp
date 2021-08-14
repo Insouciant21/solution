@@ -36,7 +36,8 @@ int main() {
     long long stamina = 0;
     stone.insert(stone.begin(), 0);
     int where = 0;
-    for (int i = 0; i < stone.size() - 1; i++) stamina += consume(stone[i], stone[i + 1]);
+    for (int i = 0; i < stone.size() - 1; i++)
+        stamina += consume(stone[i], stone[i + 1]);
     cout << stamina << endl;
     return 0;
 }

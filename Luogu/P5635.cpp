@@ -13,13 +13,10 @@ int x, y, mod;
 short mem[10010][10010];
 
 int search(int x, int y) {
-    if (mem[x][y] == -1)
-        return 3;
+    if (mem[x][y] == -1) return 3;
     mem[x][y] = -1;
-    if (x == 0)
-        return mem[x][y] = 1;
-    if (y == 0)
-        return mem[x][y] = 2;
+    if (x == 0) return mem[x][y] = 1;
+    if (y == 0) return mem[x][y] = 2;
     int res = (x + y) % mod;
     return mem[x][y] = search(res, (res + y) % mod);
 }

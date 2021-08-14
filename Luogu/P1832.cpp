@@ -29,7 +29,8 @@ int main() {
     dp[0] = 1;
     for (int i = 1; i <= n; i++) {
         if (numList[i]) continue;
-        for (int j = i; j <= n; j++) dp[j] += dp[j - i];
+        for (int j = i; j <= n; j++)
+            dp[j] += dp[j - i];
     }
     cout << dp[n] << endl;
     return 0;

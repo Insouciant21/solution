@@ -1,10 +1,3 @@
-/*
-  Problem: UVA12100
-  Time: 2020/10/18 20:32:26
-  Author: Insouciant21
-  Status: Accepted
-*/
-
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -28,10 +21,10 @@ int main() {
         queue<Task> q;
         priority_queue<Task> p;
         cin >> n >> m;
-        for (int i = 0, t; i < n; i++) {
-            cin >> t;
-            q.push({i, t});
-            p.push({i, t});
+        for (int i = 0, f; i < n; i++) {
+            cin >> f;
+            q.push({i, f});
+            p.push({i, f});
         }
         while (true) {
             Task prs = q.front();

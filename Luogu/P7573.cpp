@@ -17,8 +17,7 @@ int main() {
         int n, ans;
         scanf("%d", &n);
         ans = (n + 1) / 2;
-        if (n == 1)
-            ans = 0;
+        if (n == 1) ans = 0;
         printf("%d\n", ans);
     }
     return 0;

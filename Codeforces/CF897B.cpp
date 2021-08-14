@@ -17,8 +17,7 @@ int main() {
     cin >> k >> p;
     for (long long i = 1;; i++) {
         long long minone = 1;
-        for (long long j = 1; j < i; j++)
-            minone *= 10;
+        for (long long j = 1; j < i; j++) minone *= 10;
         long long maxone = minone * 10;
         for (long long j = minone; j < maxone; j++) {
             string t = to_string(j);

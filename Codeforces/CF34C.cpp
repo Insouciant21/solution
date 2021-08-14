@@ -14,8 +14,7 @@ string ans;
 
 int main() {
     string x;
-    while (getline(cin, x, ','))
-        num.push_back(stoi(x));
+    while (getline(cin, x, ',')) num.push_back(stoi(x));
     sort(num.begin(), num.end());
     num.erase(unique(num.begin(), num.end()), num.end());
     int l = num.front();

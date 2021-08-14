@@ -15,7 +15,8 @@ int maxn, st;
 
 int main() {
     cin >> n >> st >> maxn;
-    for (int i = 1; i <= n; i++) cin >> c[i];
+    for (int i = 1; i <= n; i++)
+        cin >> c[i];
     dp[0][st] = 1;
     for (int i = 1; i <= n; i++) {
         for (int j = maxn; j >= 0; j--) {

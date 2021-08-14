@@ -14,27 +14,19 @@ int main() {
         p[5].first = max(k[8], k[9]), p[5].second = min(k[8], k[9]);
         int ans = 0;
         if (p[0] == p[3]) {
-            if (p[1] == p[4] && p[2] == p[5])
-                ans = 1;
-            if (p[1] == p[5] && p[2] == p[4])
-                ans = 1;
+            if (p[1] == p[4] && p[2] == p[5]) ans = 1;
+            if (p[1] == p[5] && p[2] == p[4]) ans = 1;
         }
         if (p[0] == p[4]) {
-            if (p[1] == p[3] && p[2] == p[5])
-                ans = 1;
-            if (p[1] == p[5] && p[2] == p[3])
-                ans = 1;
+            if (p[1] == p[3] && p[2] == p[5]) ans = 1;
+            if (p[1] == p[5] && p[2] == p[3]) ans = 1;
         }
         if (p[0] == p[5]) {
-            if (p[1] == p[3] && p[2] == p[4])
-                ans = 1;
-            if (p[1] == p[4] && p[2] == p[3])
-                ans = 1;
+            if (p[1] == p[3] && p[2] == p[4]) ans = 1;
+            if (p[1] == p[4] && p[2] == p[3]) ans = 1;
         }
-        if (ans)
-            cout << "TRUE" << endl;
-        else
-            cout << "FALSE" << endl;
+        if (ans) cout << "TRUE" << endl;
+        else cout << "FALSE" << endl;
     }
     return 0;
 }

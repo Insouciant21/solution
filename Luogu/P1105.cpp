@@ -23,8 +23,7 @@ int main() {
         p[i].id = i;
     }
     sort(p + 1, p + 1 + n, [](Platform a, Platform b) {
-        if (a.h != b.h)
-            return a.h > b.h;
+        if (a.h != b.h) return a.h > b.h;
         return a.id < b.id;
     });
     for (int i = 1; i <= n; i++) {

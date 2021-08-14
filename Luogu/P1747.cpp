@@ -14,7 +14,8 @@ struct Node {
     int step;
 };
 
-Node direction[12] {-1, -2, 0, -1, 2, 0, 1, -2, 0, 1, 2, 0, 2, -1, 0, 2, 1, 0, -2, -1, 0, -2, 1, 0, 2, 2, 0, -2, -2, 0, -2, 2, 0, 2, -2, 0};
+Node direction[12] {-1, -2, 0, -1, 2, 0, 1, -2, 0, 1,  2,  0, 2,  -1, 0, 2, 1,  0,
+                    -2, -1, 0, -2, 1, 0, 2, 2,  0, -2, -2, 0, -2, 2,  0, 2, -2, 0};
 
 queue<Node> q;
 
@@ -35,16 +36,15 @@ int main() {
         for (int i = 0; i < 12; i++) {
             Node mover = run;
             mover.x += direction[i].x, mover.y += direction[i].y, mover.step++;
-            if (mover.x < 1 || mover.y < 1 || mover.x > 20 || mover.y > 20)
-                continue;
-            if (vis[mover.x][mover.y])
-                continue;
+            if (mover.x < 1 || mover.y < 1 || mover.x > 20 || mover.y > 20) continue;
+            if (vis[mover.x][mover.y]) continue;
             vis[mover.x][mover.y] = true;
             q.push(mover);
         }
     }
     memset(vis, 0, sizeof(vis));
-    while (q.size()) q.pop();
+    while (q.size())
+        q.pop();
     cin >> m >> n;
     q.push({m, n, 0});
     while (q.size()) {
@@ -56,10 +56,8 @@ int main() {
         for (int i = 0; i < 12; i++) {
             Node mover = run;
             mover.x += direction[i].x, mover.y += direction[i].y, mover.step++;
-            if (mover.x < 1 || mover.y < 1 || mover.x > 20 || mover.y > 20)
-                continue;
-            if (vis[mover.x][mover.y])
-                continue;
+            if (mover.x < 1 || mover.y < 1 || mover.x > 20 || mover.y > 20) continue;
+            if (vis[mover.x][mover.y]) continue;
             vis[mover.x][mover.y] = true;
             q.push(mover);
         }

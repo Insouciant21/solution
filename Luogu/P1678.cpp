@@ -26,7 +26,9 @@ int main() {
     }
     sort(line.begin(), line.end());
     for (int i = 0; i < n; i++) {
-        auto index = (upper_bound(line.begin(), line.end(), score[i]) != line.end()) ? upper_bound(line.begin(), line.end(), score[i]) : line.end() - 1;
+        auto index = (upper_bound(line.begin(), line.end(), score[i]) != line.end())
+                         ? upper_bound(line.begin(), line.end(), score[i])
+                         : line.end() - 1;
         int k = *index;
         int g = (index != line.begin()) ? *(index - 1) : line.front();
         ans = ans + min(abs(k - score[i]), abs(g - score[i]));

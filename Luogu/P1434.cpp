@@ -27,14 +27,10 @@ void dfs(Point prs) {
     for (int i = 0; i < 4; i++) {
         Point ftr = prs;
         ftr.x += dx[i], ftr.y += dy[i], ftr.step = prs.step + 1;
-        if (ftr.x < 1 || ftr.y < 1 || ftr.x > r || ftr.y > c)
-            continue;
-        if (maze[ftr.x][ftr.y] >= maze[prs.x][prs.y])
-            continue;
-        if (vis[ftr.x][ftr.y])
-            continue;
-        if (mem[ftr.x][ftr.y] >= ftr.step)
-            continue;
+        if (ftr.x < 1 || ftr.y < 1 || ftr.x > r || ftr.y > c) continue;
+        if (maze[ftr.x][ftr.y] >= maze[prs.x][prs.y]) continue;
+        if (vis[ftr.x][ftr.y]) continue;
+        if (mem[ftr.x][ftr.y] >= ftr.step) continue;
         vis[ftr.x][ftr.y] = 1;
         mem[ftr.x][ftr.y] = ftr.step;
         dfs(ftr);

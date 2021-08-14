@@ -35,13 +35,11 @@ int main() {
         if (oper == 'Q') {
             int max = stu[x].score;
             for (int j = x; j <= y; j++)
-                if (stu[j].score > max)
-                    max = stu[j].score;
+                if (stu[j].score > max) max = stu[j].score;
             cout << max << endl;
         }
         else if (oper == 'U') {
-            if (stu[x].score < y)
-                stu[x].score = y;
+            if (stu[x].score < y) stu[x].score = y;
         }
     }
     return 0;

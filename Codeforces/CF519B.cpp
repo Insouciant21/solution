@@ -39,8 +39,7 @@ int main() {
             break;
         }
     }
-    if (!ok)
-        cout << org[n - 1] << endl;
+    if (!ok) cout << org[n - 1] << endl;
     ok = false;
     for (int i = 0; i < n - 2; i++) {
         if (at1[i] != at2[i]) {
@@ -49,7 +48,6 @@ int main() {
             break;
         }
     }
-    if (!ok)
-        cout << at1[n - 2] << endl;
+    if (!ok) cout << at1[n - 2] << endl;
     return 0;
 }

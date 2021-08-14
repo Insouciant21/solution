@@ -63,10 +63,8 @@ int main() {
         Robot x = r;
         for (int j = 1; j <= 3; j++) {
             x.x += dx[x.face], x.y += dy[x.face];
-            if (x.x < 1 || x.y < 1 || x.x >= n || x.y >= m || room[x.x][x.y])
-                break;
-            if (vis[x.x][x.y][x.face])
-                continue;
+            if (x.x < 1 || x.y < 1 || x.x >= n || x.y >= m || room[x.x][x.y]) break;
+            if (vis[x.x][x.y][x.face]) continue;
             vis[x.x][x.y][x.face] = 1;
             x.step = r.step + 1;
             q.push(x);

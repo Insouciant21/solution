@@ -7,10 +7,8 @@ int main() {
     set<string> k;
     while (cin >> s) {
         for (char &i : s) {
-            if (isalpha(i))
-                i = char(tolower(i));
-            else
-                i = ' ';
+            if (isalpha(i)) i = char(tolower(i));
+            else i = ' ';
         }
         stringstream ss(s);
         while (ss >> s) k.insert(s);

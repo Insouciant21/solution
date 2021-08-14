@@ -22,8 +22,7 @@ int main() {
         int x, y;
         cin >> x >> y;
         for (int i = x; i <= y; i++) {
-            if (!mb[i])
-                cnt++;
+            if (!mb[i]) cnt++;
             mb[i] = 1;
         }
     }
@@ -33,8 +32,7 @@ int main() {
         int x, y;
         cin >> x >> y;
         for (int i = x; i <= y; i++) {
-            if (!mg[i])
-                cng++;
+            if (!mg[i]) cng++;
             mg[i] = 1;
         }
     }

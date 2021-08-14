@@ -19,7 +19,8 @@ int cnt;
 
 int main() {
     scanf("%d", &n);
-    for (int i = 1; i <= n; i++) scanf("%d %d %d", &rmb[i], &rp[i], &t[i]);
+    for (int i = 1; i <= n; i++)
+        scanf("%d %d %d", &rmb[i], &rp[i], &t[i]);
     scanf("%d %d", &m, &r);
     for (int i = 1; i <= n; i++) {
         for (int j = m; j >= rmb[i]; j--) {

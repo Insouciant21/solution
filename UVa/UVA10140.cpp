@@ -7,8 +7,7 @@ long long prime[int(1e6) + 1];
 long long quickPow(long long a, long long b, long long p) {
     long long res = 1;
     while (b) {
-        if (b & 1)
-            res = res * a % p;
+        if (b & 1) res = res * a % p;
         b >>= 1;
         a = a * a % p;
     }
@@ -16,24 +15,18 @@ long long quickPow(long long a, long long b, long long p) {
 }
 
 bool millerRabin(long long n) {
-    if (n < 2)
-        return false;
-    if (n == 2 || n == 3)
-        return true;
+    if (n < 2) return false;
+    if (n == 2 || n == 3) return true;
     long long a = n - 1, b = 0;
-    while (a % 2 == 0)
-        a /= 2, b++;
+    while (a % 2 == 0) a /= 2, b++;
     for (int i = 1, j; i <= 25; i++) {
         long long x = rand() % (n - 2) + 2, v = quickPow(x, a, n);
-        if (v == 1 || v == n - 1)
-            continue;
+        if (v == 1 || v == n - 1) continue;
         for (j = 0; j < b; j++) {
             v = v * v % n;
-            if (v == n - 1)
-                break;
+            if (v == n - 1) break;
         }
-        if (j >= b)
-            return false;
+        if (j >= b) return false;
     }
     return true;
 }
@@ -43,15 +36,14 @@ int main() {
     while (scanf("%d %d", &l, &r) != EOF) {
         int cnt = 0;
         for (long long i = l; i <= r; i++) {
-            if (millerRabin(i))
-                prime[++cnt] = i;
+            if (millerRabin(i)) prime[++cnt] = i;
         }
         if (cnt <= 1) {
             printf("There are no adjacent primes.\n");
             continue;
         }
-        pair<int, int> a, b;
-        int maxd = 0, mind = 0x3f3f3f;
+        pair<long long, long long> a, b;
+        long long maxd = 0, mind = 0x3f3f3f;
         for (int i = 1; i < cnt; i++) {
             long long dist = prime[i + 1] - prime[i];
             if (dist > maxd) {

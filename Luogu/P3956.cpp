@@ -19,10 +19,8 @@ int m, n;
 int ans = inf;
 
 void dfs(int x, int y, int color, bool magic, int coin) {
-    if (x < 1 || y < 1 || x > m || y > m)
-        return;
-    if (coin >= best[x][y])
-        return;
+    if (x < 1 || y < 1 || x > m || y > m) return;
+    if (coin >= best[x][y]) return;
     best[x][y] = coin;
     if (x == m && y == m) {
         ans = min(ans, coin);
@@ -48,7 +46,8 @@ int main() {
     ios::sync_with_stdio(0);
     cin >> m >> n;
     for (int i = 0; i < 110; i++)
-        for (int j = 0; j < 110; j++) chess[i][j] = best[i][j] = inf;
+        for (int j = 0; j < 110; j++)
+            chess[i][j] = best[i][j] = inf;
     for (int i = 0; i < n; i++) {
         int x, y, c;
         cin >> x >> y >> c;

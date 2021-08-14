@@ -28,7 +28,8 @@ int main() {
         t.id = i;
         q.push(t);
         if (i >= k) {
-            while (q.top().id <= i - k) q.pop();
+            while (q.top().id <= i - k)
+                q.pop();
             cout << q.top().num << endl;
         }
     }

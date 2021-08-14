@@ -18,18 +18,15 @@ int main() {
     ios::sync_with_stdio(false);
     cin >> l >> r >> w;
     long long limit = maxll / w;
-    if (w == 1)
-        return cout << (l == 1 && r >= 1) ? "1" : "-1", 0;
+    if (w == 1) return cout << (l == 1 && r >= 1) ? "1" : "-1", 0;
     while (true) {
         if (res >= l && res <= r) {
             cout << res << " ";
             found = true;
         }
-        if (res > r / w)
-            break;
+        if (res > r / w) break;
         res *= w;
     }
-    if (!found)
-        cout << "-1" << endl;
+    if (!found) cout << "-1" << endl;
     return 0;
 }

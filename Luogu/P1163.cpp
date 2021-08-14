@@ -23,8 +23,7 @@ int main() {
             p *= (1.0 + mid);
             money += b / p;
         }
-        if (a + 0.0001 > money && a - 0.0001 < money)
-            break;
+        if (a + 0.0001 > money && a - 0.0001 < money) break;
         if (a + 0.0001 < money)
             l = mid;
         else

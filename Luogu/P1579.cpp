@@ -31,8 +31,7 @@ void dfs(int n, int step) {
         cout << n << endl;
         exit(0);
     }
-    if (step == 2)
-        return;
+    if (step == 2) return;
     for (auto &i : num) {
         ans.push_back(i);
         dfs(n - i, step + 1);

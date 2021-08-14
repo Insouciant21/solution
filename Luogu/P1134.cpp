@@ -27,8 +27,10 @@ int countTwoFive(int n) {
 int main() {
     long long sum = 1;
     cin >> n;
-    for (int i = 1; i <= n; i++) sum = (sum * countTwoFive(i)) % 10;
-    for (int i = 1; i <= cnt; i++) sum = (sum * 2) % 10;
+    for (int i = 1; i <= n; i++)
+        sum = (sum * countTwoFive(i)) % 10;
+    for (int i = 1; i <= cnt; i++)
+        sum = (sum * 2) % 10;
     cout << sum << endl;
     return 0;
 }

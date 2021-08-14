@@ -29,8 +29,7 @@ int main() {
         for (int j = 1; j <= n; j++) {
             char m;
             cin >> m;
-            if (m == '1')
-                vis[i][j] = true;
+            if (m == '1') vis[i][j] = true;
         }
     }
     int x1, y1, x2, y2;
@@ -45,10 +44,8 @@ int main() {
         for (int i = 0; i < 4; i++) {
             Node m = run;
             m.x += mov[i].x, m.y += mov[i].y, m.step++;
-            if (m.x < 1 || m.y < 1 || m.x > n || m.y > n)
-                continue;
-            if (vis[m.x][m.y])
-                continue;
+            if (m.x < 1 || m.y < 1 || m.x > n || m.y > n) continue;
+            if (vis[m.x][m.y]) continue;
             vis[m.x][m.y] = true;
             q.push(m);
         }

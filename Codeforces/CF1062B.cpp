@@ -15,13 +15,11 @@ long long ans = 1;
 void factor(int n) {
     for (int i = 2; i * i <= n; i++) {
         if (n % i == 0) {
-            while (n % i == 0)
-                n /= i;
+            while (n % i == 0) n /= i;
             ans *= i;
         }
     }
-    if (n > 1)
-        ans *= n;
+    if (n > 1) ans *= n;
 }
 
 int main() {
@@ -33,8 +31,7 @@ int main() {
         res *= res;
         step++;
     }
-    if (res > n)
-        step++;
+    if (res > n) step++;
     printf("%d %d", ans, step);
     return 0;
 }

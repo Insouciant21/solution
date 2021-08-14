@@ -28,13 +28,10 @@ void add(int p) {
 int main() {
     string x;
     cin >> x;
-    for (int i = 0; i < x.length(); i++)
-        num.push_back(x[i] - '0');
+    for (int i = 0; i < x.length(); i++) num.push_back(x[i] - '0');
     while (num.size() != 1) {
-        if (num.back() == 1)
-            add(num.size() - 1);
-        else
-            num.pop_back();
+        if (num.back() == 1) add(num.size() - 1);
+        else num.pop_back();
         ans++;
     }
     cout << ans << endl;

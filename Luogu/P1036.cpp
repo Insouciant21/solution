@@ -15,20 +15,17 @@ bool vis[21];
 
 bool prime(int n) {
     for (int i = 2; i * i <= n; i++) {
-        if (n % i == 0)
-            return false;
+        if (n % i == 0) return false;
     }
     return true;
 }
 
 void dfs(int sum, int cnt, int last) {
     if (cnt == k) {
-        if (prime(sum))
-            ans++;
+        if (prime(sum)) ans++;
         return;
     }
-    if (cnt > k)
-        return;
+    if (cnt > k) return;
     for (int i = last; i <= n; i++)
         dfs(sum + num[i], cnt + 1, i + 1);
 }

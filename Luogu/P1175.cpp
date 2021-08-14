@@ -57,7 +57,8 @@ int main() {
     }
     cout << endl;
     reverse(back.begin(), back.end());
-    for (unsigned i = 0; i < back.length(); i++) last.push(back[i]);
+    for (unsigned i = 0; i < back.length(); i++)
+        last.push(back[i]);
     while (last.size()) {
         char p = last.top();
         last.pop();
@@ -68,16 +69,11 @@ int main() {
             num.pop();
             int b = num.top();
             num.pop();
-            if (p == '+')
-                num.push(a + b);
-            if (p == '-')
-                num.push(b - a);
-            if (p == '*')
-                num.push(a * b);
-            if (p == '/')
-                num.push(b / a);
-            if (p == '^')
-                num.push(pow(b, a));
+            if (p == '+') num.push(a + b);
+            if (p == '-') num.push(b - a);
+            if (p == '*') num.push(a * b);
+            if (p == '/') num.push(b / a);
+            if (p == '^') num.push(pow(b, a));
             stack<char> m(last);
             stack<int> c;
             stack<int> l(num);

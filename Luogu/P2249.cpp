@@ -14,7 +14,8 @@ int a[int(1e6) + 1];
 int main() {
     int n, m;
     scanf("%d %d", &n, &m);
-    for (int i = 1, t; i <= n; i++) scanf("%d", a + i);
+    for (int i = 1, t; i <= n; i++)
+        scanf("%d", a + i);
     for (int i = 1, t; i <= m; i++) {
         scanf("%d", &t);
         auto d = lower_bound(a + 1, a + 1 + n, t) - a;

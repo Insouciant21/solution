@@ -37,29 +37,24 @@ struct BigInteger {
 
 istream &operator>>(istream &in, BigInteger &x) {
     string p;
-    if (!(in >> p))
-        return in;
+    if (!(in >> p)) return in;
     x = p;
     return in;
 }
 
 ostream &operator<<(ostream &out, const BigInteger &x) {
     string res;
-    if (x.nega)
-        out << '-';
+    if (x.nega) out << '-';
     for (int i = int(x.num.size() - 1); i >= 0; i--) res += to_string(x.num[i]);
     out << res;
     return out;
 }
 
 bool operator<(const BigInteger &a, const BigInteger &b) {
-    if (a.num.size() < b.num.size())
-        return true;
-    else if (a.num.size() > b.num.size())
-        return false;
+    if (a.num.size() < b.num.size()) return true;
+    else if (a.num.size() > b.num.size()) return false;
     for (int i = int(a.num.size() - 1); i >= 0; i--)
-        if (a.num[i] != b.num[i])
-            return a.num[i] < b.num[i];
+        if (a.num[i] != b.num[i]) return a.num[i] < b.num[i];
     return false;
 }
 
@@ -81,18 +76,14 @@ bool operator==(const BigInteger &a, const BigInteger &b) {
 
 BigInteger operator+(BigInteger a, BigInteger b) {
     BigInteger res;
-    if (a.nega && b.nega)
-        res.nega = true;
+    if (a.nega && b.nega) res.nega = true;
     a.num.resize(max(a.num.size(), b.num.size()));
     b.num.resize(max(a.num.size(), b.num.size()));
     for (int i = 0; i < max(a.num.size(), b.num.size()); i++) res.num.push_back(a.num[i] + b.num[i]);
     for (int i = 0; i < res.num.size(); i++) {
-        if (res.num[i] < BigInteger::BASE * 10)
-            continue;
-        if (i != res.num.size() - 1)
-            res.num[i + 1] += res.num[i] % (BigInteger::BASE * 10);
-        else
-            res.num.push_back(res.num[i] % (BigInteger::BASE * 10));
+        if (res.num[i] < BigInteger::BASE * 10) continue;
+        if (i != res.num.size() - 1) res.num[i + 1] += res.num[i] % (BigInteger::BASE * 10);
+        else res.num.push_back(res.num[i] % (BigInteger::BASE * 10));
         res.num[i] %= (BigInteger::BASE * 10);
     }
     return res;

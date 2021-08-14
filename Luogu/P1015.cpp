@@ -17,8 +17,7 @@ map<char, int> value;
 bool p(const vector<int> &x) {
     vector<int> y(x);
     reverse(y.begin(), y.end());
-    if (x == y)
-        return true;
+    if (x == y) return true;
     return false;
 }
 

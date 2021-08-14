@@ -23,8 +23,7 @@ int main() {
         int diff = -1;
         vector<int> s(num);
         s.erase(next(s.begin(), i));
-        for (auto iter = s.begin() + 1; iter != s.end(); iter++)
-            diff = max(diff, *iter - *(iter - 1));
+        for (auto iter = s.begin() + 1; iter != s.end(); iter++) diff = max(diff, *iter - *(iter - 1));
         ans = min(ans, diff);
     }
     printf("%d\n", ans);

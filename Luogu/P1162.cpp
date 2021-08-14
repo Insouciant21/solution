@@ -28,8 +28,7 @@ void bfs(int x, int y, bool mode) {
     while (!q.empty()) {
         for (int i = 0; i < 4; i++) {
             int gx = q.front().first + dx[i], gy = q.front().second + dy[i];
-            if (gx < 1 || gy < 1 || gx > n || gy > n)
-                continue;
+            if (gx < 1 || gy < 1 || gx > n || gy > n) continue;
             if (mp[gx][gy] == p) {
                 if (!mode)
                     mp[gx][gy] = 9;
@@ -50,14 +49,11 @@ int main() {
     for (int i = 1; i <= n; i++) {
         if (i == 1 || i == n) {
             for (int j = 1; j <= n; j++)
-                if (mp[i][j] == 0)
-                    bfs(i, j, false);
+                if (mp[i][j] == 0) bfs(i, j, false);
         }
         else {
-            if (mp[i][0] == 0)
-                bfs(i, 0, false);
-            if (mp[i][n] == 0)
-                bfs(i, n, false);
+            if (mp[i][0] == 0) bfs(i, 0, false);
+            if (mp[i][n] == 0) bfs(i, n, false);
         }
     }
     for (int i = 1; i <= n; i++) {

@@ -19,8 +19,7 @@ int main() {
         for (int i = 0; i < k; i++) {
             kill_man += m - 1;
             kill_man %= (2 * k - i);
-            if (kill_man < k)
-                break;
+            if (kill_man < k) break;
             if (i + 1 == k) {
                 cout << m << endl;
                 return 0;

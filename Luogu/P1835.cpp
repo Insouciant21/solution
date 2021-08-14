@@ -14,7 +14,8 @@ void simpleSieve(ll limit, vector<ll> &prime) {
     for (ll i = 2; i <= limit; ++i) {
         if (mark[i] == false) {
             prime.push_back(i);
-            for (ll j = i; j <= limit; j += i) mark[j] = true;
+            for (ll j = i; j <= limit; j += i)
+                mark[j] = true;
         }
     }
 }
@@ -28,16 +29,14 @@ void primesInRange(ll low, ll high) {
     memset(mark, 0, sizeof(mark));
     for (ll i = 0; i < prime.size(); i++) {
         int loLim = floor(low / prime[i]) * prime[i];
-        if (loLim < low)
-            loLim += prime[i];
-        if (loLim == prime[i])
-            loLim += prime[i];
-        for (ll j = loLim; j <= high; j += prime[i]) mark[j - low] = true;
+        if (loLim < low) loLim += prime[i];
+        if (loLim == prime[i]) loLim += prime[i];
+        for (ll j = loLim; j <= high; j += prime[i])
+            mark[j - low] = true;
     }
     ll ans = 0;
     for (ll i = low; i <= high; i++)
-        if (!mark[i - low])
-            ans++;
+        if (!mark[i - low]) ans++;
     cout << ans << endl;
 }
 

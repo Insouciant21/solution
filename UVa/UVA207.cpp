@@ -15,8 +15,7 @@ int main() {
     int kase = 0;
     cin >> kase;
     for (int kas = 0; kas < kase; kas++) {
-        if (kas != 0)
-            cout << endl;
+        if (kas != 0) cout << endl;
         double totalReward;
         vector<Player> players;
         cin >> totalReward;
@@ -32,25 +31,21 @@ int main() {
             s.resize(40);
             t.name = s.substr(0, 20);
             t.amateur = false;
-            if (t.name.find('*') != string::npos)
-                t.amateur = true;
+            if (t.name.find('*') != string::npos) t.amateur = true;
             t.ho36 = t.ho72;
             for (int j = 0; j < 4; j++) {
                 string r = s.substr(20 + 3 * j, 3);
                 if (!sscanf(r.c_str(), "%d", &t.score[j])) {
                     t.DQ = j;
-                    if (j < 2)
-                        t.ho36 = 2147483647;
+                    if (j < 2) t.ho36 = 2147483647;
                     break;
                 }
                 else {
                     t.ho72 += t.score[j];
-                    if (j < 2)
-                        t.ho36 += t.score[j];
+                    if (j < 2) t.ho36 += t.score[j];
                 }
             }
-            if (t.ho36 != 2147483647)
-                players.push_back(t);
+            if (t.ho36 != 2147483647) players.push_back(t);
         }
         sort(players.begin(), players.end(), [](const Player &a, const Player &b) { return a.ho36 < b.ho36; });
         for (int i = 69; i < n; i++) {
@@ -61,17 +56,13 @@ int main() {
         }
         sort(players.begin(), players.begin() + n, [](const Player &a, const Player &b) {
             if (a.DQ == b.DQ && a.DQ == 100) {
-                if (a.ho72 != b.ho72)
-                    return a.ho72 < b.ho72;
+                if (a.ho72 != b.ho72) return a.ho72 < b.ho72;
                 return a.name < b.name;
             }
-            if (a.DQ == 100 && b.DQ < 100)
-                return true;
-            if (a.DQ < 100 && b.DQ == 100)
-                return false;
+            if (a.DQ == 100 && b.DQ < 100) return true;
+            if (a.DQ < 100 && b.DQ == 100) return false;
             if (a.DQ < 100 && a.DQ == b.DQ) {
-                if (a.ho72 != b.ho72)
-                    return a.ho72 < b.ho72;
+                if (a.ho72 != b.ho72) return a.ho72 < b.ho72;
                 return a.name < b.name;
             }
             return a.DQ > b.DQ;
@@ -106,8 +97,7 @@ int main() {
             for (; i < j; i++) {
                 cout << left << setw(21) << players[i].name;
                 string g = to_string(rank);
-                if (pro > 1 && have_money && !players[i].amateur)
-                    g += "T";
+                if (pro > 1 && have_money && !players[i].amateur) g += "T";
                 cout << left << setw(10) << g;
                 for (int e : players[i].score) cout << left << setw(5) << e;
                 if (!players[i].amateur && have_money) {
@@ -115,8 +105,7 @@ int main() {
                     cout << "$";
                     cout << right << setw(9) << fixed << setprecision(2) << reward / 100.0 << endl;
                 }
-                else
-                    cout << players[i].ho72 << endl;
+                else cout << players[i].ho72 << endl;
             }
         }
     }

@@ -51,12 +51,9 @@ int main() {
         for (int i = 0; i < 4; i++) {
             Node ftr = prs;
             ftr.x += dx[i], ftr.y += dy[i], ftr.step++;
-            if (ftr.x < 1 || ftr.y < 1 || ftr.x > n || ftr.y > m)
-                continue;
-            if (maze[ftr.x][ftr.y])
-                continue;
-            if (vis[ftr.x][ftr.y])
-                continue;
+            if (ftr.x < 1 || ftr.y < 1 || ftr.x > n || ftr.y > m) continue;
+            if (maze[ftr.x][ftr.y]) continue;
+            if (vis[ftr.x][ftr.y]) continue;
             q.push(ftr);
             vis[ftr.x][ftr.y] = 1;
         }

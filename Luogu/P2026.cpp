@@ -22,8 +22,7 @@ struct frac {
         int g = gcd(up, down);
         up /= g;
         down /= g;
-        if (down < 0)
-            down = -down, up = -up;
+        if (down < 0) down = -down, up = -up;
     }
 };
 
@@ -46,13 +45,11 @@ int main() {
         cout << k.up << "/" << k.down << "*x";
     if (b.up > 0) {
         cout << "+" << b.up;
-        if (b.down != 1)
-            cout << "/" << b.down;
+        if (b.down != 1) cout << "/" << b.down;
     }
     if (b.up < 0) {
         cout << b.up;
-        if (b.down != 1)
-            cout << "/" << b.down;
+        if (b.down != 1) cout << "/" << b.down;
     }
     return 0;
 }

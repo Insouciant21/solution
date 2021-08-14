@@ -37,10 +37,8 @@ int main() {
         for (int j = 1; j <= c; j++) {
             char x;
             cin >> x;
-            if (x == 'X')
-                maze[i][j] = 1;
-            if (x == '*')
-                start.x = i, start.y = j, start.step = 1;
+            if (x == 'X') maze[i][j] = 1;
+            if (x == '*') start.x = i, start.y = j, start.step = 1;
         }
     }
     cin >> n;
@@ -62,24 +60,18 @@ int main() {
         while (true) {
             p.x += run[pa[now.step]].x;
             p.y += run[pa[now.step]].y;
-            if (p.x < 1 || p.y < 1 || p.x > r || p.y > c)
-                break;
-            if (vis[p.x][p.y] == p.step)
-                continue;
-            if (maze[p.x][p.y] == 1)
-                break;
+            if (p.x < 1 || p.y < 1 || p.x > r || p.y > c) break;
+            if (vis[p.x][p.y] == p.step) continue;
+            if (maze[p.x][p.y] == 1) break;
             vis[p.x][p.y] = p.step;
             q.push(p);
         }
     }
     for (int i = 1; i <= r; i++) {
         for (int j = 1; j <= c; j++) {
-            if (maze[i][j] == -1)
-                cout << "*";
-            if (maze[i][j] == 1)
-                cout << "X";
-            if (maze[i][j] == 0)
-                cout << ".";
+            if (maze[i][j] == -1) cout << "*";
+            if (maze[i][j] == 1) cout << "X";
+            if (maze[i][j] == 0) cout << ".";
         }
         cout << endl;
     }

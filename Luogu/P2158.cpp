@@ -17,8 +17,7 @@ void work() {
     for (int i = 2; i <= n; i++) {
         if (!phi[i]) {
             for (int j = i; j <= n; j += i) {
-                if (!phi[j])
-                    phi[j] = j;
+                if (!phi[j]) phi[j] = j;
                 phi[j] = phi[j] / i * (i - 1);
             }
         }
@@ -29,7 +28,8 @@ int main() {
     long long ans = 0;
     cin >> n;
     work();
-    for (int i = 2; i < n; i++) ans += phi[i];
+    for (int i = 2; i < n; i++)
+        ans += phi[i];
     cout << ((ans == 0) ? 0 : 3 + ans * 2) << endl;
     return 0;
 }

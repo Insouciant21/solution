@@ -15,11 +15,11 @@ int ans;
 
 void dfs(int n, int i, int a) {
     if (i == k) {
-        if (n == l)
-            ans++;
+        if (n == l) ans++;
         return;
     }
-    for (int j = a; n + (k - i) * j <= l; j++) dfs(n + j, i + 1, j);
+    for (int j = a; n + (k - i) * j <= l; j++)
+        dfs(n + j, i + 1, j);
 }
 int main() {
     cin >> l >> k;

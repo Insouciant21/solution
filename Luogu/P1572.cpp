@@ -55,12 +55,12 @@ vector<Frac> l;
 int main() {
     ios::sync_with_stdio(false);
     getline(cin, expr);
-    if (expr[0] == '-')
-        expr.insert(0, "0/1");
+    if (expr[0] == '-') expr.insert(0, "0/1");
     expr = regex_replace(expr, regex("-"), "+-");
     stringstream ss(expr);
     string t;
-    while (getline(ss, t, '+')) l.push_back(Frac(t));
+    while (getline(ss, t, '+'))
+        l.push_back(Frac(t));
     Frac sum;
     for_each(l.begin(), l.end(), [&](Frac x) { sum = sum + x; });
     sum.simplify();

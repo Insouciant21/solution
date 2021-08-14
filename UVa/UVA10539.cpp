@@ -12,13 +12,11 @@ long long l, r;
 int t;
 
 void preWork() {
-    numList[0] = numList[1] = 1;
+    numList[0] = numList[1] = true;
     for (long long i = 2; i < maxn; i++) {
         if (!numList[i]) {
-            for (int j = 2; i * j < maxn; j++)
-                numList[i * j] = 1;
-            for (long long x = i * i; x < maxp; x *= i)
-                num.push_back(x);
+            for (int j = 2; i * j < maxn; j++) numList[i * j] = true;
+            for (long long x = i * i; x < maxp; x *= i) num.push_back(x);
         }
     }
 }

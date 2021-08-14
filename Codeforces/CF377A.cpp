@@ -54,10 +54,8 @@ int main() {
                 }
                 return 0;
             }
-            if (ftr.x < 1 || ftr.y < 1 || ftr.x > n || ftr.y > m)
-                continue;
-            if (maze[ftr.x][ftr.y] != 'X')
-                continue;
+            if (ftr.x < 1 || ftr.y < 1 || ftr.x > n || ftr.y > m) continue;
+            if (maze[ftr.x][ftr.y] != 'X') continue;
             maze[ftr.x][ftr.y] = '.';
             q.push(ftr);
             cnt++;

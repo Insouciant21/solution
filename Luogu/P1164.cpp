@@ -16,10 +16,12 @@ int a[1001];
 
 int main() {
     cin >> n >> m;
-    for (int i = 0; i < n; i++) cin >> a[i];
+    for (int i = 0; i < n; i++)
+        cin >> a[i];
     dp[0] = 1;
     for (int i = 0; i < n; i++)
-        for (int j = m; j >= a[i]; j--) dp[j] = dp[j] + dp[j - a[i]];
+        for (int j = m; j >= a[i]; j--)
+            dp[j] = dp[j] + dp[j - a[i]];
     cout << dp[m] << endl;
     return 0;
 }

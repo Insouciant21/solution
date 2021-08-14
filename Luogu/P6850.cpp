@@ -13,8 +13,7 @@ int main() {
     int a, b, c, d, e, f, g, h, i;
     cin >> a >> b >> c >> d >> e >> f >> g >> h >> i;
     int res = a + 50 + b + c + d + e + f + g;
-    if (h)
-        res += 5;
+    if (h) res += 5;
     if (res >= i)
         cout << "AKIOI" << endl;
     else

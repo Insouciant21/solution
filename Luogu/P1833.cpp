@@ -24,8 +24,7 @@ int main() {
     for (int i = 1; i <= n; i++) {
         int t1, t2, t3, p = 1;
         scanf("%d %d %d", &t1, &t2, &t3);
-        if (t3 == 0)
-            t3 = maxn - 2;
+        if (t3 == 0) t3 = maxn - 2;
         while (t3 - p > 0) {
             t3 -= p;
             t[++cnt] = t1 * p;
@@ -36,7 +35,8 @@ int main() {
         c[cnt] = t2 * t3;
     }
     for (int i = 1; i <= cnt; i++)
-        for (int j = ti; j >= t[i]; j--) dp[j] = max(dp[j], dp[j - t[i]] + c[i]);
+        for (int j = ti; j >= t[i]; j--)
+            dp[j] = max(dp[j], dp[j - t[i]] + c[i]);
     printf("%d\n", dp[ti]);
     return 0;
 }

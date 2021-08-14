@@ -50,8 +50,7 @@ int Month(int month, int year) {
         case 12:
             return 31;
         case 2:
-            if (leapYear(year))
-                return 29;
+            if (leapYear(year)) return 29;
             return 28;
         default:
             return 30;
@@ -62,19 +61,24 @@ void Time::getLast() {
     long long cnt = 0;
     const long long m = 3600 * 24;
     cnt += Month(month, year) * 24 * 3600 - ((day - 1) * 24 * 3600 + hour * 3600 + minute * 60 + second);
-    for (int i = month + 1; i <= 12; i++) cnt += Month(i, year) * m;
+    for (int i = month + 1; i <= 12; i++)
+        cnt += Month(i, year) * m;
     int i;
-    for (i = year + 1; cnt <= max; i++) cnt += m * (365 + leapYear(i));
+    for (i = year + 1; cnt <= max; i++)
+        cnt += m * (365 + leapYear(i));
     (leapYear(i - 1)) ? cnt -= m * 366 : cnt -= m * 365;
     year = i - 1, month = 1, day = 1, hour = 0, minute = 0, second = 0;
     max -= cnt;
-    for (i = 1; max > 0; i++) max -= Month(i, year) * m;
+    for (i = 1; max > 0; i++)
+        max -= Month(i, year) * m;
     max += Month(i - 1, year) * m;
     month = i - 1;
-    for (i = 1; max > 0; i++) max -= m;
+    for (i = 1; max > 0; i++)
+        max -= m;
     max += m;
     day = i - 1;
-    for (i = 0; max > 0; i++) max -= 3600;
+    for (i = 0; max > 0; i++)
+        max -= 3600;
     max += 3600;
     hour = i - 1;
     minute = max / 60;
@@ -90,9 +94,11 @@ int main() {
         cin >> data.bit >> data.year >> data.month >> data.day >> data.hour >> data.minute >> data.second;
         data.getMax();
         data.getLast();
-        if (data.year == 3217 && data.month == 3 && data.day == 3 && data.hour == 6 && data.minute == 32 && data.second == 33)
+        if (data.year == 3217 && data.month == 3 && data.day == 3 && data.hour == 6 && data.minute == 32 &&
+            data.second == 33)
             data.day = 2;
-        if (data.year == 6460 && data.month == 11 && data.day == 13 && data.hour == 20 && data.minute == 7 && data.second == 50)
+        if (data.year == 6460 && data.month == 11 && data.day == 13 && data.hour == 20 && data.minute == 7 &&
+            data.second == 50)
             data.day = 12;
         data.print();
     }

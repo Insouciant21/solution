@@ -29,8 +29,7 @@ int main() {
     double value = 0;
     int i = 0;
     while (true) {
-        if (weight + 1 > t || i >= n)
-            break;
+        if (weight + 1 > t || i >= n) break;
         if (hole[i].m != 0) {
             hole[i].m--;
             weight++;

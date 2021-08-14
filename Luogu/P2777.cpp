@@ -16,11 +16,11 @@ int ans;
 int main() {
     ios::sync_with_stdio(0);
     cin >> n;
-    for (int i = 0; i < n; i++) cin >> sc[i];
+    for (int i = 0; i < n; i++)
+        cin >> sc[i];
     sort(sc, sc + n);
     for (int i = 0; i < n; i++) {
-        if (sc[i] + n > sc[n - 1])
-            ans++;
+        if (sc[i] + n > sc[n - 1]) ans++;
     }
     cout << ans << endl;
     return 0;

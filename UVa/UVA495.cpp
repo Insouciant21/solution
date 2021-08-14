@@ -10,12 +10,10 @@ class BigInteger {
 
    public:
     BigInteger() {
-        for (int i = 0; i <= LEN; i++)
-            digit[i] = 0;
+        for (int i = 0; i <= LEN; i++) digit[i] = 0;
     }
     explicit BigInteger(int x) {
-        for (int i = 0; i <= LEN; i++)
-            digit[i] = 0;
+        for (int i = 0; i <= LEN; i++) digit[i] = 0;
         int t = x;
         int length = 1;
         int len = 0;
@@ -33,8 +31,7 @@ class BigInteger {
     }
     int getLength() {
         for (int i = LEN; i >= 0; i--)
-            if (digit[i] != 0)
-                return i;
+            if (digit[i] != 0) return i;
         return 0;
     }
     friend BigInteger operator+(BigInteger x, BigInteger y);
@@ -55,8 +52,7 @@ BigInteger operator+(BigInteger x, BigInteger y) {
 
 void print(int n, BigInteger &res) {
     printf("The Fibonacci number for %d is ", n);
-    for (int i = res.getLength(); i >= 0; i--)
-        printf("%d", res.digit[i]);
+    for (int i = res.getLength(); i >= 0; i--) printf("%d", res.digit[i]);
     printf("\n");
 }
 

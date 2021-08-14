@@ -16,12 +16,10 @@ int dpc = 0;
 void make_prime() {
     int cnt = 0;
     for (int i = 2; i < 100000001; i++) {
-        if (!num[i])
-            prime[cnt++] = i;
+        if (!num[i]) prime[cnt++] = i;
         for (int j = 0; j < cnt && i * prime[j] < 100000001; j++) {
             num[i * prime[j]] = 1;
-            if (i % prime[j] == 0)
-                break;
+            if (i % prime[j] == 0) break;
         }
     }
     for (int i = 0; i < cnt; i++) {
@@ -31,8 +29,7 @@ void make_prime() {
             sum += p % 10;
             p /= 10;
         }
-        if (!num[sum])
-            prime[dpc++] = prime[i];
+        if (!num[sum]) prime[dpc++] = prime[i];
     }
 }
 

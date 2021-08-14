@@ -20,15 +20,13 @@ int main() {
         a.push_back(t);
     }
     sort(a.begin(), a.end(), greater<long long>());
-    if (n > 6)
-        a.erase(unique(a.begin(), a.end()), a.end());
+    if (n > 6) a.erase(unique(a.begin(), a.end()), a.end());
     while (a.size() != 0) {
         vector<int> x;
         do {
             x.push_back(a.back());
             a.pop_back();
-            if (a.size() == 0)
-                break;
+            if (a.size() == 0) break;
         } while (x.back() == a.back() - 1);
         ans.push_back(x.size());
         x.clear();

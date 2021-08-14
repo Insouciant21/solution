@@ -26,16 +26,11 @@ int main() {
         usea[l]++, useb[r]++;
     }
     for (int i = 1; i <= int(1e6); i++) {
-        if (usea[i] == 1 && useb[i] == 0)
-            ans[1] = i;
-        if (useb[i] == 1 && usea[i] == 0)
-            ans[n] = i;
-        if (ans[1] && ans[n])
-            break;
+        if (usea[i] == 1 && useb[i] == 0) ans[1] = i;
+        if (useb[i] == 1 && usea[i] == 0) ans[n] = i;
+        if (ans[1] && ans[n]) break;
     }
-    for (int i = 2; i <= n; i++)
-        ans[i] = f[ans[i - 2]];
-    for (int i = 1; i <= n; i++)
-        printf("%d ", ans[i]);
+    for (int i = 2; i <= n; i++) ans[i] = f[ans[i - 2]];
+    for (int i = 1; i <= n; i++) printf("%d ", ans[i]);
     return 0;
 }

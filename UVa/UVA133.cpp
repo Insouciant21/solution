@@ -8,24 +8,21 @@ int k, m;
 
 int go(int position, int direction, int step) {
     while (step--) {
-        do {
-            position = (position + direction + n - 1) % n + 1;
-        } while (c[position] == -1);
+        do position = (position + direction + n - 1) % n + 1;
+        while (c[position] == -1);
     }
     return position;
 }
 
 int main() {
     while (scanf("%d %d %d", &n, &k, &m) == 3 && n) {
-        for (int i = 1; i <= n; i++)
-            c[i] = i;
+        for (int i = 1; i <= n; i++) c[i] = i;
         int left = n;
         int a = n, b = 1;
         while (left) {
             a = go(a, 1, k);
             b = go(b, -1, m);
-            if (left != n)
-                printf(",");
+            if (left != n) printf(",");
             left--;
             printf("%3d", c[a]);
             if (a != b) {

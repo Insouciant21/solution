@@ -10,10 +10,8 @@
 using namespace std;
 
 bool validate(int m, int d) {
-    if ((m == 9 || m == 10) && d == 30)
-        return 1;
-    if ((m + d) % 2 == 0)
-        return 1;
+    if ((m == 9 || m == 10) && d == 30) return 1;
+    if ((m + d) % 2 == 0) return 1;
     return 0;
 }
 

@@ -36,10 +36,8 @@ void bfs(Node st) {
         for (int i = 0; i < 8; i++) {
             Node nt = now;
             nt.x += mov[i].x, nt.y += mov[i].y;
-            if (nt.x < 1 || nt.y < 1 || nt.x > n || nt.y > n)
-                continue;
-            if (vis[nt.x][nt.y])
-                continue;
+            if (nt.x < 1 || nt.y < 1 || nt.x > n || nt.y > n) continue;
+            if (vis[nt.x][nt.y]) continue;
             if (mp[nt.x][nt.y] == mid) {
                 vis[nt.x][nt.y] = true;
                 q.push(nt);
@@ -48,8 +46,7 @@ void bfs(Node st) {
         for (int i = 0; i < 8; i++) {
             Node nt = now;
             nt.x += mov[i].x, nt.y += mov[i].y;
-            if (nt.x < 1 || nt.y < 1 || nt.x > n || nt.y > n)
-                continue;
+            if (nt.x < 1 || nt.y < 1 || nt.x > n || nt.y > n) continue;
             if (mp[nt.x][nt.y] > mid)
                 high = true;
             else if (mp[nt.x][nt.y] < mid)
@@ -62,16 +59,14 @@ int main() {
     int cnt = 0;
     cin >> n;
     for (int i = 1; i <= n; i++)
-        for (int j = 1; j <= n; j++) cin >> mp[i][j];
+        for (int j = 1; j <= n; j++)
+            cin >> mp[i][j];
     for (int i = 1; i <= n; i++) {
         for (int j = 1; j <= n; j++) {
-            if (vis[i][j])
-                continue;
+            if (vis[i][j]) continue;
             bfs({i, j});
-            if (low && !high)
-                ansh++;
-            if (!low && high)
-                ansl++;
+            if (low && !high) ansh++;
+            if (!low && high) ansl++;
             low = high = 0;
             cnt++;
         }

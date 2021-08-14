@@ -16,14 +16,12 @@ int n;
 
 void dfs(int step, unsigned long long last) {
     if (step > n) {
-        for (int i = 1; i <= n; i++)
-            cout << arr[i] << " ";
+        for (int i = 1; i <= n; i++) cout << arr[i] << " ";
         cout << endl;
         exit(0);
     }
     for (int i = 1; i <= n; i++) {
-        if (vis[i])
-            continue;
+        if (vis[i]) continue;
         if ((last % 3 == 0 && p[i] * 3 == last) || (last * 2 == p[i])) {
             vis[i] = 1;
             arr[step] = p[i];
@@ -35,8 +33,7 @@ void dfs(int step, unsigned long long last) {
 
 int main() {
     cin >> n;
-    for (int i = 1; i <= n; i++)
-        cin >> p[i];
+    for (int i = 1; i <= n; i++) cin >> p[i];
     for (int i = 1; i <= n; i++) {
         vis[i] = 1;
         arr[1] = p[i];

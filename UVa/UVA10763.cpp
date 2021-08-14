@@ -8,8 +8,7 @@ int main() {
     ios::sync_with_stdio(false);
     while (true) {
         cin >> n;
-        if (!n)
-            break;
+        if (!n) break;
         vector<int> f1, f2;
         while (n--) {
             int t1, t2;
@@ -18,10 +17,8 @@ int main() {
         }
         sort(f1.begin(), f1.end());
         sort(f2.begin(), f2.end());
-        if (f1 == f2)
-            cout << "YES" << endl;
-        else
-            cout << "NO" << endl;
+        if (f1 == f2) cout << "YES" << endl;
+        else cout << "NO" << endl;
     }
     return 0;
 }

@@ -28,8 +28,7 @@ int main() {
     for (int i = 0; i <= 1000; i++) {
         for (int j = 0; j <= 1000; j++) {
             int k = i + j;
-            if (numOfMatches(i) + numOfMatches(j) + numOfMatches(k) + 4 == n)
-                ans++;
+            if (numOfMatches(i) + numOfMatches(j) + numOfMatches(k) + 4 == n) ans++;
         }
     }
     cout << ans << endl;

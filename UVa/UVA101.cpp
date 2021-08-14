@@ -14,8 +14,7 @@ vector<int> blocks[25];
 Point find_block(int id) {
     for (int i = 0; i < n; i++)
         for (int j = 0; j < blocks[i].size(); j++)
-            if (blocks[i][j] == id)
-                return {i, j};
+            if (blocks[i][j] == id) return {i, j};
 }
 
 void restore(Point k) {
@@ -55,12 +54,9 @@ int main() {
         cin >> k1 >> p2 >> k2;
         Point a = find_block(k1);
         Point b = find_block(k2);
-        if (a.p == b.p)
-            continue;
-        if (p2 == "onto")
-            restore(b);
-        if (p1 == "move")
-            restore(a);
+        if (a.p == b.p) continue;
+        if (p2 == "onto") restore(b);
+        if (p1 == "move") restore(a);
         move(a, b.p);
     }
     return 0;

@@ -16,12 +16,15 @@ int q[maxn], a[maxn];
 int main() {
     int n, k;
     scanf("%d%d", &n, &k);
-    for (int i = 0; i < n; i++) scanf("%d", &a[i]);
+    for (int i = 0; i < n; i++)
+        scanf("%d", &a[i]);
     int head = 0, tail = 0;
     cout << 0 << endl;
     for (int i = 0; i < n - 1; i++) {
-        while (head <= tail && q[head] <= i - k) head++;
-        while (tail >= head && a[i] < a[q[tail]]) tail--;
+        while (head <= tail && q[head] <= i - k)
+            head++;
+        while (tail >= head && a[i] < a[q[tail]])
+            tail--;
         q[++tail] = i;
         printf("%d\n", a[q[head]]);
     }

@@ -17,11 +17,9 @@ void work() {
     while (true) {
         dec.push_back(n / d);
         int x = n % d;
-        if (x == 0)
-            break;
+        if (x == 0) break;
         p = distance(rem.begin(), find(rem.begin(), rem.end(), x));
-        if (p != rem.size())
-            break;
+        if (p != rem.size()) break;
         p = 0x3f3f3f;
         rem.push_back(x);
         n = x * 10;
@@ -34,8 +32,7 @@ void work() {
         string x = to_string(dec[0]);
         cnt = x.length() + 1;
         for (unsigned i = 1; i < dec.size(); i++) {
-            if (cnt % 76 == 0)
-                cout << endl;
+            if (cnt % 76 == 0) cout << endl;
             if (p + 1 == i) {
                 cout << "(";
                 cnt++;
@@ -43,8 +40,7 @@ void work() {
             cout << dec[i];
             cnt++;
         }
-        if (p != 0x3f3f3f)
-            cout << ")";
+        if (p != 0x3f3f3f) cout << ")";
     }
     return;
 }

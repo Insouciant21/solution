@@ -39,8 +39,7 @@ int getDayOfMonth(int x, int y) {
         case 12:
             return 31;
         case 2:
-            if (leapYear(y))
-                return 29;
+            if (leapYear(y)) return 29;
             return 28;
         default:
             return 30;
@@ -55,7 +54,8 @@ void remaining() {
             nLeap++;
     }
     long long x = leap * 366 * 24 * 60 + nLeap * 365 * 24 * 60;
-    for (int i = 1; i < mo1; i++) x += getDayOfMonth(i, year1) * 24 * 60;
+    for (int i = 1; i < mo1; i++)
+        x += getDayOfMonth(i, year1) * 24 * 60;
     leap = 0, nLeap = 0;
     x += (d1 - 1) * 24 * 60 + h1 * 60 + mi1;
     for (int i = 0; i < y2; i++) {
@@ -65,7 +65,8 @@ void remaining() {
             nLeap++;
     }
     long long y = leap * 366 * 24 * 60 + nLeap * 365 * 24 * 60;
-    for (int i = 1; i < mo2; i++) y += getDayOfMonth(i, y2) * 24 * 60;
+    for (int i = 1; i < mo2; i++)
+        y += getDayOfMonth(i, y2) * 24 * 60;
     y += (d2 - 1) * 24 * 60 + h2 * 60 + mi2;
     timer = y - x;
 }
@@ -83,11 +84,9 @@ int main() {
     remaining();
     while (true) {
         past += p.top();
-        if (past > timer)
-            break;
+        if (past > timer) break;
         cnt++;
-        if (cnt == n)
-            break;
+        if (cnt == n) break;
         p.pop();
     }
     cout << cnt << endl;

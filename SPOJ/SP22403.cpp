@@ -17,12 +17,10 @@ void prepare_table() {
     const int maxn = 5e4 + 1;
     bitset<int(5e4) + 1> a;
     for (int i = 2; i < maxn; i++) {
-        if (!a[i])
-            prime[++cnt] = i;
+        if (!a[i]) prime[++cnt] = i;
         for (int j = 1; j <= cnt && i * prime[j] < maxn; j++) {
             a[i * prime[j]] = 1;
-            if (i % prime[j] == 0)
-                break;
+            if (i % prime[j] == 0) break;
         }
     }
 }

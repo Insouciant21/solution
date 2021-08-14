@@ -20,12 +20,9 @@ int main() {
     cin >> n;
     for (int i = 1; i <= n; i++) {
         cin >> name[i] >> oper;
-        if (oper == "UP")
-            down.push_back(i);
-        if (oper == "DOWN")
-            up.push_back(i);
-        if (oper == "SAME")
-            same[i] = true;
+        if (oper == "UP") down.push_back(i);
+        if (oper == "DOWN") up.push_back(i);
+        if (oper == "SAME") same[i] = true;
     }
     for (int i = 1; i <= n; i++) {
         if (same[i])

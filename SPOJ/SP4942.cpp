@@ -20,8 +20,7 @@ void factor(long long n) {
             printf("%lld^%d ", i, cnt);
         }
     }
-    if (n > 1)
-        printf("%lld^1", n);
+    if (n > 1) printf("%lld^1", n);
     printf("\n");
 }
 
@@ -29,8 +28,7 @@ int main() {
     while (true) {
         long long n;
         scanf("%lld", &n);
-        if (!n)
-            break;
+        if (!n) break;
         factor(n);
     }
     return 0;

@@ -20,13 +20,11 @@ int main() {
     for (int i = 1; i <= n; i++) {
         scanf("%d", num + i);
         cnt[num[i]]++;
-        if (cnt[num[i]] > 1)
-            ans++;
+        if (cnt[num[i]] > 1) ans++;
     }
     printf("%d\n", ans);
     for (int i = 1; i <= n; i++)
-        if (cnt[i] == 0)
-            q.push(i);
+        if (cnt[i] == 0) q.push(i);
     for (int i = 1; i <= n; i++) {
         if (cnt[num[i]] > 1) {
             if (q.top() < num[i] || (q.top() > num[i] && skip[num[i]])) {
@@ -34,11 +32,9 @@ int main() {
                 num[i] = q.top();
                 q.pop();
             }
-            else if (q.top() > num[i] && !skip[num[i]])
-                skip[num[i]] = true;
+            else if (q.top() > num[i] && !skip[num[i]]) skip[num[i]] = true;
         }
     }
-    for (int i = 1; i <= n; i++)
-        printf("%d ", num[i]);
+    for (int i = 1; i <= n; i++) printf("%d ", num[i]);
     return 0;
 }

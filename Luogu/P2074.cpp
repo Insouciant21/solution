@@ -24,12 +24,10 @@ int main() {
         int cnt = 0;
         for (int j = max(x - t, 1); j <= min(x + t, n); j++) {
             for (int k = max(y - t, 1); k <= min(y + t, m); k++) {
-                if (distance(j, k, x, y) <= t)
-                    cnt++;
+                if (distance(j, k, x, y) <= t) cnt++;
             }
         }
-        if (cnt > ans)
-            ans = cnt;
+        if (cnt > ans) ans = cnt;
     }
     printf("%d\n", ans);
     return 0;

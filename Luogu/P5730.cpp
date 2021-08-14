@@ -9,7 +9,8 @@ int main() {
     cin >> n >> m;
     vector<vector<bool>> mon(3 * n + n - 1, vector<bool>(5));
     for (int i = 0; i < 3 * n + n - 1; i++) {
-        for (int j = 0; j < 5; j++) mon[i][j] = 0;
+        for (int j = 0; j < 5; j++)
+            mon[i][j] = 0;
     }
     int row = 0, col = 0;
     for (int i = 0; i < n; i++) {
@@ -25,7 +26,8 @@ int main() {
                 break;
             }
             case '1': {
-                for (int i = 0; i < 5; i++) mon[row + 2][i] = 1;
+                for (int i = 0; i < 5; i++)
+                    mon[row + 2][i] = 1;
                 row += 4;
                 break;
             }
@@ -52,8 +54,10 @@ int main() {
                 break;
             }
             case '4': {
-                for (int i = 0; i < 5; i++) mon[row + 2][i] = 1;
-                for (int i = 0; i < 3; i++) mon[row][i] = 1;
+                for (int i = 0; i < 5; i++)
+                    mon[row + 2][i] = 1;
+                for (int i = 0; i < 3; i++)
+                    mon[row][i] = 1;
                 mon[row + 1][2] = 1;
                 row += 4;
                 break;
@@ -82,7 +86,8 @@ int main() {
                 break;
             }
             case '7': {
-                for (int i = 0; i < 5; i++) mon[row + 2][i] = 1;
+                for (int i = 0; i < 5; i++)
+                    mon[row + 2][i] = 1;
                 mon[row][0] = 1;
                 mon[row + 1][0] = 1;
                 row += 4;

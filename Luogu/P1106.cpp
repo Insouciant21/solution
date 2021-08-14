@@ -26,8 +26,7 @@ int main() {
         }
     }
     n.erase(0, n.find_first_not_of('0'));
-    if (n.length() == 0)
-        n = "0";
+    if (n.length() == 0) n = "0";
     cout << n << endl;
     return 0;
 }

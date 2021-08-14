@@ -33,7 +33,6 @@ int main() {
         out[t] = 1;
     }
     for (auto i = stu.begin(); i != stu.end(); i++)
-        if (!out[*i])
-            cout << *i << " ";
+        if (!out[*i]) cout << *i << " ";
     return 0;
 }

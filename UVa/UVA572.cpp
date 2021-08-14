@@ -23,12 +23,9 @@ void bfs(int x, int y) {
         for (int i = 0; i < 8; i++) {
             int nx = now.first, ny = now.second;
             nx += dx[i], ny += dy[i];
-            if (nx < 1 || ny < 1 || nx > m || ny > n)
-                continue;
-            if (oil[nx][ny])
-                continue;
-            if (vis[nx][ny])
-                continue;
+            if (nx < 1 || ny < 1 || nx > m || ny > n) continue;
+            if (oil[nx][ny]) continue;
+            if (vis[nx][ny]) continue;
             vis[nx][ny] = true;
             q.push({nx, ny});
         }
@@ -38,8 +35,7 @@ void bfs(int x, int y) {
 void search() {
     for (int i = 1; i <= m; i++) {
         for (int j = 1; j <= n; j++) {
-            if (vis[i][j])
-                continue;
+            if (vis[i][j]) continue;
             if (!oil[i][j]) {
                 bfs(i, j);
                 ans++;
@@ -51,8 +47,7 @@ void search() {
 int main() {
     while (true) {
         cin >> m >> n;
-        if (!m && !n)
-            break;
+        if (!m && !n) break;
         ans = 0;
         memset(vis, 0, sizeof(vis));
         memset(oil, 0, sizeof(oil));

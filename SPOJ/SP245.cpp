@@ -12,16 +12,11 @@ struct BigInteger {
     vector<int> s;
 
     BigInteger &clean() {
-        while (!s.back() && s.size() > 1)
-            s.pop_back();
+        while (!s.back() && s.size() > 1) s.pop_back();
         return *this;
     }
-    BigInteger(LL num = 0) {
-        *this = num;
-    }
-    BigInteger(string s) {
-        *this = s;
-    }
+    BigInteger(LL num = 0) { *this = num; }
+    BigInteger(string s) { *this = s; }
     BigInteger &operator=(long long num) {
         s.clear();
         do {
@@ -46,13 +41,10 @@ struct BigInteger {
         BigInteger c;
         c.s.clear();
         for (int i = 0, g = 0;; i++) {
-            if (g == 0 && i >= s.size() && i >= b.s.size())
-                break;
+            if (g == 0 && i >= s.size() && i >= b.s.size()) break;
             int x = g;
-            if (i < s.size())
-                x += s[i];
-            if (i < b.s.size())
-                x += b.s[i];
+            if (i < s.size()) x += s[i];
+            if (i < b.s.size()) x += b.s[i];
             c.s.push_back(x % BASE);
             g = x / BASE;
         }
@@ -63,17 +55,14 @@ struct BigInteger {
         BigInteger c;
         c.s.clear();
         for (int i = 0, g = 0;; i++) {
-            if (g == 0 && i >= s.size() && i >= b.s.size())
-                break;
+            if (g == 0 && i >= s.size() && i >= b.s.size()) break;
             int x = s[i] + g;
-            if (i < b.s.size())
-                x -= b.s[i];
+            if (i < b.s.size()) x -= b.s[i];
             if (x < 0) {
                 g = -1;
                 x += BASE;
             }
-            else
-                g = 0;
+            else g = 0;
             c.s.push_back(x);
         }
         return c.clean();
@@ -85,11 +74,9 @@ struct BigInteger {
         BigInteger c;
         c.s.clear();
         for (i = 0; i < s.size(); i++)
-            for (j = 0; j < b.s.size(); j++)
-                v[i + j] += LL(s[i]) * b.s[j];
+            for (j = 0; j < b.s.size(); j++) v[i + j] += LL(s[i]) * b.s[j];
         for (i = 0, g = 0;; i++) {
-            if (g == 0 && i >= v.size())
-                break;
+            if (g == 0 && i >= v.size()) break;
             LL x = v[i] + g;
             c.s.push_back(x % BASE);
             g = x / BASE;
@@ -123,13 +110,10 @@ struct BigInteger {
         while (1) {
             x = (L + R) >> 1;
             if (b * x <= m) {
-                if (b * (x + 1) > m)
-                    return x;
-                else
-                    L = x;
+                if (b * (x + 1) > m) return x;
+                else L = x;
             }
-            else
-                R = x;
+            else R = x;
         }
     }
     BigInteger &operator+=(const BigInteger &b) {
@@ -154,28 +138,16 @@ struct BigInteger {
     }
 
     bool operator<(const BigInteger &b) const {
-        if (s.size() != b.s.size())
-            return s.size() < b.s.size();
+        if (s.size() != b.s.size()) return s.size() < b.s.size();
         for (int i = s.size() - 1; i >= 0; i--)
-            if (s[i] != b.s[i])
-                return s[i] < b.s[i];
+            if (s[i] != b.s[i]) return s[i] < b.s[i];
         return false;
     }
-    bool operator>(const BigInteger &b) const {
-        return b < *this;
-    }
-    bool operator<=(const BigInteger &b) const {
-        return !(b < *this);
-    }
-    bool operator>=(const BigInteger &b) const {
-        return !(*this < b);
-    }
-    bool operator!=(const BigInteger &b) const {
-        return b < *this || *this < b;
-    }
-    bool operator==(const BigInteger &b) const {
-        return !(b < *this) && !(b > *this);
-    }
+    bool operator>(const BigInteger &b) const { return b < *this; }
+    bool operator<=(const BigInteger &b) const { return !(b < *this); }
+    bool operator>=(const BigInteger &b) const { return !(*this < b); }
+    bool operator!=(const BigInteger &b) const { return b < *this || *this < b; }
+    bool operator==(const BigInteger &b) const { return !(b < *this) && !(b > *this); }
 };
 
 ostream &operator<<(ostream &out, const BigInteger &x) {
@@ -183,16 +155,14 @@ ostream &operator<<(ostream &out, const BigInteger &x) {
     for (int i = x.s.size() - 2; i >= 0; i--) {
         char buf[20];
         sprintf(buf, "%08d", x.s[i]);
-        for (int j = 0; j < strlen(buf); j++)
-            out << buf[j];
+        for (int j = 0; j < strlen(buf); j++) out << buf[j];
     }
     return out;
 }
 
 istream &operator>>(istream &in, BigInteger &x) {
     string s;
-    if (!(in >> s))
-        return in;
+    if (!(in >> s)) return in;
     x = s;
     return in;
 }
@@ -211,10 +181,8 @@ int main() {
                 cout << mid << endl;
                 break;
             }
-            else if (res < n)
-                l = mid + 1;
-            else
-                r = mid - 1;
+            else if (res < n) l = mid + 1;
+            else r = mid - 1;
             mid = (l + r) / 2;
         }
     }

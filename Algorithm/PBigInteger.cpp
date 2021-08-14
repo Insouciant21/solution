@@ -14,8 +14,7 @@ class BigInteger {
     }
     int getLength() {
         for (int i = LEN; i >= 0; i--)
-            if (digit[i] != 0)
-                return i;
+            if (digit[i] != 0) return i;
         return 0;
     }
     friend BigInteger operator+(BigInteger x, BigInteger y);
@@ -48,8 +47,7 @@ BigInteger operator-(BigInteger x, BigInteger y) {
             swap(x, y);
             break;
         }
-        if (x.digit[i] > y.digit[i])
-            break;
+        if (x.digit[i] > y.digit[i]) break;
     }
     for (int i = 0; i <= LEN; i++) {
         res.digit[i] += x.digit[i] - y.digit[i];
@@ -129,8 +127,7 @@ istream &operator>>(istream &in, BigInteger &r) {
     }
     int x = res.length() - 1, y = res.length() - 1;
     for (char re : res) r.digit[x--] = re - '0';
-    if (nega)
-        r.digit[y] = -r.digit[y];
+    if (nega) r.digit[y] = -r.digit[y];
     return in;
 }
 

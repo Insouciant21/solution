@@ -28,16 +28,11 @@ int main() {
         stu.push_back(tmp_stu);
         wes.push_back(tmp_wes);
         reward.push_back(0);
-        if (avg_score[i] > 80 && pap[i] >= 1)
-            reward[i] += 8000;
-        if (avg_score[i] > 85 && cla_score[i] > 80)
-            reward[i] += 4000;
-        if (avg_score[i] > 90)
-            reward[i] += 2000;
-        if (avg_score[i] > 85 && wes[i] == 'Y')
-            reward[i] += 1000;
-        if (cla_score[i] > 80 && stu[i] == 'Y')
-            reward[i] += 850;
+        if (avg_score[i] > 80 && pap[i] >= 1) reward[i] += 8000;
+        if (avg_score[i] > 85 && cla_score[i] > 80) reward[i] += 4000;
+        if (avg_score[i] > 90) reward[i] += 2000;
+        if (avg_score[i] > 85 && wes[i] == 'Y') reward[i] += 1000;
+        if (cla_score[i] > 80 && stu[i] == 'Y') reward[i] += 850;
         index.push_back(reward[i]);
         total += reward[i];
     }

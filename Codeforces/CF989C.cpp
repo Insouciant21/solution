@@ -18,8 +18,7 @@ void work(char type) {
             for (int j = 1; j <= 50; j += 2) {
                 mp[i][j] = 'A';
                 a--;
-                if (!a)
-                    return;
+                if (!a) return;
             }
         }
     }
@@ -28,8 +27,7 @@ void work(char type) {
             for (int j = 1; j <= 50; j += 2) {
                 mp[i][j] = 'B';
                 b--;
-                if (!b)
-                    return;
+                if (!b) return;
             }
         }
     }
@@ -38,8 +36,7 @@ void work(char type) {
             for (int j = 1; j <= 50; j += 2) {
                 mp[i][j] = 'C';
                 c--;
-                if (!c)
-                    return;
+                if (!c) return;
             }
         }
     }
@@ -48,8 +45,7 @@ void work(char type) {
             for (int j = 1; j <= 50; j += 2) {
                 mp[i][j] = 'D';
                 d--;
-                if (!d)
-                    return;
+                if (!d) return;
             }
         }
     }
@@ -61,29 +57,18 @@ int main() {
     for (int i = 1; i <= 36; i++) {
         for (int j = 1; j <= 50; j++) {
             switch ((i - 1) / 9) {
-                case 0:
-                    mp[i][j] = 'A';
-                    break;
-                case 1:
-                    mp[i][j] = 'B';
-                    break;
-                case 2:
-                    mp[i][j] = 'C';
-                    break;
-                case 3:
-                    mp[i][j] = 'D';
-                    break;
-                default:
-                    break;
+                case 0: mp[i][j] = 'A'; break;
+                case 1: mp[i][j] = 'B'; break;
+                case 2: mp[i][j] = 'C'; break;
+                case 3: mp[i][j] = 'D'; break;
+                default: break;
             }
         }
     }
     a--, b--, c--, d--;
-    for (char i = 'a'; i <= 'd'; i++)
-        work(i);
+    for (char i = 'a'; i <= 'd'; i++) work(i);
     for (int i = 1; i <= 36; i++) {
-        for (int j = 1; j <= 50; j++)
-            printf("%c", mp[i][j]);
+        for (int j = 1; j <= 50; j++) printf("%c", mp[i][j]);
         printf("\n");
     }
     return 0;

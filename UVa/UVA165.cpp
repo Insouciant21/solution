@@ -8,8 +8,7 @@ int main() {
     while (true) {
         string t;
         cin >> t;
-        if (t == "#")
-            break;
+        if (t == "#") break;
         stringstream ss(t);
         while (ss >> t) {
             words.push_back(t);
@@ -20,8 +19,7 @@ int main() {
     }
     set<string> ans;
     for (const auto &i : p) {
-        if (i.second.size() > 1)
-            continue;
+        if (i.second.size() > 1) continue;
         ans.insert(words[i.second[0] - 1]);
     }
     for (const auto &i : ans) cout << i << endl;

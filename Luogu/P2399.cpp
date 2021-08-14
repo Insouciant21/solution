@@ -36,8 +36,7 @@ int sizeOfDecmial(string m, mode n) {
 
 bool infinte(string x) {
     for (size_t i = 0; i < x.size(); i++)
-        if (x[i] == '(')
-            return 1;
+        if (x[i] == '(') return 1;
     return 0;
 }
 
@@ -73,13 +72,16 @@ int main() {
     if (infinte(m)) {
         int s = sizeOfDecmial(m, mode::Infinite);
         if (m[2] == '(') {
-            for (int i = 1; i <= s; i++) down = down * 10 + 9;
+            for (int i = 1; i <= s; i++)
+                down = down * 10 + 9;
             up = getInteger(m) * down + getRepeat(m, s);
         }
         else {
             int p = sizeOfDecmial(m, mode::Repeat);
-            for (int i = 1; i <= s; i++) down = down * 10 + 9;
-            for (int i = 1; i <= p; i++) down *= 10;
+            for (int i = 1; i <= s; i++)
+                down = down * 10 + 9;
+            for (int i = 1; i <= p; i++)
+                down *= 10;
             up = getDecimal(m);
             long long b = up;
             b /= pow(10, s);

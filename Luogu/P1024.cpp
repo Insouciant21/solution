@@ -24,8 +24,7 @@ int main() {
             cout << fixed << setprecision(2) << l << " ";
             cnt++;
         }
-        if (cnt == 3)
-            break;
+        if (cnt == 3) break;
     }
     return 0;
 }

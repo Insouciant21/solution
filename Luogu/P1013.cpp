@@ -24,25 +24,23 @@ int main() {
     for (int i = 1; i <= n; i++) {
         for (int j = 1; j <= n; j++) {
             cin >> add[i][j];
-            if (i == 1 && j != 1)
-                ls[j - 1] = add[i][j][0];
+            if (i == 1 && j != 1) ls[j - 1] = add[i][j][0];
         }
     }
     for (int i = 2; i <= n; i++) {
         for (int j = 2; j <= n; j++)
-            if (add[i][j].length() < 2)
-                value[add[i][j][0]]++;
+            if (add[i][j].length() < 2) value[add[i][j][0]]++;
     }
     for_each(value.begin(), value.end(), [](pair<const char, int> &m) { m.second--; });
     for (int i = 1; i <= n; i++) {
         for (int j = 1; j <= n; j++) {
-            if (i == 1 || j == 1)
-                continue;
+            if (i == 1 || j == 1) continue;
             int a = 0, b = 0, c = 0;
             unsigned z = add[i][j].length();
             a = value[add[i][1][0]];
             b = value[add[1][j][0]];
-            for (int k = 0; k < z; k++) c += value[add[i][j][k]] * pow(n - 1, z - k - 1);
+            for (int k = 0; k < z; k++)
+                c += value[add[i][j][k]] * pow(n - 1, z - k - 1);
             if (a + b != c) {
                 cout << "ERROR!" << endl;
                 return 0;

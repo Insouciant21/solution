@@ -93,8 +93,7 @@ int main() {
             t.z0 = int(lower_bound(z.begin(), z.end(), item.z0) - z.begin());
             for (int i = t.x; i < t.x0; i++)
                 for (int j = t.y; j < t.y0; j++)
-                    for (int k = t.z; k < t.z0; k++)
-                        vis[i][j][k] = 1;
+                    for (int k = t.z; k < t.z0; k++) vis[i][j][k] = 1;
         }
         bfs();
         cout << s << " " << v << endl;

@@ -17,8 +17,10 @@ priority_queue<int, vector<int>, less<int>> q;
 
 int main() {
     scanf("%d", &n);
-    for (int i = 1; i <= n; i++) scanf("%d", a + i);
-    for (int i = 1; i <= n; i++) scanf("%d", b + i);
+    for (int i = 1; i <= n; i++)
+        scanf("%d", a + i);
+    for (int i = 1; i <= n; i++)
+        scanf("%d", b + i);
     for (int i = 1; i <= n; i++) {
         for (int j = 1; j <= n; j++) {
             int x = a[i] + b[j];

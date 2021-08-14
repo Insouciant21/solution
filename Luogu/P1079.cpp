@@ -19,8 +19,7 @@ void gen() {
         // 密钥
         for (char j = 'A'; j <= 'Z'; j++) {
             key[i][j] = i - j + 'A';
-            if (key[i][j] < 'A')
-                key[i][j] = key[i][j] + 'Z' - 'A' + 1;
+            if (key[i][j] < 'A') key[i][j] = key[i][j] + 'Z' - 'A' + 1;
         }
     }
 }

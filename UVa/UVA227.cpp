@@ -6,14 +6,11 @@ int main() {
     int kase = 0;
     while (true) {
         string grid[5];
-        for (auto &i : grid)
-            i = "";
+        for (auto &i : grid) i = "";
         kase++;
         char ch = getchar();
-        if (ch == '\n')
-            ch = getchar();
-        if (ch == 'Z')
-            return 0;
+        if (ch == '\n') ch = getchar();
+        if (ch == 'Z') return 0;
         grid[0] += ch;
         for (auto &i : grid) {
             string t;
@@ -30,8 +27,7 @@ int main() {
                     break;
                 }
             }
-            if (find)
-                break;
+            if (find) break;
         }
         if (!find) {
             for (int i = 0; i < 5; i++) {
@@ -45,10 +41,8 @@ int main() {
         bool success = true;
         while (true) {
             char i = getchar();
-            if (i == '\n')
-                i = getchar();
-            if (i == '0')
-                break;
+            if (i == '\n') i = getchar();
+            if (i == '0') break;
             switch (i) {
                 case 'A':
                     if (x - 1 < 0) {
@@ -84,15 +78,12 @@ int main() {
                     break;
             }
         }
-        if (kase != 1)
-            printf("\n");
+        if (kase != 1) printf("\n");
         printf("Puzzle #%d:\n", kase);
-        if (!success)
-            printf("This puzzle has no final configuration.\n");
+        if (!success) printf("This puzzle has no final configuration.\n");
         else {
             for (auto &i : grid) {
-                for (int j = 0; j < 5; j++)
-                    printf((j == 0) ? "%c" : " %c", i[j]);
+                for (int j = 0; j < 5; j++) printf((j == 0) ? "%c" : " %c", i[j]);
                 printf("\n");
             }
         }

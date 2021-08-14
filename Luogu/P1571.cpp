@@ -25,8 +25,7 @@ int main() {
     }
     sort(b.begin(), b.end());
     for (auto &i : a) {
-        if (binary_search(b.begin(), b.end(), i))
-            printf("%d ", i);
+        if (binary_search(b.begin(), b.end(), i)) printf("%d ", i);
     }
     return 0;
 }

@@ -20,7 +20,8 @@ priority_queue<int, vector<int>, greater<int>> q2;
 int main() {
     int p = 1;
     scanf("%d%d", &m, &n);
-    for (int i = 1; i <= m; i++) scanf("%d", a + i);
+    for (int i = 1; i <= m; i++)
+        scanf("%d", a + i);
     for (int i = 1; i <= n; i++) {
         int t;
         cin >> t;

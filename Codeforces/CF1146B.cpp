@@ -30,8 +30,7 @@ int main() {
             cout << ":(" << endl;
             return 0;
         }
-    for (int i = 1; i <= k.length(); i++)
-        t1.pop_back();
+    for (int i = 1; i <= k.length(); i++) t1.pop_back();
     cout << t1 << endl;
     return 0;
 }

@@ -33,10 +33,8 @@ int main() {
         int t;
         string x;
         cin >> t >> x;
-        if (x == "USB")
-            v.push({t, 1});
-        else
-            v.push({t, 0});
+        if (x == "USB") v.push({t, 1});
+        else v.push({t, 0});
     }
     while (v.size()) {
         Mouse prs = v.top();
@@ -44,8 +42,7 @@ int main() {
             e1++;
             cost += prs.price;
         }
-        else
-            rem.push(prs);
+        else rem.push(prs);
         v.pop();
     }
     while (rem.size()) {
@@ -58,8 +55,7 @@ int main() {
             e3++;
             cost += prs.price;
         }
-        if (e3 + e2 == b + c)
-            break;
+        if (e3 + e2 == b + c) break;
         rem.pop();
     }
     printf("%I64d %I64d\n", e1 + e2 + e3, cost);

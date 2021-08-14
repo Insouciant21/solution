@@ -35,12 +35,9 @@ void bfs(Node st) {
         for (int i = 0; i < 4; i++) {
             Node ftr = prs;
             ftr.x += dx[i], ftr.y += dy[i];
-            if (ftr.x < 1 || ftr.y < 1 || ftr.x > n || ftr.y > m)
-                continue;
-            if (maze[ftr.x][ftr.y] != '.')
-                continue;
-            if (vis[ftr.x][ftr.y])
-                continue;
+            if (ftr.x < 1 || ftr.y < 1 || ftr.x > n || ftr.y > m) continue;
+            if (maze[ftr.x][ftr.y] != '.') continue;
+            if (vis[ftr.x][ftr.y]) continue;
             vis[ftr.x][ftr.y] = cnt;
             q.push(ftr);
             block++;
@@ -74,8 +71,7 @@ int main() {
                     Node ftr;
                     ftr.x = i, ftr.y = j;
                     ftr.x += dx[k], ftr.y += dy[k];
-                    if (ftr.x < 1 || ftr.y < 1 || ftr.x > n || ftr.y > m)
-                        continue;
+                    if (ftr.x < 1 || ftr.y < 1 || ftr.x > n || ftr.y > m) continue;
                     bool ok = false;
                     for (int p = 0; p < k; p++) {
                         if (vis[ftr.x][ftr.y] == id[p]) {
@@ -83,8 +79,7 @@ int main() {
                             break;
                         }
                     }
-                    if (ok)
-                        continue;
+                    if (ok) continue;
                     block += ans[vis[ftr.x][ftr.y]];
                     id[k] = vis[ftr.x][ftr.y];
                 }

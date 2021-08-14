@@ -29,8 +29,7 @@ int cmp1(Group x, Group y) {
 }
 int cmp2(Group x, Group y) {
     if (x.newpos == y.newpos) {
-        if (x.level == y.level)
-            return x.id < y.id;
+        if (x.level == y.level) return x.id < y.id;
         return x.level > y.level;
     }
     return x.newpos < y.newpos;

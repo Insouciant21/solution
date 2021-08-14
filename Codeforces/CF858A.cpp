@@ -14,8 +14,7 @@ long long n, k;
 int main() {
     scanf("%I64d %I64d", &n, &k);
     long long p = 1;
-    for (int i = 1; i <= k; i++)
-        p *= 10;
+    for (int i = 1; i <= k; i++) p *= 10;
     long long x = n * p;
     long long g = __gcd(p, n);
     x /= g;

@@ -4,8 +4,7 @@ std::vector<std::set<int>> set;
 std::map<std::set<int>, int> ID;
 
 int getID(std::set<int> &p) {
-    if (ID[p])
-        return ID[p];
+    if (ID[p]) return ID[p];
     set.push_back(p);
     ID[p] = int(set.size() - 1);
     return ID[p];

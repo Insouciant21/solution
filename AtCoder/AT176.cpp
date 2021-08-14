@@ -17,17 +17,13 @@ int getDayM(int y, int m) {
         case 7:
         case 8:
         case 10:
-        case 12:
-            return 31;
+        case 12: return 31;
         case 2:
-            if (y % 4 == 0 && y % 100 != 0)
-                return 29;
-            if (y % 400 == 0)
-                return 29;
+            if (y % 4 == 0 && y % 100 != 0) return 29;
+            if (y % 400 == 0) return 29;
             return 28;
 
-        default:
-            return 30;
+        default: return 30;
     }
 }
 
@@ -35,8 +31,7 @@ int main() {
     while (true) {
         int Y, M, D, h, m, s;
         scanf("%d", &Y);
-        if (Y == 0)
-            return 0;
+        if (Y == 0) return 0;
         scanf("/%d/%d %d:%d:%d", &M, &D, &h, &m, &s);
         bitset<32> in;
         cin >> in;

@@ -24,7 +24,8 @@ string toBin(long long n) {
 long long toDex(string m) {
     long long dex = 0;
     reverse(m.begin(), m.end());
-    for (unsigned i = 0; i < m.length(); i++) dex += (m[i] - '0') * pow(k, i);
+    for (unsigned i = 0; i < m.length(); i++)
+        dex += (m[i] - '0') * pow(k, i);
     return dex;
 }
 

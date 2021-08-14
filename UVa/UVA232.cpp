@@ -7,21 +7,17 @@ int main() {
     int kase = 0;
     while (true) {
         scanf("%d", &r);
-        if (r == 0)
-            break;
+        if (r == 0) break;
         scanf("%d", &c);
         kase++;
         char grid[11][11];
         int id[11][11];
-        for (int i = 1; i <= r; i++)
-            scanf("%s", grid[i] + 1);
+        for (int i = 1; i <= r; i++) scanf("%s", grid[i] + 1);
         int tot = 0;
         for (int i = 1; i <= r; i++)
             for (int j = 1; j <= c; j++)
-                if ((i == 1 || j == 1 || grid[i][j - 1] == '*' || grid[i - 1][j] == '*') && grid[i][j] != '*')
-                    id[i][j] = ++tot;
-        if (kase != 1)
-            printf("\n");
+                if ((i == 1 || j == 1 || grid[i][j - 1] == '*' || grid[i - 1][j] == '*') && grid[i][j] != '*') id[i][j] = ++tot;
+        if (kase != 1) printf("\n");
         printf("puzzle #%d:\n", kase);
         printf("Across\n");
         for (int i = 1; i <= r; i++) {
@@ -29,8 +25,7 @@ int main() {
                 if ((j == 1 || grid[i][j - 1] == '*') && grid[i][j] != '*') {
                     printf("%3d.", id[i][j]);
                     for (int k = j; k <= c; k++) {
-                        if (grid[i][k] == '*')
-                            break;
+                        if (grid[i][k] == '*') break;
                         putchar(grid[i][k]);
                     }
                     printf("\n");
@@ -43,8 +38,7 @@ int main() {
                 if ((i == 1 || grid[i - 1][j] == '*') && grid[i][j] != '*') {
                     printf("%3d.", id[i][j]);
                     for (int k = i; k <= r; k++) {
-                        if (grid[k][j] == '*')
-                            break;
+                        if (grid[k][j] == '*') break;
                         putchar(grid[k][j]);
                     }
                     printf("\n");

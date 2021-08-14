@@ -18,16 +18,11 @@ struct Command {
 vector<Command> commands;
 
 int getMode(const string &k) {
-    if (k == "EX")
-        return 5;
-    if (k == "DC")
-        return 1;
-    if (k == "DR")
-        return 2;
-    if (k == "IC")
-        return 3;
-    if (k == "IR")
-        return 4;
+    if (k == "EX") return 5;
+    if (k == "DC") return 1;
+    if (k == "DR") return 2;
+    if (k == "IC") return 3;
+    if (k == "IR") return 4;
 }
 
 void simulate(Point &k) {
@@ -36,8 +31,7 @@ void simulate(Point &k) {
             case 1: {
                 int lower = 0;
                 for (int i : command.oper) {
-                    if (i < k.y)
-                        lower++;
+                    if (i < k.y) lower++;
                     if (i == k.y) {
                         k.y = 100;
                         return;
@@ -49,8 +43,7 @@ void simulate(Point &k) {
             case 2: {
                 int lower = 0;
                 for (int i : command.oper) {
-                    if (i < k.x)
-                        lower++;
+                    if (i < k.x) lower++;
                     if (i == k.x) {
                         k.x = 100;
                         return;
@@ -62,16 +55,14 @@ void simulate(Point &k) {
             case 3: {
                 int lower = 0;
                 for (int i : command.oper)
-                    if (i <= k.y)
-                        lower++;
+                    if (i <= k.y) lower++;
                 k.y += lower;
                 break;
             }
             case 4: {
                 int lower = 0;
                 for (int i : command.oper)
-                    if (i <= k.x)
-                        lower++;
+                    if (i <= k.x) lower++;
                 k.x += lower;
                 break;
             }
@@ -94,8 +85,7 @@ int main() {
     int kase = 0;
     while (true) {
         cin >> r >> c;
-        if (r == 0 || c == 0)
-            break;
+        if (r == 0 || c == 0) break;
         int n;
         cin >> n;
         for (int i = 0; i < n; i++) {
@@ -103,8 +93,7 @@ int main() {
             cin >> m;
             Command t {};
             t.mode = getMode(m);
-            if (m == "EX")
-                cin >> t.a.x >> t.a.y >> t.b.x >> t.b.y;
+            if (m == "EX") cin >> t.a.x >> t.a.y >> t.b.x >> t.b.y;
             else {
                 int A = 0;
                 cin >> A;
@@ -119,18 +108,15 @@ int main() {
         int q;
         cin >> q;
         kase++;
-        if (kase != 1)
-            printf("\n");
+        if (kase != 1) printf("\n");
         printf("Spreadsheet #%d\n", kase);
         while (q--) {
             Point u {};
             cin >> u.x >> u.y;
             int px = u.x, py = u.y;
             simulate(u);
-            if (u.x != 100 && u.y != 100)
-                printf("Cell data in (%d,%d) moved to (%d,%d)\n", px, py, u.x, u.y);
-            else
-                printf("Cell data in (%d,%d) GONE\n", px, py);
+            if (u.x != 100 && u.y != 100) printf("Cell data in (%d,%d) moved to (%d,%d)\n", px, py, u.x, u.y);
+            else printf("Cell data in (%d,%d) GONE\n", px, py);
         }
         commands.clear();
     }

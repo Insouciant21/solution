@@ -43,10 +43,8 @@ int main() {
             char x;
             cin >> x;
             maze[i][j] = x;
-            if (x == '@')
-                st.x = i, st.y = j, st.step = 0;
-            if (x == '=')
-                ed.x = i, ed.y = j, ed.step = 0;
+            if (x == '@') st.x = i, st.y = j, st.step = 0;
+            if (x == '=') ed.x = i, ed.y = j, ed.step = 0;
         }
     }
     q.push(st);
@@ -58,17 +56,13 @@ int main() {
             cout << now.step << endl;
             return 0;
         }
-        if (maze[now.x][now.y] >= 'A' && maze[now.x][now.y] <= 'Z')
-            teleport(now);
+        if (maze[now.x][now.y] >= 'A' && maze[now.x][now.y] <= 'Z') teleport(now);
         for (int i = 0; i < 4; i++) {
             Node p = now;
             p.x += mov[i].x, p.y += mov[i].y, p.step++;
-            if (p.x < 1 || p.y < 1 || p.x > n || p.y > m)
-                continue;
-            if (vis[p.x][p.y])
-                continue;
-            if (maze[p.x][p.y] == '#')
-                continue;
+            if (p.x < 1 || p.y < 1 || p.x > n || p.y > m) continue;
+            if (vis[p.x][p.y]) continue;
+            if (maze[p.x][p.y] == '#') continue;
             vis[p.x][p.y] = 1;
             q.push(p);
         }

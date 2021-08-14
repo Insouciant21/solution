@@ -16,11 +16,9 @@ int main() {
     while (q--) {
         scanf("%d", &n);
         int ans = 0;
-        if (n % 2 != 0)
-            n -= 9, ans = 1;
+        if (n % 2 != 0) n -= 9, ans = 1;
         ans += n / 4;
-        if (n < 4 && n != 0)
-            ans = -1;
+        if (n < 4 && n != 0) ans = -1;
         printf("%d\n", ans);
     }
     return 0;

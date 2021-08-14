@@ -38,12 +38,9 @@ void dfs(Position prs, int step) {
     for (int i = 0; i < 4; i++) {
         Position ftr = prs;
         ftr.x += dx[i], ftr.y += dy[i];
-        if (ftr.x < 1 || ftr.y < 1 || ftr.x > n || ftr.y > m)
-            continue;
-        if (vis[ftr.x][ftr.y])
-            continue;
-        if (!mp[ftr.x][ftr.y])
-            continue;
+        if (ftr.x < 1 || ftr.y < 1 || ftr.x > n || ftr.y > m) continue;
+        if (vis[ftr.x][ftr.y]) continue;
+        if (!mp[ftr.x][ftr.y]) continue;
         vis[ftr.x][ftr.y] = 1;
         arr[step] = ftr;
         dfs(ftr, step + 1);
@@ -54,13 +51,13 @@ void dfs(Position prs, int step) {
 int main() {
     cin >> n >> m;
     for (int i = 1; i <= n; i++)
-        for (int j = 1; j <= m; j++) cin >> mp[i][j];
+        for (int j = 1; j <= m; j++)
+            cin >> mp[i][j];
     cin >> st.x >> st.y;
     cin >> ed.x >> ed.y;
     arr[0] = st;
     vis[st.x][st.y] = 1;
     dfs(st, 1);
-    if (!ok)
-        cout << -1 << endl;
+    if (!ok) cout << -1 << endl;
     return 0;
 }

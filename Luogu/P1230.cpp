@@ -31,14 +31,16 @@ priority_queue<Work> q;
 int main() {
     ios::sync_with_stdio(0);
     cin >> m >> n;
-    for (int i = 1; i <= n; i++) cin >> p[i].t;
-    for (int i = 1; i <= n; i++) cin >> p[i].m, m -= p[i].m;
+    for (int i = 1; i <= n; i++)
+        cin >> p[i].t;
+    for (int i = 1; i <= n; i++)
+        cin >> p[i].m, m -= p[i].m;
     sort(p, p + n + 1, cmp);
     int pos = n;
     for (int i = n; i > 0; i--) {
-        while (pos != 0 && p[pos].t >= i) q.push(p[pos--]);
-        if (q.empty())
-            continue;
+        while (pos != 0 && p[pos].t >= i)
+            q.push(p[pos--]);
+        if (q.empty()) continue;
         m += q.top().m;
         q.pop();
     }

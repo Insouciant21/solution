@@ -16,8 +16,7 @@ int main() {
             }
         }
         printf("%d", ans[0]);
-        for (int i = 1; i <= 9; i++)
-            printf(" %d", ans[i]);
+        for (int i = 1; i <= 9; i++) printf(" %d", ans[i]);
         printf("\n");
     }
     return 0;

@@ -12,12 +12,10 @@ using namespace std;
 long long num[10000];
 
 long long sum(int n) {
-    if (n == 0)
-        return 0;
+    if (n == 0) return 0;
     long long res = 0;
     for (int i = 1;; i++) {
-        if (num[i] < n)
-            res += num[i] * (num[i] - num[i - 1]);
+        if (num[i] < n) res += num[i] * (num[i] - num[i - 1]);
         else {
             res += num[i] * (n - num[i - 1]);
             break;

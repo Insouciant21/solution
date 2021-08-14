@@ -17,8 +17,7 @@ int main() {
         int gt = 10000;
         for (int i = 0; i < 69; i++) {
             int h = l(gen);
-            while (gt - h < 0)
-                h = l(gen);
+            while (gt - h < 0) h = l(gen);
             gt -= h;
             cout << fixed << setprecision(4) << h / 100.0 << endl;
         }
@@ -27,18 +26,15 @@ int main() {
         for (int i = 0; i < 140; i++) {
             string s = "P";
             s += to_string(i);
-            if (g(gen) % 20 < 4)
-                s += "*";
-            while (s.length() != 20)
-                s += " ";
+            if (g(gen) % 20 < 4) s += "*";
+            while (s.length() != 20) s += " ";
             cout << s;
             for (int j = 0; j < 4; j++) {
                 if (g(gen) % 40 == 0) {
                     cout << " DQ";
                     break;
                 }
-                else
-                    cout << setw(3) << g(gen) % 10;
+                else cout << setw(3) << g(gen) % 10;
             }
             cout << endl;
         }

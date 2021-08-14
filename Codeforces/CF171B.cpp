@@ -13,8 +13,7 @@ int main() {
     int a;
     cin >> a;
     int ans = 1;
-    for (int i = 2; i <= a; i++)
-        ans += (i - 1) * 12;
+    for (int i = 2; i <= a; i++) ans += (i - 1) * 12;
     cout << ans << endl;
     return 0;
 }

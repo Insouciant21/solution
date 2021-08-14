@@ -16,7 +16,8 @@ int n;
 
 int main() {
     scanf("%d", &n);
-    for (int i = 1; i <= n; i++) scanf("%d", &a[i]);
+    for (int i = 1; i <= n; i++)
+        scanf("%d", &a[i]);
     int head = 0, tail = 0;
     for (int i = 1; i <= n; i++) {
         while (tail >= head && a[i] > a[q[tail]]) {
@@ -25,6 +26,7 @@ int main() {
         }
         q[++tail] = i;
     }
-    for (int i = 1; i <= n; i++) printf("%d\n", ans[i]);
+    for (int i = 1; i <= n; i++)
+        printf("%d\n", ans[i]);
     return 0;
 }

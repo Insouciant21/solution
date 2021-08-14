@@ -22,8 +22,7 @@ int main() {
                 break;
             }
         }
-        if (success)
-            cout << "Yes" << endl;
+        if (success) cout << "Yes" << endl;
     }
     return 0;
 }

@@ -23,13 +23,13 @@ Lift runner;
 int main() {
     ios::sync_with_stdio(0);
     cin >> n >> a >> b;
-    for (int i = 1; i <= n; i++) cin >> k[i];
+    for (int i = 1; i <= n; i++)
+        cin >> k[i];
     viewed[a] = 1;
     q.push({a, 0});
     while (!q.empty()) {
         runner = q.front(), q.pop();
-        if (runner.id == b)
-            break;
+        if (runner.id == b) break;
         if (runner.id + k[runner.id] <= n && !viewed[runner.id + k[runner.id]]) {
             q.push({runner.id + k[runner.id], runner.step + 1});
             viewed[runner.id + k[runner.id]] = true;

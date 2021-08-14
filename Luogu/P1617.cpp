@@ -53,8 +53,7 @@ int main() {
     }
     else if (num < 1000) {
         cout << s[num / 100] << " hundred ";
-        if (num % 100 == 0)
-            return 0;
+        if (num % 100 == 0) return 0;
         if (num % 100 <= 10)
             cout << "and " << s[num % 100] << endl;
         else if (num % 100 > 10 && num % 100 < 20)
@@ -64,8 +63,7 @@ int main() {
     }
     else {
         cout << s[num / 1000] << " thousand ";
-        if (num % 1000 == 0)
-            return 0;
+        if (num % 1000 == 0) return 0;
         if (num % 1000 < 100) {
             cout << "and ";
             if (num % 1000 <= 10 || (num % 1000) % 10 == 0)
@@ -77,8 +75,7 @@ int main() {
         }
         else {
             cout << s[(num % 1000) / 100] << " hundred ";
-            if ((num % 1000) % 100 == 0)
-                return 0;
+            if ((num % 1000) % 100 == 0) return 0;
             if ((num % 1000) % 100 <= 10)
                 cout << "and " << s[(num % 1000) % 100] << endl;
             else if ((num % 1000) % 100 > 10 && (num % 1000) % 100 < 20)

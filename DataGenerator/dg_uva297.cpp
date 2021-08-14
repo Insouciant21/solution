@@ -32,8 +32,7 @@ void make(Node *g, int depth) {
 }
 
 void removeTree(Node *g) {
-    if (g == nullptr)
-        return;
+    if (g == nullptr) return;
     removeTree(g->l1);
     removeTree(g->l2);
     removeTree(g->r1);

@@ -20,8 +20,7 @@ void prepare() {
         if (!numList[i]) prime[++cnt] = i;
         for (int j = 1; j <= cnt && prime[j] * i < 40000; j++) {
             numList[i * prime[j]] = 1;
-            if (i % prime[j] == 0)
-                break;
+            if (i % prime[j] == 0) break;
         }
     }
     cnt = 0;
@@ -49,8 +48,7 @@ int main() {
             }
         }
         ll p = lower_bound(cube + 1, cube + 1000001, n) - cube;
-        if (p * p * p == n)
-            ans = ans * p;
+        if (p * p * p == n) ans = ans * p;
         printf("%lld\n", ans);
     }
     return 0;

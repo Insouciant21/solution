@@ -9,12 +9,12 @@ vector<int> prime;
 
 void preWork() {
     numList[0] = numList[1] = true;
-    for (int i = 2; i < maxn; i++)
+    for (int i = 2; i < maxn; i++) {
         if (!numList[i]) {
             prime.push_back(i);
-            for (int j = 2; i * j < maxn; j++)
-                numList[i * j] = true;
+            for (int j = 2; i * j < maxn; j++) numList[i * j] = true;
         }
+    }
 }
 
 int n;
@@ -23,8 +23,7 @@ int main() {
     preWork();
     while (true) {
         scanf("%d", &n);
-        if (!n)
-            break;
+        if (!n) break;
         if (numList[n] == 0) {
             printf("0\n");
             continue;

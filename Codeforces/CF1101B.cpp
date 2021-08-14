@@ -48,8 +48,7 @@ int main() {
         return 0;
     }
     for (int i = 2; i < q.length() - 2; i++) {
-        if (q[i] != '|')
-            rem++;
+        if (q[i] != '|') rem++;
     }
     cout << len - rem << endl;
     return 0;

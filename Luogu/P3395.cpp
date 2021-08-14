@@ -34,7 +34,8 @@ int main() {
         memset(viewed, 0, sizeof(viewed));
         cin >> n;
         for (int i = 1; i <= n; i++)
-            for (int j = 1; j <= n; j++) chess[i][j] = inf;
+            for (int j = 1; j <= n; j++)
+                chess[i][j] = inf;
         for (int j = 1; j <= 2 * n - 2; j++) {
             int x, y;
             cin >> x >> y;
@@ -52,8 +53,7 @@ int main() {
             for (int i = 0; i < 4; i++) {
                 Node p;
                 p.x = man.x + mov[i].x, p.y = man.y + mov[i].y, p.step = man.step + 1;
-                if (p.x < 1 || p.y < 1 || p.x > n || p.y > n)
-                    continue;
+                if (p.x < 1 || p.y < 1 || p.x > n || p.y > n) continue;
                 if (p.step <= chess[p.x][p.y] && !viewed[p.x][p.y]) {
                     q.push(p);
                     viewed[p.x][p.y] = true;

@@ -23,10 +23,8 @@ bool use[4];
 int main() {
     for (int i = 0; i < 4; i++) {
         scanf("%d %d %d %d", &s[i].f[0].x, &s[i].f[0].y, &s[i].f[1].x, &s[i].f[1].y);
-        if (s[i].f[0].x == s[i].f[1].x)
-            ax++;
-        if (s[i].f[0].y == s[i].f[1].y)
-            ay++;
+        if (s[i].f[0].x == s[i].f[1].x) ax++;
+        if (s[i].f[0].y == s[i].f[1].y) ay++;
         if (s[i].f[0].y == s[i].f[1].y && s[i].f[0].x == s[i].f[1].x) {
             puts("NO");
             return 0;
@@ -43,8 +41,7 @@ int main() {
             int cnt = 0;
             bool add = false;
             for (int i = 0; i < 4; i++) {
-                if (use[i] || i == place)
-                    continue;
+                if (use[i] || i == place) continue;
                 for (int j = 0; j < 2; j++) {
                     if (now.x == s[i].f[j].x && now.y == s[i].f[j].y) {
                         add = true;

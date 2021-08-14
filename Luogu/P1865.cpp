@@ -36,8 +36,7 @@ int main() {
         }
         int ans = 0;
         for (int i = l; i <= r; i++)
-            if (!numList[i])
-                ans++;
+            if (!numList[i]) ans++;
         cout << ans << endl;
     }
     return 0;

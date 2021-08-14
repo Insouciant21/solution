@@ -19,12 +19,9 @@ string div(int k) {
             p <<= 1;
             cnt++;
         }
-        if (cnt == 0)
-            a += "2(0)+";
-        if (cnt == 1)
-            a += "2+";
-        if (cnt > 1)
-            a += "2(" + div(cnt) + ")+";
+        if (cnt == 0) a += "2(0)+";
+        if (cnt == 1) a += "2+";
+        if (cnt > 1) a += "2(" + div(cnt) + ")+";
         k -= p;
     }
     return a;
@@ -35,13 +32,11 @@ int main() {
     cin >> n;
     ans = div(n);
     for (int i = 0; i < ans.length() - 1; i++) {
-        if (ans[i] == '+' && ans[i + 1] == ')')
-            ans[i] = '*';
+        if (ans[i] == '+' && ans[i + 1] == ')') ans[i] = '*';
     }
     ans.pop_back();
     for (auto &i : ans)
-        if (i != '*')
-            cout << i;
+        if (i != '*') cout << i;
     cout << endl;
     return 0;
 }

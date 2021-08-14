@@ -15,8 +15,7 @@ int main() {
                 tot++;
                 score += tot;
             }
-            else
-                tot = 0;
+            else tot = 0;
         }
         printf("%d\n", score);
     }

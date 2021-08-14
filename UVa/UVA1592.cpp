@@ -18,10 +18,8 @@ int main() {
             stringstream ss(t);
             for (int j = 0; j < m; j++) {
                 getline(ss, t, ',');
-                if (table.count(t))
-                    ID[{i, j}] = table[t];
-                else
-                    ID[{i, j}] = table[t] = id++;
+                if (table.count(t)) ID[{i, j}] = table[t];
+                else ID[{i, j}] = table[t] = id++;
             }
         }
         bool found = false;
@@ -41,8 +39,7 @@ int main() {
                 p.clear();
             }
         }
-        if (!found)
-            cout << "YES" << endl;
+        if (!found) cout << "YES" << endl;
     }
     return 0;
 }

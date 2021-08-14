@@ -15,8 +15,7 @@ mt19937 g(rand());
 ll mul(ll a, ll b, ll p) {
     ll res = 0;
     while (b) {
-        if (b & 1)
-            res = (res + a) % p;
+        if (b & 1) res = (res + a) % p;
         a = (a + a) % p;
         b >>= 1;
     }
@@ -26,8 +25,7 @@ ll mul(ll a, ll b, ll p) {
 ll quickPow(ll a, ll b, ll p) {
     ll res = 1;
     while (b) {
-        if (b & 1)
-            res = mul(res, a, p);
+        if (b & 1) res = mul(res, a, p);
         a = mul(a, a, p);
         b >>= 1;
     }
@@ -41,11 +39,9 @@ bool miller_rabin(ll a, ll n) {
         q++;
     }
     ll v = quickPow(a, m, n);
-    if (v == 1 || v == n - 1)
-        return true;
+    if (v == 1 || v == n - 1) return true;
     for (int i = 0; i < q; i++) {
-        if (v == n - 1)
-            return true;
+        if (v == n - 1) return true;
         v = mul(v, v, n);
     }
     return false;
@@ -53,14 +49,11 @@ bool miller_rabin(ll a, ll n) {
 
 bool prime_test(ll n) {
     srand(time(NULL));
-    if (n == 2)
-        return true;
-    if (n < 2 || !(n & 1))
-        return false;
+    if (n == 2) return true;
+    if (n < 2 || !(n & 1)) return false;
     for (int i = 0; i < 16; i++) {
         ll a = g() % (n - 1) + 1;
-        if (!miller_rabin(a, n))
-            return false;
+        if (!miller_rabin(a, n)) return false;
     }
     return true;
 }

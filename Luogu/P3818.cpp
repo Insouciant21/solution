@@ -33,7 +33,8 @@ bool check(Node p) {
 int main() {
     cin >> h >> w >> d >> r;
     for (int i = 1; i <= h; i++)
-        for (int j = 1; j <= w; j++) cin >> maze[i][j];
+        for (int j = 1; j <= w; j++)
+            cin >> maze[i][j];
     memset(vis, -1, sizeof(vis));
     q.push({1, 1, 0});
     vis[1][1][0] = 0;
@@ -62,8 +63,7 @@ int main() {
     else {
         int ans = inf;
         for (int i = 0; i < 2; i++)
-            if (vis[h][w][i] != -1 && vis[h][w][i] < ans)
-                ans = vis[h][w][i];
+            if (vis[h][w][i] != -1 && vis[h][w][i] < ans) ans = vis[h][w][i];
         cout << ans << endl;
     }
     return 0;

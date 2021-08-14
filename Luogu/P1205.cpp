@@ -35,8 +35,7 @@ vector<vector<char>> rev(vector<vector<char>> k) {
 bool validate(vector<vector<char>> a, vector<vector<char>> b) {
     for (int i = 1; i <= n; i++)
         for (int j = 1; j <= n; j++)
-            if (a[i][j] != b[i][j])
-                return 0;
+            if (a[i][j] != b[i][j]) return 0;
     return 1;
 }
 

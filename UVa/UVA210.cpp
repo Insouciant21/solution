@@ -12,8 +12,7 @@ int main() {
     int kase;
     cin >> kase;
     for (int ka = 0; ka < kase; ka++) {
-        if (ka)
-            cout << endl;
+        if (ka) cout << endl;
         map<char, int> var;
         int n, t1, t2, t3, t4, t5, Q;
         cin >> n >> t1 >> t2 >> t3 >> t4 >> t5 >> Q;
@@ -27,8 +26,7 @@ int main() {
             while (true) {
                 string s;
                 getline(cin, s);
-                if (s == "end")
-                    break;
+                if (s == "end") break;
                 t.commands.push_back(s);
             }
             programs.push_back(t);

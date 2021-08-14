@@ -21,17 +21,12 @@ int main() {
             }
         }
         for (int i = 0; i < in.length() - 1; i++)
-            if (in[i] == 'A' && in[i + 1] == 'B')
-                a++;
+            if (in[i] == 'A' && in[i + 1] == 'B') a++;
         for (int i = 0; i < in.length() - 1; i++)
-            if (in[i] == 'B' && in[i + 1] == 'A')
-                b++;
-        if ((a && b) || (a && p) || (b && p) || (p >= 2))
-            puts("YES");
-        else
-            puts("NO");
+            if (in[i] == 'B' && in[i + 1] == 'A') b++;
+        if ((a && b) || (a && p) || (b && p) || (p >= 2)) puts("YES");
+        else puts("NO");
     }
-    else
-        puts("NO");
+    else puts("NO");
     return 0;
 }

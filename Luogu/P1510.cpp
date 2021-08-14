@@ -16,7 +16,8 @@ int p[10001], m[10001];
 
 int main() {
     cin >> v >> n >> c;
-    for (int i = 1; i <= n; i++) cin >> p[i] >> m[i];
+    for (int i = 1; i <= n; i++)
+        cin >> p[i] >> m[i];
     for (int i = 1; i <= n; i++) {
         for (int j = c; j >= m[i]; j--) {
             dp[j] = max(dp[j], dp[j - m[i]] + p[i]);

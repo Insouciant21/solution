@@ -18,7 +18,8 @@ void dfs(int step) {
     if (step == n + 1) {
         ans++;
         if (ans <= 3) {
-            for (int i = 1; i < step; i++) cout << f[i] << " ";
+            for (int i = 1; i < step; i++)
+                cout << f[i] << " ";
             cout << endl;
         }
         return;
@@ -32,8 +33,7 @@ void dfs(int step) {
                     break;
                 }
             }
-            if (skip)
-                continue;
+            if (skip) continue;
             f[step] = i;
             dfs(step + 1);
         }

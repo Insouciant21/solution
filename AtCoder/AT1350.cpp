@@ -29,12 +29,9 @@ int main() {
         for (int j = 1; j <= m; j++) {
             char x;
             cin >> x;
-            if (x == '#')
-                maze[i][j] = true;
-            if (x == 's')
-                start.x = i, start.y = j, start.step = 0;
-            if (x == 'g')
-                end.x = i, end.y = j, end.step = 0;
+            if (x == '#') maze[i][j] = true;
+            if (x == 's') start.x = i, start.y = j, start.step = 0;
+            if (x == 'g') end.x = i, end.y = j, end.step = 0;
         }
     }
     q.push(start);
@@ -49,12 +46,9 @@ int main() {
         for (auto &i : d) {
             Point p = now;
             p.x += i.x, p.y += i.y, p.step++;
-            if (p.x < 1 || p.y < 1 || p.x > n || p.y > m)
-                continue;
-            if (maze[p.x][p.y])
-                continue;
-            if (vis[p.x][p.y])
-                continue;
+            if (p.x < 1 || p.y < 1 || p.x > n || p.y > m) continue;
+            if (maze[p.x][p.y]) continue;
+            if (vis[p.x][p.y]) continue;
             vis[p.x][p.y] = true;
             q.push(p);
         }

@@ -29,7 +29,8 @@ int main() {
     int start_x, start_y;
     cin >> start_x >> start_y;
     for (int i = 1; i <= n; i++)
-        for (int j = 1; j <= m; j++) chess[i][j] = -1;
+        for (int j = 1; j <= m; j++)
+            chess[i][j] = -1;
     q.push({start_x, start_y, 0});
     chess[start_x][start_y] = 0;
     viewed[start_x][start_y] = 1;
@@ -38,8 +39,7 @@ int main() {
         for (int i = 0; i < 8; i++) {
             Node p;
             p.x = man.x + mov[i].x, p.y = man.y + mov[i].y, p.step = man.step + 1;
-            if (p.x < 1 || p.y < 1 || p.x > n || p.y > m)
-                continue;
+            if (p.x < 1 || p.y < 1 || p.x > n || p.y > m) continue;
             if (!viewed[p.x][p.y]) {
                 q.push(p);
                 viewed[p.x][p.y] = 1;

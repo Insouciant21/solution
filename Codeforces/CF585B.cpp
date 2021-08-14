@@ -34,23 +34,17 @@ void bfs() {
             puts("YES");
             return;
         }
-        if (mp[prs.x][prs.y + 1] || mp[prs.x][prs.y])
-            continue;
+        if (mp[prs.x][prs.y + 1] || mp[prs.x][prs.y]) continue;
         for (int i : d) {
             Node ftr = prs;
             ftr.x += i, ftr.y++;
-            if (ftr.x < 1 || ftr.x > 3)
-                continue;
-            if (mp[ftr.x][ftr.y])
-                continue;
+            if (ftr.x < 1 || ftr.x > 3) continue;
+            if (mp[ftr.x][ftr.y]) continue;
             ftr.y++;
-            if (mp[ftr.x][ftr.y])
-                continue;
+            if (mp[ftr.x][ftr.y]) continue;
             ftr.y++;
-            if (mp[ftr.x][ftr.y])
-                continue;
-            if (vis[ftr.x][ftr.y])
-                continue;
+            if (mp[ftr.x][ftr.y]) continue;
+            if (vis[ftr.x][ftr.y]) continue;
             vis[ftr.x][ftr.y] = true;
             q.push(ftr);
         }
@@ -72,8 +66,7 @@ int main() {
                     mp[i][j] = false;
                     st.x = i, st.y = j;
                 }
-                if (x[j] >= 'A' && x[j] <= 'Z')
-                    mp[i][j] = true;
+                if (x[j] >= 'A' && x[j] <= 'Z') mp[i][j] = true;
             }
         }
         bfs();

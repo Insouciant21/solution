@@ -9,18 +9,16 @@
 using namespace std;
 
 bool validate(char x, char y) {
-    if (('0' <= x && x <= '9' && '0' <= y && y <= '9') || ('a' <= x && x <= 'z' && 'a' <= y && y <= 'z') || ('A' <= x && x <= 'Z' && 'A' <= y && y <= 'Z'))
+    if (('0' <= x && x <= '9' && '0' <= y && y <= '9') || ('a' <= x && x <= 'z' && 'a' <= y && y <= 'z') ||
+        ('A' <= x && x <= 'Z' && 'A' <= y && y <= 'Z'))
         return true;
     return false;
 }
 
 int type(char x) {
-    if (x >= 'a' && x <= 'z')
-        return 0;
-    if (x >= 'A' && x <= 'Z')
-        return 1;
-    if (x >= '0' && x <= '9')
-        return 2;
+    if (x >= 'a' && x <= 'z') return 0;
+    if (x >= 'A' && x <= 'Z') return 1;
+    if (x >= '0' && x <= '9') return 2;
     return 0;
 }
 
@@ -59,8 +57,7 @@ string generate(string x, int a, int b, int c) {
             ans += filled;
         }
     }
-    if (c == 2)
-        reverse(ans.begin(), ans.end());
+    if (c == 2) reverse(ans.begin(), ans.end());
     stringstream ss;
     ss << x.front() << ans << x.back();
     ss >> ans;
@@ -82,8 +79,7 @@ int main() {
     pen.erase(b + 1, pen.length());
     while (pen.find('-', pos) != string::npos) {
         pos = pen.find('-', pos);
-        if (pos == 0 || pos == pen.length() - 1)
-            continue;
+        if (pos == 0 || pos == pen.length() - 1) continue;
         if (pen[pos - 1] < pen[pos + 1]) {
             if (validate(pen[pos - 1], pen[pos + 1])) {
                 ss << pen[pos - 1] << pen[pos] << pen[pos + 1];

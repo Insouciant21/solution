@@ -13,11 +13,9 @@ long long n;
 long long k;
 
 bool prime(long long x) {
-    if (x < 2)
-        return 0;
+    if (x < 2) return 0;
     for (long long i = 2; i <= sqrt(x); i++)
-        if (x % i == 0)
-            return 0;
+        if (x % i == 0) return 0;
     return 1;
 }
 

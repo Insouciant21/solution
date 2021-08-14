@@ -15,19 +15,15 @@ char pattern[maxlen], pre[maxlen];
 
 bool search(int sign, int len) {
     if (len == 0) {
-        if (sign == 0)
-            return 1;
+        if (sign == 0) return 1;
         for (int i = sign; i > 0; i--)
-            if (pattern[i] != '*')
-                return 0;
+            if (pattern[i] != '*') return 0;
         return 1;
     }
-    if (!sign)
-        return 0;
+    if (!sign) return 0;
     if (pattern[sign] == '*') {
         for (int i = len; i >= 0; i--)
-            if (search(sign - 1, i))
-                return 1;
+            if (search(sign - 1, i)) return 1;
     }
     else {
         if (pre[len] == pattern[sign] || pattern[sign] == '?')

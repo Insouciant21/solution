@@ -57,8 +57,7 @@ int ukc(string e, char un) {
                 e.insert(0, "1");
             }
             else {
-                if (e[i - 1] == '+' || e[i - 1] == '-')
-                    e.insert(i, "1");
+                if (e[i - 1] == '+' || e[i - 1] == '-') e.insert(i, "1");
             }
         }
     }
@@ -93,7 +92,6 @@ int main() {
     }
     int c = calc(exp);
     double ans = double(c) / sum;
-    if (ans == 0.0)
-        ans = -ans;
+    if (ans == 0.0) ans = -ans;
     cout << unknown << "=" << fixed << setprecision(3) << ans << endl;
 }

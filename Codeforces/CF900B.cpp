@@ -32,8 +32,7 @@ void work(int num, int div, int f) {
         rem.push_back(x);
         num = x * 10;
     }
-    if (type == 1)
-        dec.push_back(0);
+    if (type == 1) dec.push_back(0);
     for (unsigned int i = 1; i < dec.size(); i++) {
         if (dec[i] == f) {
             cout << i << endl;

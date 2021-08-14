@@ -39,8 +39,7 @@ long long get() {
             cnt++;
         }
     }
-    if (cnt == 0)
-        exit(0);
+    if (cnt == 0) exit(0);
     return num;
 }
 
@@ -78,10 +77,10 @@ int main() {
                     break;
             }
         }
-        if (num != 1)
-            q[num]++;
+        if (num != 1) q[num]++;
         string ans;
-        for (auto iter = q.begin(); iter != q.end(); iter++) ans += to_string(iter->first) + "^" + to_string(iter->second) + "*";
+        for (auto iter = q.begin(); iter != q.end(); iter++)
+            ans += to_string(iter->first) + "^" + to_string(iter->second) + "*";
         ans.pop_back();
         cout << re << "=" << ans << endl << endl;
         q.clear();
