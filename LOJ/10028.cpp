@@ -1,10 +1,3 @@
-/*
- *  Problem: 10028
- *  Author: Insouciant21
- *  Time: 2020/9/20 20:25:45
- *  Status: Accepted
- */
-
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -35,10 +28,8 @@ void bfs(Node start, Node end) {
         for (auto &i : mov) {
             Node p = now;
             p.x += i.x, p.y += i.y, p.step++;
-            if (p.x < 0 || p.y < 0 || p.x >= l || p.y >= l)
-                continue;
-            if (vis[p.x][p.y])
-                continue;
+            if (p.x < 0 || p.y < 0 || p.x >= l || p.y >= l) continue;
+            if (vis[p.x][p.y]) continue;
             vis[p.x][p.y] = true;
             q.push(p);
         }
@@ -49,7 +40,7 @@ int main() {
     cin >> n;
     for (int i = 1; i <= n; i++) {
         cin >> l;
-        Node r, e;
+        Node r {}, e {};
         cin >> r.x >> r.y;
         r.step = e.step = 0;
         cin >> e.x >> e.y;

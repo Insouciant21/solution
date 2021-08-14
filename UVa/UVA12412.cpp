@@ -1,10 +1,3 @@
-/*
-  Problem: UVA12412
-  Time: 2021/7/13 21:01
-  Author: Insouciant21
-  Status: Accepted
-*/
-
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -54,16 +47,13 @@ void query(const string &q) {
 }
 
 void calculateRank() {
-    for (auto &i : bucket)
-        i.clear();
+    for (auto &i : bucket) i.clear();
     for (int i = 0; i < students.size(); i++)
-        if (!students[i].removed)
-            bucket[students[i].totalScore].insert(i);
+        if (!students[i].removed) bucket[students[i].totalScore].insert(i);
     int rk = 1;
     for (int i = 400; i >= 0; i--) {
         if (!bucket[i].empty()) {
-            for (auto j : bucket[i])
-                students[j].rank = rk;
+            for (auto j : bucket[i]) students[j].rank = rk;
             rk += int(bucket[i].size());
         }
     }
@@ -85,8 +75,7 @@ void generateStatistics(int cid) {
             passedProgramming += (student.program >= 60);
             passedChinese += (student.chinese >= 60);
             numStudents++;
-            for (int j = 1; j < 5; j++)
-                numPass[j] += (student.passedExam >= j);
+            for (int j = 1; j < 5; j++) numPass[j] += (student.passedExam >= j);
             numPass[0] += (student.passedExam == 0);
         }
     }
@@ -128,15 +117,13 @@ int main() {
         cout << endl;
         int operation;
         cin >> operation;
-        if (operation == 0)
-            break;
+        if (operation == 0) break;
         if (operation == 1) {
             while (true) {
                 cout << "Please enter the SID, CID, name and four scores. Enter 0 to finish." << endl;
                 string s;
                 cin >> s;
-                if (s == "0")
-                    break;
+                if (s == "0") break;
                 bool bad = false;
                 for (auto &student : students) {
                     if (s == student.sid && !student.removed) {
@@ -151,8 +138,7 @@ int main() {
                 Input.sid = s;
                 Input.passedExam = (Input.chinese >= 60) + (Input.math >= 60) + (Input.english >= 60) + (Input.program >= 60);
                 Input.removed = false;
-                if (bad)
-                    continue;
+                if (bad) continue;
                 students.push_back(Input);
                 calculateRank();
             }
@@ -162,8 +148,7 @@ int main() {
                 cout << "Please enter SID or name. Enter 0 to finish." << endl;
                 string input;
                 cin >> input;
-                if (input == "0")
-                    break;
+                if (input == "0") break;
                 remove(input);
             }
         }
@@ -172,13 +157,11 @@ int main() {
                 cout << "Please enter SID or name. Enter 0 to finish." << endl;
                 string input;
                 cin >> input;
-                if (input == "0")
-                    break;
+                if (input == "0") break;
                 query(input);
             }
         }
-        else if (operation == 4)
-            cout << "Showing the ranklist hurts students' self-esteem. Don't do that." << endl;
+        else if (operation == 4) cout << "Showing the ranklist hurts students' self-esteem. Don't do that." << endl;
         else if (operation == 5) {
             cout << "Please enter class ID, 0 for the whole statistics." << endl;
             int id;

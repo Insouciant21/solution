@@ -21,8 +21,7 @@ void factor(int x) {
             p[i] += cnt * (n - x + 1LL);
         }
     }
-    if (x > 1)
-        p[x] += (n - x + 1LL);
+    if (x > 1) p[x] += (n - x + 1LL);
 }
 
 int main() {

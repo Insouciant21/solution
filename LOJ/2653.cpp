@@ -1,10 +1,3 @@
-/*
- *  Problem: 2653
- *  Author: Insouciant21
- *  Time: 2020/9/20 20:30:11
- *  Status: Accepted
- */
-
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -33,27 +26,22 @@ void bfs(Node st) {
     while (q.size()) {
         Node now = q.front();
         q.pop();
-        for (int i = 0; i < 8; i++) {
+        for (auto &i : mov) {
             Node nt = now;
-            nt.x += mov[i].x, nt.y += mov[i].y;
-            if (nt.x < 1 || nt.y < 1 || nt.x > n || nt.y > n)
-                continue;
-            if (vis[nt.x][nt.y])
-                continue;
+            nt.x += i.x, nt.y += i.y;
+            if (nt.x < 1 || nt.y < 1 || nt.x > n || nt.y > n) continue;
+            if (vis[nt.x][nt.y]) continue;
             if (mp[nt.x][nt.y] == mid) {
                 vis[nt.x][nt.y] = true;
                 q.push(nt);
             }
         }
-        for (int i = 0; i < 8; i++) {
+        for (auto &i : mov) {
             Node nt = now;
-            nt.x += mov[i].x, nt.y += mov[i].y;
-            if (nt.x < 1 || nt.y < 1 || nt.x > n || nt.y > n)
-                continue;
-            if (mp[nt.x][nt.y] > mid)
-                high = true;
-            else if (mp[nt.x][nt.y] < mid)
-                low = true;
+            nt.x += i.x, nt.y += i.y;
+            if (nt.x < 1 || nt.y < 1 || nt.x > n || nt.y > n) continue;
+            if (mp[nt.x][nt.y] > mid) high = true;
+            else if (mp[nt.x][nt.y] < mid) low = true;
         }
     }
 }
@@ -65,14 +53,11 @@ int main() {
         for (int j = 1; j <= n; j++) cin >> mp[i][j];
     for (int i = 1; i <= n; i++) {
         for (int j = 1; j <= n; j++) {
-            if (vis[i][j])
-                continue;
+            if (vis[i][j]) continue;
             bfs({i, j});
-            if (low && !high)
-                ansh++;
-            if (!low && high)
-                ansl++;
-            low = high = 0;
+            if (low && !high) ansh++;
+            if (!low && high) ansl++;
+            low = high = false;
             cnt++;
         }
     }
