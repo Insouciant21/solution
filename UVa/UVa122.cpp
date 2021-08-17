@@ -41,7 +41,9 @@ struct Tree {
 vector<StoreNode> store;
 
 bool solve() {
-    sort(store.begin(), store.end(), [](const StoreNode &a, const StoreNode &b) { return a.path.length() < b.path.length(); });
+    sort(store.begin(), store.end(), [](const StoreNode &a, const StoreNode &b) {
+        return a.path.length() < b.path.length();
+    });
     if (!store[0].path.empty()) return false;
     Tree g {};
     g.root->id = store[0].id;

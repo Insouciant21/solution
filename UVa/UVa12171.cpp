@@ -45,7 +45,9 @@ void bfs() {
         for (int i = 0; i < 6; i++) {
             Point ftr = prs;
             ftr.move(i);
-            if (ftr.x < 0 || ftr.y < 0 || ftr.z < 0 || ftr.x >= x.size() - 1 || ftr.y >= y.size() - 1 || ftr.z >= z.size() - 1) continue;
+            if (ftr.x < 0 || ftr.y < 0 || ftr.z < 0 || ftr.x >= x.size() - 1 || ftr.y >= y.size() - 1 ||
+                ftr.z >= z.size() - 1)
+                continue;
             if (vis[ftr.x][ftr.y][ftr.z] == 1) {
                 s += calcArea(prs, i);
                 continue;

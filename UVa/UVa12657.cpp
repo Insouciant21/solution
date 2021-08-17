@@ -84,7 +84,8 @@ int main() {
             pos++;
             p = p->next;
             if (p == g.tail) break;
-            if ((pos % 2 == 1 && (!g.reversed || n % 2 == 1)) || (pos % 2 == 0 && g.reversed && n % 2 == 0)) ans += p->id;
+            if ((pos % 2 == 1 && (!g.reversed || n % 2 == 1)) || (pos % 2 == 0 && g.reversed && n % 2 == 0))
+                ans += p->id;
         }
         cout << "Case " << ++kase << ": " << ans << endl;
     }

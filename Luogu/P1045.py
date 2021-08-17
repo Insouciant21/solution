@@ -1,10 +1,3 @@
-"""
-  Problem: P1045
-  Time: 2020/10/11 10:55:56
-  Author: Insouciant21
-  Status: Accepted
-"""
-
 import math
 
 p = int(input())

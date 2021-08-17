@@ -21,7 +21,7 @@ AlwaysBreakAfterReturnType: None
 AlwaysBreakBeforeMultilineStrings: false
 AlwaysBreakTemplateDeclarations: MultiLine
 BinPackArguments: false
-BinPackParameters: true
+BinPackParameters: false
 BraceWrapping:
   AfterCaseLabel: false
   AfterClass: false
@@ -35,9 +35,9 @@ BraceWrapping:
   BeforeCatch: false
   BeforeElse: true
   IndentBraces: false
-  SplitEmptyFunction: true
-  SplitEmptyRecord: true
-  SplitEmptyNamespace: true
+  SplitEmptyFunction: false
+  SplitEmptyRecord: false
+  SplitEmptyNamespace: false
 BreakBeforeBinaryOperators: None
 BreakBeforeBraces: Custom
 BreakBeforeInheritanceComma: false
@@ -45,11 +45,11 @@ BreakInheritanceList: BeforeColon
 BreakBeforeTernaryOperators: true
 BreakConstructorInitializersBeforeComma: false
 BreakConstructorInitializers: BeforeColon
-BreakAfterJavaFieldAnnotations: false
+BreakAfterJavaFieldAnnotations: true
 BreakStringLiterals: true
-ColumnLimit: 200
+ColumnLimit: 120
 CompactNamespaces: false
-ConstructorInitializerAllOnOneLineOrOnePerLine: false
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
 ConstructorInitializerIndentWidth: 4
 ContinuationIndentWidth: 4
 Cpp11BracedListStyle: true
@@ -79,10 +79,8 @@ IndentCaseLabels: true
 IndentGotoLabels: true
 IndentPPDirectives: None
 IndentWidth: 4
-IndentWrappedFunctionNames: false
-JavaScriptQuotes: Leave
-JavaScriptWrapImports: true
-KeepEmptyLinesAtTheStartOfBlocks: true
+IndentWrappedFunctionNames: true
+KeepEmptyLinesAtTheStartOfBlocks: false
 MacroBlockBegin: ''
 MacroBlockEnd: ''
 MaxEmptyLinesToKeep: 1
@@ -122,7 +120,7 @@ SpacesInCStyleCastParentheses: false
 SpacesInParentheses: false
 SpacesInSquareBrackets: false
 SpaceBeforeSquareBrackets: false
-Standard: Latest
+Standard: Auto
 StatementMacros:
   - Q_UNUSED
   - QT_REQUIRE_VERSION

@@ -34,8 +34,7 @@ struct BigInteger {
 
 istream &operator>>(istream &in, BigInteger &x) {
     string p;
-    if (!(in >> p))
-        return in;
+    if (!(in >> p)) return in;
     x = p;
     return in;
 }

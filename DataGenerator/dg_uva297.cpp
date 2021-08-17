@@ -11,7 +11,8 @@ struct Node {
     char value;
     Node *l1, *l2;
     Node *r1, *r2;
-    explicit Node(char i = 0, Node *u = nullptr, Node *y = nullptr, Node *g = nullptr, Node *c = nullptr) : value(i), l1(u), l2(y), r1(g), r2(c) {};
+    explicit Node(char i = 0, Node *u = nullptr, Node *y = nullptr, Node *g = nullptr, Node *c = nullptr)
+        : value(i), l1(u), l2(y), r1(g), r2(c) {};
 };
 
 void make(Node *g, int depth) {
