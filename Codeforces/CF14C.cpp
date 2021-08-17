@@ -1,10 +1,3 @@
-/*
-  Problem: CF14C
-  Time: 2020/10/16 18:20:58
-  Author: Insouciant21
-  Status: Accepted
-*/
-
 #include <bits/stdc++.h>
 
 using namespace std;

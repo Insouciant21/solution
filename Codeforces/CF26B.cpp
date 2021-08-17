@@ -1,10 +1,3 @@
-/*
-  Problem: CF26B
-  Time: 2020/10/16 21:16:56
-  Author: Insouciant21
-  Status: Accepted
-*/
-
 #include <bits/stdc++.h>
 
 using namespace std;

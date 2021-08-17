@@ -17,13 +17,13 @@ int n;
 
 bool high, low;
 
-int ansh, ansl;
+int ansH, ansL;
 
 void bfs(Node st) {
     q.push(st);
     int mid = mp[st.x][st.y];
     vis[st.x][st.y] = true;
-    while (q.size()) {
+    while (!q.empty()) {
         Node now = q.front();
         q.pop();
         for (auto &i : mov) {
@@ -55,12 +55,12 @@ int main() {
         for (int j = 1; j <= n; j++) {
             if (vis[i][j]) continue;
             bfs({i, j});
-            if (low && !high) ansh++;
-            if (!low && high) ansl++;
+            if (low && !high) ansH++;
+            if (!low && high) ansL++;
             low = high = false;
             cnt++;
         }
     }
-    printf((cnt == 1) ? "1 1" : "%d %d", ansh, ansl);
+    printf((cnt == 1) ? "1 1" : "%d %d", ansH, ansL);
     return 0;
 }

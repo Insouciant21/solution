@@ -1,10 +1,3 @@
-/*
-  Problem: AT176
-  Time: 2020/11/13 18:17:35
-  Author: Insouciant21
-  Status: Accepted
-*/
-
 #include <bits/stdc++.h>
 
 using namespace std;

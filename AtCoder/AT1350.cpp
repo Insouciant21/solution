@@ -1,10 +1,4 @@
-﻿/*
- *  Problem: AT1350
- *  Author: Insouciant21
- *  Time: 2020/9/15 20:09:33
- *  Status: Accepted
- */
-#include <bits/stdc++.h>
+﻿#include <bits/stdc++.h>
 
 using namespace std;
 

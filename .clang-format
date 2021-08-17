@@ -40,10 +40,8 @@ BraceWrapping:
   SplitEmptyNamespace: false
 BreakBeforeBinaryOperators: None
 BreakBeforeBraces: Custom
-BreakBeforeInheritanceComma: false
-BreakInheritanceList: BeforeColon
+BreakInheritanceList: AfterColon
 BreakBeforeTernaryOperators: true
-BreakConstructorInitializersBeforeComma: false
 BreakConstructorInitializers: BeforeColon
 BreakAfterJavaFieldAnnotations: true
 BreakStringLiterals: true

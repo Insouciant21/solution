@@ -24,7 +24,7 @@ int n;
 
 bool high, low;
 
-int ansh, ansl;
+int ansH, ansL;
 
 void bfs(Node st) {
     q.push(st);
@@ -65,12 +65,12 @@ int main() {
         for (int j = 1; j <= n; j++) {
             if (vis[i][j]) continue;
             bfs({i, j});
-            if (low && !high) ansh++;
-            if (!low && high) ansl++;
+            if (low && !high) ansH++;
+            if (!low && high) ansL++;
             low = high = 0;
             cnt++;
         }
     }
-    printf((cnt == 1) ? "1 1" : "%d %d", ansh, ansl);
+    printf((cnt == 1) ? "1 1" : "%d %d", ansH, ansL);
     return 0;
 }

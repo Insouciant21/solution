@@ -1,10 +1,3 @@
-/*
-  Problem: CF4C
-  Time: 2020/12/31 20:50:55
-  Author: Insouciant21
-  Status: Accepted
-*/
-
 #include <bits/stdc++.h>
 
 using namespace std;
