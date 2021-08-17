@@ -39,7 +39,8 @@ int main() {
                 s.pop();
                 int b = s.top();
                 s.pop();
-                std::set_union(set[a].begin(), set[a].end(), set[b].begin(), set[b].end(), std::inserter(ans, ans.begin()));
+                std::set_union(
+                    set[a].begin(), set[a].end(), set[b].begin(), set[b].end(), std::inserter(ans, ans.begin()));
                 s.push(getID(ans));
             }
             if (command == "INTERSECT") {
@@ -48,7 +49,8 @@ int main() {
                 s.pop();
                 int b = s.top();
                 s.pop();
-                std::set_intersection(set[a].begin(), set[a].end(), set[b].begin(), set[b].end(), std::inserter(ans, ans.begin()));
+                std::set_intersection(
+                    set[a].begin(), set[a].end(), set[b].begin(), set[b].end(), std::inserter(ans, ans.begin()));
                 s.push(getID(ans));
             }
             if (command == "ADD") {

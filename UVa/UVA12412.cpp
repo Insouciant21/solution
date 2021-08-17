@@ -39,9 +39,11 @@ void remove(const string &q) {
 void query(const string &q) {
     for (auto &student : students) {
         if ((student.sid == q || student.name == q) && !student.removed) {
-            cout << student.rank << " " << student.sid << " " << student.cid << " " << student.name << " " << student.chinese << " " << student.math << " " << student.english << " " << student.program
-                 << " " << student.totalScore << " ";
-            cout << fixed << setprecision(2) << (student.chinese + student.math + student.english + student.program) / 4.0 + eps << endl;
+            cout << student.rank << " " << student.sid << " " << student.cid << " " << student.name << " "
+                 << student.chinese << " " << student.math << " " << student.english << " " << student.program << " "
+                 << student.totalScore << " ";
+            cout << fixed << setprecision(2)
+                 << (student.chinese + student.math + student.english + student.program) / 4.0 + eps << endl;
         }
     }
 }
@@ -81,19 +83,23 @@ void generateStatistics(int cid) {
     }
     cout << "Chinese\n"
          << "Average Score: " << fixed << setprecision(2) << double(totalChinese) / numStudents + eps << endl;
-    cout << "Number of passed students: " << passedChinese << endl << "Number of failed students: " << numStudents - passedChinese << endl;
+    cout << "Number of passed students: " << passedChinese << endl
+         << "Number of failed students: " << numStudents - passedChinese << endl;
     cout << endl;
     cout << "Mathematics\n"
          << "Average Score: " << fixed << setprecision(2) << double(totalMath) / numStudents + eps << endl;
-    cout << "Number of passed students: " << passedMath << endl << "Number of failed students: " << numStudents - passedMath << endl;
+    cout << "Number of passed students: " << passedMath << endl
+         << "Number of failed students: " << numStudents - passedMath << endl;
     cout << endl;
     cout << "English\n"
          << "Average Score: " << fixed << setprecision(2) << double(totalEnglish) / numStudents + eps << endl;
-    cout << "Number of passed students: " << passedEnglish << endl << "Number of failed students: " << numStudents - passedEnglish << endl;
+    cout << "Number of passed students: " << passedEnglish << endl
+         << "Number of failed students: " << numStudents - passedEnglish << endl;
     cout << endl;
     cout << "Programming\n"
          << "Average Score: " << fixed << setprecision(2) << double(totalProgramming) / numStudents + eps << endl;
-    cout << "Number of passed students: " << passedProgramming << endl << "Number of failed students: " << numStudents - passedProgramming << endl;
+    cout << "Number of passed students: " << passedProgramming << endl
+         << "Number of failed students: " << numStudents - passedProgramming << endl;
     cout << endl;
     cout << "Overall:\n"
          << "Number of students who passed all subjects: " << numPass[4] << endl
@@ -136,7 +142,8 @@ int main() {
                 cin >> Input.cid >> Input.name >> Input.chinese >> Input.math >> Input.english >> Input.program;
                 Input.totalScore = Input.chinese + Input.math + Input.english + Input.program;
                 Input.sid = s;
-                Input.passedExam = (Input.chinese >= 60) + (Input.math >= 60) + (Input.english >= 60) + (Input.program >= 60);
+                Input.passedExam =
+                    (Input.chinese >= 60) + (Input.math >= 60) + (Input.english >= 60) + (Input.program >= 60);
                 Input.removed = false;
                 if (bad) continue;
                 students.push_back(Input);

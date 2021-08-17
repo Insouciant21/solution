@@ -16,7 +16,8 @@ int main() {
         int tot = 0;
         for (int i = 1; i <= r; i++)
             for (int j = 1; j <= c; j++)
-                if ((i == 1 || j == 1 || grid[i][j - 1] == '*' || grid[i - 1][j] == '*') && grid[i][j] != '*') id[i][j] = ++tot;
+                if ((i == 1 || j == 1 || grid[i][j - 1] == '*' || grid[i - 1][j] == '*') && grid[i][j] != '*')
+                    id[i][j] = ++tot;
         if (kase != 1) printf("\n");
         printf("puzzle #%d:\n", kase);
         printf("Across\n");

@@ -23,7 +23,12 @@ void bfs(Node start, Node end) {
         Node now = q.front();
         q.pop();
         if (now.x == end.x && now.y == end.y) {
-            printf("To get from %c%d to %c%d takes %d knight moves.\n", start.x + 'a' - 1, start.y, end.x + 'a' - 1, end.y, now.step);
+            printf("To get from %c%d to %c%d takes %d knight moves.\n",
+                   start.x + 'a' - 1,
+                   start.y,
+                   end.x + 'a' - 1,
+                   end.y,
+                   now.step);
             return;
         }
         for (auto &i : mov) {
