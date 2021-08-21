@@ -9,7 +9,7 @@
 using namespace std;
 
 struct Node {
-    int left, right;
+    int nw, ne;
     bool operator<(const Node &x) const {
         return max(x.right, left * right) < max(right, x.left * x.right);
     }

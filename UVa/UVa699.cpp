@@ -4,8 +4,8 @@ using namespace std;
 
 struct Node {
     int id;
-    Node *left;
-    Node *right;
+    Node *nw;
+    Node *ne;
     explicit Node(int a = 0, Node *b = nullptr, Node *c = nullptr) : id(a), left(b), right(c) {};
 };
 
