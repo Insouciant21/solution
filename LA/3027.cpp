@@ -1,5 +1,5 @@
 // Insouciant at 21:19
-// Status:
+// Status: AC
 // Problem: 3027.cpp
 
 #include <bits/stdc++.h>
@@ -10,15 +10,12 @@ const int maxn = 20100;
 
 pair<int, int> fa[maxn];
 
-// pair<int,int> operator=(pair<int,int>a,pair<int,int)
-
-int updateDist(int u) {
+int find(int u) {
     if (fa[u].first == u) return u;
-    else {
-        fa[u].first = updateDist(u);
-        fa[u].second += fa[fa[u].first].second;
-        return fa[u].first;
-    }
+    int root = find(fa[u].first);
+    fa[u].second += fa[fa[u].first].second;
+    fa[u].first = root;
+    return fa[u].first;
 }
 
 int main() {
@@ -31,17 +28,19 @@ int main() {
         for (int i = 0; i < maxn; i++) fa[i] = {i, 0};
         string f;
         while (getline(cin, f)) {
-            if (f == "O") break;
-            if (f == "E") {
+            if (f[0] == 'O') break;
+            if (f[0] == 'E') {
                 int k;
                 sscanf(f.c_str(), "E %d", &k);
+                find(k);
                 printf("%d\n", fa[k].second);
             }
-            else if (f == "I") {
+            else if (f[0] == 'I') {
                 int u, v;
                 sscanf(f.c_str(), "I %d %d", &u, &v);
-                fa[u] = {v, abs(u - v) % 1000};
-                updateDist(u);
+                fa[u].first = v;
+                fa[u].second = abs(u - v) % 1000;
+
             }
         }
     }
