@@ -24,10 +24,10 @@
     </Objective-C>
     <Objective-C-extensions>
       <extensions>
+        <pair source="cc" header="h" fileNamingConvention="CAMEL_CASE" />
         <pair source="cpp" header="h" fileNamingConvention="CAMEL_CASE" />
         <pair source="c" header="h" fileNamingConvention="NONE" />
         <pair source="cu" header="cuh" fileNamingConvention="NONE" />
-        <pair source="cc" header="h" fileNamingConvention="CAMEL_CASE" />
       </extensions>
       <rules>
         <rule entity="MACRO" visibility="ANY" specifier="ANY" prefix="" style="SCREAMING_SNAKE_CASE" suffix="" />
