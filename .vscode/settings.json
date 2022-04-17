@@ -147,5 +147,30 @@
   "oneDarkPro.vivid": true,
   "python.formatting.provider": "yapf",
   "python.pythonPath": "C:\\Users\\Insouciant21\\AppData\\Local\\Microsoft\\WindowsApps\\python3.9.exe",
-  "editor.defaultFormatter": "ms-vscode.cpptools"
+  "editor.defaultFormatter": "ms-vscode.cpptools",
+  "C_Cpp_Runner.cStandard": "",
+  "C_Cpp_Runner.cppStandard": "c++11",
+  "C_Cpp_Runner.msvcBatchPath": "",
+  "C_Cpp_Runner.warnings": [
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic"
+  ],
+  "C_Cpp_Runner.enableWarnings": true,
+  "C_Cpp_Runner.warningsAsError": false,
+  "C_Cpp_Runner.compilerArgs": [],
+  "C_Cpp_Runner.linkerArgs": [],
+  "C_Cpp_Runner.includePaths": [],
+  "C_Cpp_Runner.includeSearch": [
+    "*",
+    "**/*"
+  ],
+  "C_Cpp_Runner.excludeSearch": [
+    "**/build",
+    "**/build/**",
+    "**/.*",
+    "**/.*/**",
+    "**/.vscode",
+    "**/.vscode/**"
+  ]
 }

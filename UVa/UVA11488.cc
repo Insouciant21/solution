@@ -2,7 +2,6 @@
  *  Problem: UVA11488
  *  Author: Insouciant21
  *  Date: 2022/4/14
- *  wait
  */
 
 #include <bits/stdc++.h>
@@ -27,9 +26,11 @@ struct Trie {
     void clear() {
         memset(ch, 0, sizeof ch);
         memset(v, 0, sizeof v);
+        ans = 0;
+        size = 1;
     }
 
-    static int idx(char c) { return c - 'a'; }
+    static int idx(char c) { return (c == '0') ? 0 : 1; }
 
     void insert(const string &s) {
         int u = 0;
@@ -41,13 +42,23 @@ struct Trie {
                 node[size] = 0;
                 ch[u][c] = size++;
             }
+            v[u].cnt++;
+            v[u].depth = depth++;
             u = ch[u][c];
-            depth++;
         }
         node[u] = 1;
+        v[u].cnt++;
+        v[u].depth = s.length();
     }
 
-    int checkSizeOf(int pos) { return (ch[pos][0] == 1) + (ch[pos][1] == 1); }
+    int ans = 0;
+
+    void solve(int u) {
+        ans = max(ans, v[u].depth * v[u].cnt);
+        // printf("u dep u %d %d %d\n", u, v[u].depth, v[u].cnt);
+        if (ch[u][0]) solve(ch[u][0]);
+        if (ch[u][1]) solve(ch[u][1]);
+    }
 };
 
 Trie f;
@@ -62,12 +73,14 @@ int main() {
     while (T--) {
         int n;
         cin >> n;
+        f.clear();
         for (int i = 0; i < n; i++) {
             string s;
             cin >> s;
             f.insert(s);
         }
-        solve(0, 0);
+        f.solve(0);
+        cout << f.ans << endl;
     }
     return 0;
 }
