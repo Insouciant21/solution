@@ -1,11 +1,15 @@
 #include <bits/stdc++.h>
+
 using namespace std;
+
 struct Event {
     int time, period, pid;
 };
+
 struct cmp {
     bool operator()(Event a, Event b) { return (a.time != b.time) ? a.time > b.time : a.pid > b.pid; }
 };
+
 int main() {
     string s;
     priority_queue<Event, vector<Event>, cmp> pq;
