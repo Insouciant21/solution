@@ -5,15 +5,6 @@
   Status: Accepted
 */
 
-/* [se]  [s]
-3   a    x
-1   e    e
-7   e    l
-6   l    p
-4   m    a
-5   p    m
-2   x    e 7-start
-*/
 
 #include <bits/stdc++.h>
 
