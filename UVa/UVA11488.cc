@@ -12,11 +12,11 @@ const int maxNode = 250020;
 const int sigmaSize = 2;
 
 struct Trie {
-    int ch[maxNode][sigmaSize];
-    bool node[maxNode];
+    int ch[maxNode][sigmaSize]{};
+    bool node[maxNode]{};
     struct Val {
         int depth, cnt;
-    } v[maxNode];
+    } v[maxNode]{};
     int size = 0;
     Trie() {
         size = 1;
@@ -39,35 +39,33 @@ struct Trie {
             int c = idx(i);
             if (!ch[u][c]) {
                 memset(ch[size], 0, sizeof ch[size]);
-                node[size] = 0;
+                node[size] = false;
                 ch[u][c] = size++;
             }
             v[u].cnt++;
             v[u].depth = depth++;
             u = ch[u][c];
         }
-        node[u] = 1;
+        node[u] = true;
         v[u].cnt++;
-        v[u].depth = s.length();
+        v[u].depth = int(s.length());
     }
 
     int ans = 0;
 
     void solve(int u) {
         ans = max(ans, v[u].depth * v[u].cnt);
-        // printf("u dep u %d %d %d\n", u, v[u].depth, v[u].cnt);
         if (ch[u][0]) solve(ch[u][0]);
         if (ch[u][1]) solve(ch[u][1]);
     }
 };
-
-Trie f;
 
 int main() {
 #ifdef LOCALENV
     freopen("test.in", "r", stdin);
     freopen("test.out", "w", stdout);
 #endif
+    Trie f;
     int T;
     cin >> T;
     while (T--) {
