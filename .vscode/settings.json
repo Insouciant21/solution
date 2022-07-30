@@ -173,7 +173,7 @@
     "**/.vscode",
     "**/.vscode/**"
   ],
-  "editor.fontFamily": "'Cascadia Code','Droid Sans Mono', 'monospace', monospace",
+  "editor.fontFamily": "'Cascadia Code PL','Droid Sans Mono', 'monospace', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
   "C_Cpp.clang_format_sortIncludes": true,

@@ -3177,6 +3177,30 @@ Luogu/P1443.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/solution.dir/build.make CMakeFiles/solution.dir/Luogu/P1443.cpp.s
 .PHONY : Luogu/P1443.cpp.s
 
+Luogu/P1464.o: Luogu/P1464.cc.o
+.PHONY : Luogu/P1464.o
+
+# target to build an object file
+Luogu/P1464.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/solution.dir/build.make CMakeFiles/solution.dir/Luogu/P1464.cc.o
+.PHONY : Luogu/P1464.cc.o
+
+Luogu/P1464.i: Luogu/P1464.cc.i
+.PHONY : Luogu/P1464.i
+
+# target to preprocess a source file
+Luogu/P1464.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/solution.dir/build.make CMakeFiles/solution.dir/Luogu/P1464.cc.i
+.PHONY : Luogu/P1464.cc.i
+
+Luogu/P1464.s: Luogu/P1464.cc.s
+.PHONY : Luogu/P1464.s
+
+# target to generate assembly for a file
+Luogu/P1464.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/solution.dir/build.make CMakeFiles/solution.dir/Luogu/P1464.cc.s
+.PHONY : Luogu/P1464.cc.s
+
 Luogu/P1509.o: Luogu/P1509.cpp.o
 .PHONY : Luogu/P1509.o
 
@@ -8391,6 +8415,9 @@ help:
 	@echo "... Luogu/P1443.o"
 	@echo "... Luogu/P1443.i"
 	@echo "... Luogu/P1443.s"
+	@echo "... Luogu/P1464.o"
+	@echo "... Luogu/P1464.i"
+	@echo "... Luogu/P1464.s"
 	@echo "... Luogu/P1509.o"
 	@echo "... Luogu/P1509.i"
 	@echo "... Luogu/P1509.s"
