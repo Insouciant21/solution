@@ -1,0 +1,1642 @@
+[
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/AtCoder/AT1350.cpp.o -c /home/insouciant21/solution/AtCoder/AT1350.cpp",
+  "file": "/home/insouciant21/solution/AtCoder/AT1350.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/AtCoder/AT176.cpp.o -c /home/insouciant21/solution/AtCoder/AT176.cpp",
+  "file": "/home/insouciant21/solution/AtCoder/AT176.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/AtCoder/AT4242.cpp.o -c /home/insouciant21/solution/AtCoder/AT4242.cpp",
+  "file": "/home/insouciant21/solution/AtCoder/AT4242.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF1062B.cpp.o -c /home/insouciant21/solution/Codeforces/CF1062B.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF1062B.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF1101B.cpp.o -c /home/insouciant21/solution/Codeforces/CF1101B.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF1101B.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF1139A.cpp.o -c /home/insouciant21/solution/Codeforces/CF1139A.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF1139A.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF1146B.cpp.o -c /home/insouciant21/solution/Codeforces/CF1146B.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF1146B.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF121A.cpp.o -c /home/insouciant21/solution/Codeforces/CF121A.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF121A.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF14C.cpp.o -c /home/insouciant21/solution/Codeforces/CF14C.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF14C.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF171B.cpp.o -c /home/insouciant21/solution/Codeforces/CF171B.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF171B.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF192A.cpp.o -c /home/insouciant21/solution/Codeforces/CF192A.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF192A.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF260A.cpp.o -c /home/insouciant21/solution/Codeforces/CF260A.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF260A.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF26B.cpp.o -c /home/insouciant21/solution/Codeforces/CF26B.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF26B.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF34C.cpp.o -c /home/insouciant21/solution/Codeforces/CF34C.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF34C.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF377A.cpp.o -c /home/insouciant21/solution/Codeforces/CF377A.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF377A.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF399B.cpp.o -c /home/insouciant21/solution/Codeforces/CF399B.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF399B.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF45D.cpp.o -c /home/insouciant21/solution/Codeforces/CF45D.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF45D.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF485A.cpp.o -c /home/insouciant21/solution/Codeforces/CF485A.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF485A.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF490B.cpp.o -c /home/insouciant21/solution/Codeforces/CF490B.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF490B.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF496A.cpp.o -c /home/insouciant21/solution/Codeforces/CF496A.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF496A.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF4C.cpp.o -c /home/insouciant21/solution/Codeforces/CF4C.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF4C.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF519B.cpp.o -c /home/insouciant21/solution/Codeforces/CF519B.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF519B.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF550A.cpp.o -c /home/insouciant21/solution/Codeforces/CF550A.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF550A.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF585B.cpp.o -c /home/insouciant21/solution/Codeforces/CF585B.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF585B.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF616C.cpp.o -c /home/insouciant21/solution/Codeforces/CF616C.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF616C.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF675A.cpp.o -c /home/insouciant21/solution/Codeforces/CF675A.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF675A.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF70A.cpp.o -c /home/insouciant21/solution/Codeforces/CF70A.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF70A.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF762A.cpp.o -c /home/insouciant21/solution/Codeforces/CF762A.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF762A.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF762B.cpp.o -c /home/insouciant21/solution/Codeforces/CF762B.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF762B.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF807A.cpp.o -c /home/insouciant21/solution/Codeforces/CF807A.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF807A.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF858A.cpp.o -c /home/insouciant21/solution/Codeforces/CF858A.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF858A.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF864D.cpp.o -c /home/insouciant21/solution/Codeforces/CF864D.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF864D.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF866A.cpp.o -c /home/insouciant21/solution/Codeforces/CF866A.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF866A.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF870C.cpp.o -c /home/insouciant21/solution/Codeforces/CF870C.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF870C.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF897B.cpp.o -c /home/insouciant21/solution/Codeforces/CF897B.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF897B.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF900B.cpp.o -c /home/insouciant21/solution/Codeforces/CF900B.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF900B.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF92B.cpp.o -c /home/insouciant21/solution/Codeforces/CF92B.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF92B.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF977D.cpp.o -c /home/insouciant21/solution/Codeforces/CF977D.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF977D.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF988C.cpp.o -c /home/insouciant21/solution/Codeforces/CF988C.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF988C.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF989C.cpp.o -c /home/insouciant21/solution/Codeforces/CF989C.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF989C.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Codeforces/CF991B.cpp.o -c /home/insouciant21/solution/Codeforces/CF991B.cpp",
+  "file": "/home/insouciant21/solution/Codeforces/CF991B.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Libre/10018.cpp.o -c /home/insouciant21/solution/Libre/10018.cpp",
+  "file": "/home/insouciant21/solution/Libre/10018.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Libre/10028.cpp.o -c /home/insouciant21/solution/Libre/10028.cpp",
+  "file": "/home/insouciant21/solution/Libre/10028.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Libre/2653.cpp.o -c /home/insouciant21/solution/Libre/2653.cpp",
+  "file": "/home/insouciant21/solution/Libre/2653.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/B2001.cpp.o -c /home/insouciant21/solution/Luogu/B2001.cpp",
+  "file": "/home/insouciant21/solution/Luogu/B2001.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/B2002.cpp.o -c /home/insouciant21/solution/Luogu/B2002.cpp",
+  "file": "/home/insouciant21/solution/Luogu/B2002.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/B2003.cpp.o -c /home/insouciant21/solution/Luogu/B2003.cpp",
+  "file": "/home/insouciant21/solution/Luogu/B2003.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/B2004.cpp.o -c /home/insouciant21/solution/Luogu/B2004.cpp",
+  "file": "/home/insouciant21/solution/Luogu/B2004.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/B2005.cpp.o -c /home/insouciant21/solution/Luogu/B2005.cpp",
+  "file": "/home/insouciant21/solution/Luogu/B2005.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/B2006.cpp.o -c /home/insouciant21/solution/Luogu/B2006.cpp",
+  "file": "/home/insouciant21/solution/Luogu/B2006.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/B2007.cpp.o -c /home/insouciant21/solution/Luogu/B2007.cpp",
+  "file": "/home/insouciant21/solution/Luogu/B2007.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/B2008.cpp.o -c /home/insouciant21/solution/Luogu/B2008.cpp",
+  "file": "/home/insouciant21/solution/Luogu/B2008.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/B2009.cpp.o -c /home/insouciant21/solution/Luogu/B2009.cpp",
+  "file": "/home/insouciant21/solution/Luogu/B2009.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/B2010.cpp.o -c /home/insouciant21/solution/Luogu/B2010.cpp",
+  "file": "/home/insouciant21/solution/Luogu/B2010.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1003.cpp.o -c /home/insouciant21/solution/Luogu/P1003.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1003.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1010.cpp.o -c /home/insouciant21/solution/Luogu/P1010.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1010.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1011.cpp.o -c /home/insouciant21/solution/Luogu/P1011.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1011.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1012.cpp.o -c /home/insouciant21/solution/Luogu/P1012.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1012.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1013.cpp.o -c /home/insouciant21/solution/Luogu/P1013.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1013.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1015.cpp.o -c /home/insouciant21/solution/Luogu/P1015.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1015.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1017.cpp.o -c /home/insouciant21/solution/Luogu/P1017.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1017.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1022.cpp.o -c /home/insouciant21/solution/Luogu/P1022.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1022.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1024.cpp.o -c /home/insouciant21/solution/Luogu/P1024.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1024.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1025.cpp.o -c /home/insouciant21/solution/Luogu/P1025.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1025.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1028.cpp.o -c /home/insouciant21/solution/Luogu/P1028.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1028.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1036.cpp.o -c /home/insouciant21/solution/Luogu/P1036.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1036.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1051.cpp.o -c /home/insouciant21/solution/Luogu/P1051.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1051.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1062.cpp.o -c /home/insouciant21/solution/Luogu/P1062.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1062.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1079.cpp.o -c /home/insouciant21/solution/Luogu/P1079.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1079.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1080.cpp.o -c /home/insouciant21/solution/Luogu/P1080.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1080.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1088.cpp.o -c /home/insouciant21/solution/Luogu/P1088.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1088.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1090.cpp.o -c /home/insouciant21/solution/Luogu/P1090.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1090.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1093.cpp.o -c /home/insouciant21/solution/Luogu/P1093.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1093.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1098.cpp.o -c /home/insouciant21/solution/Luogu/P1098.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1098.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1100.cpp.o -c /home/insouciant21/solution/Luogu/P1100.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1100.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1102.cpp.o -c /home/insouciant21/solution/Luogu/P1102.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1102.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1105.cpp.o -c /home/insouciant21/solution/Luogu/P1105.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1105.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1106.cpp.o -c /home/insouciant21/solution/Luogu/P1106.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1106.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1124.cpp.o -c /home/insouciant21/solution/Luogu/P1124.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1124.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1126.cpp.o -c /home/insouciant21/solution/Luogu/P1126.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1126.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1134.cpp.o -c /home/insouciant21/solution/Luogu/P1134.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1134.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1135.cpp.o -c /home/insouciant21/solution/Luogu/P1135.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1135.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1145.cpp.o -c /home/insouciant21/solution/Luogu/P1145.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1145.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1147.cpp.o -c /home/insouciant21/solution/Luogu/P1147.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1147.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1149.cpp.o -c /home/insouciant21/solution/Luogu/P1149.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1149.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1154.cpp.o -c /home/insouciant21/solution/Luogu/P1154.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1154.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1157.cpp.o -c /home/insouciant21/solution/Luogu/P1157.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1157.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1159.cpp.o -c /home/insouciant21/solution/Luogu/P1159.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1159.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1160.cpp.o -c /home/insouciant21/solution/Luogu/P1160.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1160.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1162.cpp.o -c /home/insouciant21/solution/Luogu/P1162.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1162.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1163.cpp.o -c /home/insouciant21/solution/Luogu/P1163.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1163.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1164.cpp.o -c /home/insouciant21/solution/Luogu/P1164.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1164.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1167.cpp.o -c /home/insouciant21/solution/Luogu/P1167.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1167.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1168.cpp.o -c /home/insouciant21/solution/Luogu/P1168.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1168.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1175.cpp.o -c /home/insouciant21/solution/Luogu/P1175.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1175.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1189.cpp.o -c /home/insouciant21/solution/Luogu/P1189.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1189.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1205.cpp.o -c /home/insouciant21/solution/Luogu/P1205.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1205.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1209.cpp.o -c /home/insouciant21/solution/Luogu/P1209.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1209.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1219.cpp.o -c /home/insouciant21/solution/Luogu/P1219.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1219.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1230.cpp.o -c /home/insouciant21/solution/Luogu/P1230.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1230.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1238.cpp.o -c /home/insouciant21/solution/Luogu/P1238.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1238.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1239.cpp.o -c /home/insouciant21/solution/Luogu/P1239.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1239.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1332.cpp.o -c /home/insouciant21/solution/Luogu/P1332.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1332.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1363.cpp.o -c /home/insouciant21/solution/Luogu/P1363.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1363.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1434.cpp.o -c /home/insouciant21/solution/Luogu/P1434.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1434.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1440.cpp.o -c /home/insouciant21/solution/Luogu/P1440.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1440.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1443.cpp.o -c /home/insouciant21/solution/Luogu/P1443.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1443.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1509.cpp.o -c /home/insouciant21/solution/Luogu/P1509.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1509.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1510.cpp.o -c /home/insouciant21/solution/Luogu/P1510.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1510.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1512.cpp.o -c /home/insouciant21/solution/Luogu/P1512.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1512.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1530.cpp.o -c /home/insouciant21/solution/Luogu/P1530.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1530.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1531.cpp.o -c /home/insouciant21/solution/Luogu/P1531.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1531.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1549.cpp.o -c /home/insouciant21/solution/Luogu/P1549.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1549.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1571.cpp.o -c /home/insouciant21/solution/Luogu/P1571.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1571.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1572.cpp.o -c /home/insouciant21/solution/Luogu/P1572.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1572.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1579.cpp.o -c /home/insouciant21/solution/Luogu/P1579.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1579.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1617.cpp.o -c /home/insouciant21/solution/Luogu/P1617.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1617.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1619.cpp.o -c /home/insouciant21/solution/Luogu/P1619.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1619.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1627.cpp.o -c /home/insouciant21/solution/Luogu/P1627.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1627.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1631.cpp.o -c /home/insouciant21/solution/Luogu/P1631.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1631.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1678.cpp.o -c /home/insouciant21/solution/Luogu/P1678.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1678.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1729.cpp.o -c /home/insouciant21/solution/Luogu/P1729.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1729.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1746.cpp.o -c /home/insouciant21/solution/Luogu/P1746.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1746.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1747.cpp.o -c /home/insouciant21/solution/Luogu/P1747.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1747.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1776.cpp.o -c /home/insouciant21/solution/Luogu/P1776.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1776.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1786.cpp.o -c /home/insouciant21/solution/Luogu/P1786.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1786.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1801.cpp.o -c /home/insouciant21/solution/Luogu/P1801.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1801.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1825.cpp.o -c /home/insouciant21/solution/Luogu/P1825.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1825.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1832.cpp.o -c /home/insouciant21/solution/Luogu/P1832.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1832.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1833.cpp.o -c /home/insouciant21/solution/Luogu/P1833.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1833.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1835.cpp.o -c /home/insouciant21/solution/Luogu/P1835.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1835.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1836.cpp.o -c /home/insouciant21/solution/Luogu/P1836.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1836.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1851.cpp.o -c /home/insouciant21/solution/Luogu/P1851.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1851.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1865.cpp.o -c /home/insouciant21/solution/Luogu/P1865.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1865.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1877.cpp.o -c /home/insouciant21/solution/Luogu/P1877.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1877.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1886.cpp.o -c /home/insouciant21/solution/Luogu/P1886.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1886.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1927.cpp.o -c /home/insouciant21/solution/Luogu/P1927.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1927.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2026.cpp.o -c /home/insouciant21/solution/Luogu/P2026.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2026.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2032.cpp.o -c /home/insouciant21/solution/Luogu/P2032.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2032.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2074.cpp.o -c /home/insouciant21/solution/Luogu/P2074.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2074.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2085.cpp.o -c /home/insouciant21/solution/Luogu/P2085.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2085.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2094.cpp.o -c /home/insouciant21/solution/Luogu/P2094.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2094.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2104.cpp.o -c /home/insouciant21/solution/Luogu/P2104.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2104.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2158.cpp.o -c /home/insouciant21/solution/Luogu/P2158.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2158.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2199.cpp.o -c /home/insouciant21/solution/Luogu/P2199.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2199.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2240.cpp.o -c /home/insouciant21/solution/Luogu/P2240.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2240.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2249.cpp.o -c /home/insouciant21/solution/Luogu/P2249.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2249.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2261.cpp.o -c /home/insouciant21/solution/Luogu/P2261.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2261.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2298.cpp.o -c /home/insouciant21/solution/Luogu/P2298.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2298.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2386.cpp.o -c /home/insouciant21/solution/Luogu/P2386.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2386.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2388.cpp.o -c /home/insouciant21/solution/Luogu/P2388.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2388.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2397.cpp.o -c /home/insouciant21/solution/Luogu/P2397.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2397.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2399.cpp.o -c /home/insouciant21/solution/Luogu/P2399.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2399.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2424.cpp.o -c /home/insouciant21/solution/Luogu/P2424.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2424.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2548.cpp.o -c /home/insouciant21/solution/Luogu/P2548.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2548.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2563.cpp.o -c /home/insouciant21/solution/Luogu/P2563.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2563.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2655.cpp.o -c /home/insouciant21/solution/Luogu/P2655.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2655.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2692.cpp.o -c /home/insouciant21/solution/Luogu/P2692.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2692.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2699.cpp.o -c /home/insouciant21/solution/Luogu/P2699.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2699.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2759.cpp.o -c /home/insouciant21/solution/Luogu/P2759.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2759.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2777.cpp.o -c /home/insouciant21/solution/Luogu/P2777.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2777.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2895.cpp.o -c /home/insouciant21/solution/Luogu/P2895.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2895.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2947.cpp.o -c /home/insouciant21/solution/Luogu/P2947.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2947.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P3167.cpp.o -c /home/insouciant21/solution/Luogu/P3167.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P3167.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P3395.cpp.o -c /home/insouciant21/solution/Luogu/P3395.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P3395.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P3456.cpp.o -c /home/insouciant21/solution/Luogu/P3456.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P3456.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P3719.cpp.o -c /home/insouciant21/solution/Luogu/P3719.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P3719.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P3818.cpp.o -c /home/insouciant21/solution/Luogu/P3818.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P3818.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P3912.cpp.o -c /home/insouciant21/solution/Luogu/P3912.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P3912.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P3926.cpp.o -c /home/insouciant21/solution/Luogu/P3926.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P3926.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P3935.cpp.o -c /home/insouciant21/solution/Luogu/P3935.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P3935.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P3956.cpp.o -c /home/insouciant21/solution/Luogu/P3956.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P3956.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P4446.cpp.o -c /home/insouciant21/solution/Luogu/P4446.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P4446.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P4447.cpp.o -c /home/insouciant21/solution/Luogu/P4447.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P4447.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P4710.cpp.o -c /home/insouciant21/solution/Luogu/P4710.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P4710.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P4772.cpp.o -c /home/insouciant21/solution/Luogu/P4772.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P4772.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P4863.cpp.o -c /home/insouciant21/solution/Luogu/P4863.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P4863.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P4994.cpp.o -c /home/insouciant21/solution/Luogu/P4994.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P4994.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P4995.cpp.o -c /home/insouciant21/solution/Luogu/P4995.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P4995.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P5143.cpp.o -c /home/insouciant21/solution/Luogu/P5143.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P5143.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P5461.cpp.o -c /home/insouciant21/solution/Luogu/P5461.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P5461.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P5535.cpp.o -c /home/insouciant21/solution/Luogu/P5535.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P5535.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P5635.cpp.o -c /home/insouciant21/solution/Luogu/P5635.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P5635.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P5682.cpp.o -c /home/insouciant21/solution/Luogu/P5682.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P5682.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P5730.cpp.o -c /home/insouciant21/solution/Luogu/P5730.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P5730.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P5788.cpp.o -c /home/insouciant21/solution/Luogu/P5788.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P5788.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P6850.cpp.o -c /home/insouciant21/solution/Luogu/P6850.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P6850.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P7257.cpp.o -c /home/insouciant21/solution/Luogu/P7257.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P7257.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P7573.cpp.o -c /home/insouciant21/solution/Luogu/P7573.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P7573.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P7588.cpp.o -c /home/insouciant21/solution/Luogu/P7588.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P7588.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/NOIOJ/1007.cpp.o -c /home/insouciant21/solution/NOIOJ/1007.cpp",
+  "file": "/home/insouciant21/solution/NOIOJ/1007.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/SPOJ/SP22403.cpp.o -c /home/insouciant21/solution/SPOJ/SP22403.cpp",
+  "file": "/home/insouciant21/solution/SPOJ/SP22403.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/SPOJ/SP245.cpp.o -c /home/insouciant21/solution/SPOJ/SP245.cpp",
+  "file": "/home/insouciant21/solution/SPOJ/SP245.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/SPOJ/SP288.cpp.o -c /home/insouciant21/solution/SPOJ/SP288.cpp",
+  "file": "/home/insouciant21/solution/SPOJ/SP288.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/SPOJ/SP3442.cpp.o -c /home/insouciant21/solution/SPOJ/SP3442.cpp",
+  "file": "/home/insouciant21/solution/SPOJ/SP3442.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/SPOJ/SP4141.cpp.o -c /home/insouciant21/solution/SPOJ/SP4141.cpp",
+  "file": "/home/insouciant21/solution/SPOJ/SP4141.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/SPOJ/SP4942.cpp.o -c /home/insouciant21/solution/SPOJ/SP4942.cpp",
+  "file": "/home/insouciant21/solution/SPOJ/SP4942.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/SPOJ/SP6471.cpp.o -c /home/insouciant21/solution/SPOJ/SP6471.cpp",
+  "file": "/home/insouciant21/solution/SPOJ/SP6471.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA10140.cpp.o -c /home/insouciant21/solution/UVa/UVA10140.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA10140.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA10179.cpp.o -c /home/insouciant21/solution/UVa/UVA10179.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA10179.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA10299.cpp.o -c /home/insouciant21/solution/UVa/UVA10299.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA10299.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA10340.cpp.o -c /home/insouciant21/solution/UVa/UVA10340.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA10340.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA10474.cpp.o -c /home/insouciant21/solution/UVa/UVA10474.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA10474.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA10539.cpp.o -c /home/insouciant21/solution/UVa/UVA10539.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA10539.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA10763.cpp.o -c /home/insouciant21/solution/UVa/UVA10763.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA10763.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA1152.cpp.o -c /home/insouciant21/solution/UVa/UVA1152.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA1152.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA11526.cpp.o -c /home/insouciant21/solution/UVa/UVA11526.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA11526.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA12100.cpp.o -c /home/insouciant21/solution/UVa/UVA12100.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA12100.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA1225.cpp.o -c /home/insouciant21/solution/UVa/UVA1225.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA1225.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA12412.cpp.o -c /home/insouciant21/solution/UVa/UVA12412.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA12412.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA13279.cpp.o -c /home/insouciant21/solution/UVa/UVA13279.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA13279.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA133.cpp.o -c /home/insouciant21/solution/UVa/UVA133.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA133.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA1339.cpp.o -c /home/insouciant21/solution/UVa/UVA1339.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA1339.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA1368.cpp.o -c /home/insouciant21/solution/UVa/UVA1368.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA1368.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA1585.cpp.o -c /home/insouciant21/solution/UVa/UVA1585.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA1585.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA1586.cpp.o -c /home/insouciant21/solution/UVa/UVA1586.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA1586.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA1644.cpp.o -c /home/insouciant21/solution/UVa/UVA1644.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA1644.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA213.cpp.o -c /home/insouciant21/solution/UVa/UVA213.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA213.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA220.cpp.o -c /home/insouciant21/solution/UVa/UVA220.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA220.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA227.cpp.o -c /home/insouciant21/solution/UVa/UVA227.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA227.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA232.cpp.o -c /home/insouciant21/solution/UVa/UVA232.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA232.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA253.cpp.o -c /home/insouciant21/solution/UVa/UVA253.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA253.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA294.cpp.o -c /home/insouciant21/solution/UVa/UVA294.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA294.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA439.cpp.o -c /home/insouciant21/solution/UVa/UVA439.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA439.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA455.cpp.o -c /home/insouciant21/solution/UVa/UVA455.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA455.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA489.cpp.o -c /home/insouciant21/solution/UVa/UVA489.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA489.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA495.cpp.o -c /home/insouciant21/solution/UVa/UVA495.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA495.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA512.cpp.o -c /home/insouciant21/solution/UVa/UVA512.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA512.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA524.cpp.o -c /home/insouciant21/solution/UVa/UVA524.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA524.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA572.cpp.o -c /home/insouciant21/solution/UVa/UVA572.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA572.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA101.cpp.o -c /home/insouciant21/solution/UVa/UVA101.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA101.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA10815.cpp.o -c /home/insouciant21/solution/UVa/UVA10815.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA10815.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA165.cpp.o -c /home/insouciant21/solution/UVa/UVA165.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA165.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA12096.cpp.o -c /home/insouciant21/solution/UVa/UVA12096.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA12096.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA540.cpp.o -c /home/insouciant21/solution/UVa/UVA540.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA540.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA136.cpp.o -c /home/insouciant21/solution/UVa/UVA136.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA136.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Algorithm/BigInteger.cpp.o -c /home/insouciant21/solution/Algorithm/BigInteger.cpp",
+  "file": "/home/insouciant21/solution/Algorithm/BigInteger.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA400.cpp.o -c /home/insouciant21/solution/UVa/UVA400.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA400.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA1592.cpp.o -c /home/insouciant21/solution/UVa/UVA1592.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA1592.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA207.cpp.o -c /home/insouciant21/solution/UVa/UVA207.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA207.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/DataGenerator/dg_uva207.cpp.o -c /home/insouciant21/solution/DataGenerator/dg_uva207.cpp",
+  "file": "/home/insouciant21/solution/DataGenerator/dg_uva207.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P3693.cpp.o -c /home/insouciant21/solution/Luogu/P3693.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P3693.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1313.cpp.o -c /home/insouciant21/solution/Luogu/P1313.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1313.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1962.cpp.o -c /home/insouciant21/solution/Luogu/P1962.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1962.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1306.cpp.o -c /home/insouciant21/solution/Luogu/P1306.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1306.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA210.cpp.o -c /home/insouciant21/solution/UVa/UVA210.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA210.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa514.cpp.o -c /home/insouciant21/solution/UVa/UVa514.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa514.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa442.cpp.o -c /home/insouciant21/solution/UVa/UVa442.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa442.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa11988.cpp.o -c /home/insouciant21/solution/UVa/UVa11988.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa11988.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa12657.cpp.o -c /home/insouciant21/solution/UVa/UVa12657.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa12657.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa679.cpp.o -c /home/insouciant21/solution/UVa/UVa679.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa679.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa122.cpp.o -c /home/insouciant21/solution/UVa/UVa122.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa122.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa548.cpp.o -c /home/insouciant21/solution/UVa/UVa548.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa548.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa839.cpp.o -c /home/insouciant21/solution/UVa/UVa839.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa839.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa699.cpp.o -c /home/insouciant21/solution/UVa/UVa699.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa699.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa297.cpp.o -c /home/insouciant21/solution/UVa/UVa297.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa297.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/DataGenerator/dg_uva297.cpp.o -c /home/insouciant21/solution/DataGenerator/dg_uva297.cpp",
+  "file": "/home/insouciant21/solution/DataGenerator/dg_uva297.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa1103.cpp.o -c /home/insouciant21/solution/UVa/UVa1103.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa1103.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa816.cpp.o -c /home/insouciant21/solution/UVa/UVa816.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa816.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa10305.cpp.o -c /home/insouciant21/solution/UVa/UVa10305.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa10305.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa10129.cpp.o -c /home/insouciant21/solution/UVa/UVa10129.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa10129.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa10562.cpp.o -c /home/insouciant21/solution/UVa/UVa10562.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa10562.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa12171.cpp.o -c /home/insouciant21/solution/UVa/UVa12171.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa12171.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa814.cpp.o -c /home/insouciant21/solution/UVa/UVa814.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa814.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa221.cpp.o -c /home/insouciant21/solution/UVa/UVa221.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa221.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa1572.cpp.o -c /home/insouciant21/solution/UVa/UVa1572.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa1572.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa1599.cpp.o -c /home/insouciant21/solution/UVa/UVa1599.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa1599.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa506.cpp.o -c /home/insouciant21/solution/UVa/UVa506.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa506.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa673.cpp.o -c /home/insouciant21/solution/UVa/UVa673.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa673.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa536.cpp.o -c /home/insouciant21/solution/UVa/UVa536.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa536.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1030.cpp.o -c /home/insouciant21/solution/Luogu/P1030.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1030.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1827.cpp.o -c /home/insouciant21/solution/Luogu/P1827.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1827.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa1600.cpp.o -c /home/insouciant21/solution/UVa/UVa1600.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa1600.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa12166.cpp.o -c /home/insouciant21/solution/UVa/UVa12166.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa12166.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa804.cpp.o -c /home/insouciant21/solution/UVa/UVa804.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa804.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa806.cpp.o -c /home/insouciant21/solution/UVa/UVa806.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa806.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Algorithm/base_convert.cpp.o -c /home/insouciant21/solution/Algorithm/base_convert.cpp",
+  "file": "/home/insouciant21/solution/Algorithm/base_convert.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1540.cpp.o -c /home/insouciant21/solution/Luogu/P1540.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1540.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2347.cpp.o -c /home/insouciant21/solution/Luogu/P2347.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2347.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2196.cpp.o -c /home/insouciant21/solution/Luogu/P2196.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2196.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1091.cpp.o -c /home/insouciant21/solution/Luogu/P1091.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1091.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1020.cpp.o -c /home/insouciant21/solution/Luogu/P1020.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1020.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1970.cpp.o -c /home/insouciant21/solution/Luogu/P1970.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1970.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA11462.cpp.o -c /home/insouciant21/solution/UVa/UVA11462.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA11462.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA11995.cpp.o -c /home/insouciant21/solution/UVa/UVA11995.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA11995.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA11991.cpp.o -c /home/insouciant21/solution/UVa/UVA11991.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA11991.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/LA/3135.cpp.o -c /home/insouciant21/solution/LA/3135.cpp",
+  "file": "/home/insouciant21/solution/LA/3135.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/LA/3644.cpp.o -c /home/insouciant21/solution/LA/3644.cpp",
+  "file": "/home/insouciant21/solution/LA/3644.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/LA/3027.cpp.o -c /home/insouciant21/solution/LA/3027.cpp",
+  "file": "/home/insouciant21/solution/LA/3027.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/LA/4329.cpp.o -c /home/insouciant21/solution/LA/4329.cpp",
+  "file": "/home/insouciant21/solution/LA/4329.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2357.cpp.o -c /home/insouciant21/solution/Luogu/P2357.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2357.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P3374.cpp.o -c /home/insouciant21/solution/Luogu/P3374.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P3374.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P3368.cpp.o -c /home/insouciant21/solution/Luogu/P3368.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P3368.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P3373.cc.o -c /home/insouciant21/solution/Luogu/P3373.cc",
+  "file": "/home/insouciant21/solution/Luogu/P3373.cc"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P3611.cpp.o -c /home/insouciant21/solution/Luogu/P3611.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P3611.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2574.cc.o -c /home/insouciant21/solution/Luogu/P2574.cc",
+  "file": "/home/insouciant21/solution/Luogu/P2574.cc"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P5057.cc.o -c /home/insouciant21/solution/Luogu/P5057.cc",
+  "file": "/home/insouciant21/solution/Luogu/P5057.cc"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA11461.cpp.o -c /home/insouciant21/solution/UVa/UVA11461.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVA11461.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA11538.cc.o -c /home/insouciant21/solution/UVa/UVA11538.cc",
+  "file": "/home/insouciant21/solution/UVa/UVA11538.cc"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA11136.cc.o -c /home/insouciant21/solution/UVa/UVA11136.cc",
+  "file": "/home/insouciant21/solution/UVa/UVA11136.cc"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/LA/4487.cc.o -c /home/insouciant21/solution/LA/4487.cc",
+  "file": "/home/insouciant21/solution/LA/4487.cc"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2580.cc.o -c /home/insouciant21/solution/Luogu/P2580.cc",
+  "file": "/home/insouciant21/solution/Luogu/P2580.cc"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVA11488.cc.o -c /home/insouciant21/solution/UVa/UVA11488.cc",
+  "file": "/home/insouciant21/solution/UVa/UVA11488.cc"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa11137.cc.o -c /home/insouciant21/solution/UVa/UVa11137.cc",
+  "file": "/home/insouciant21/solution/UVa/UVa11137.cc"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa11732.cc.o -c /home/insouciant21/solution/UVa/UVa11732.cc",
+  "file": "/home/insouciant21/solution/UVa/UVa11732.cc"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P3375.cc.o -c /home/insouciant21/solution/Luogu/P3375.cc",
+  "file": "/home/insouciant21/solution/Luogu/P3375.cc"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P4391.cc.o -c /home/insouciant21/solution/Luogu/P4391.cc",
+  "file": "/home/insouciant21/solution/Luogu/P4391.cc"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P4824.cc.o -c /home/insouciant21/solution/Luogu/P4824.cc",
+  "file": "/home/insouciant21/solution/Luogu/P4824.cc"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa11992.cc.o -c /home/insouciant21/solution/UVa/UVa11992.cc",
+  "file": "/home/insouciant21/solution/UVa/UVa11992.cc"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1119.cc.o -c /home/insouciant21/solution/Luogu/P1119.cc",
+  "file": "/home/insouciant21/solution/Luogu/P1119.cc"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P3371.cc.o -c /home/insouciant21/solution/Luogu/P3371.cc",
+  "file": "/home/insouciant21/solution/Luogu/P3371.cc"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1629.cpp.o -c /home/insouciant21/solution/Luogu/P1629.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1629.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1144.cpp.o -c /home/insouciant21/solution/Luogu/P1144.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1144.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P3376.cc.o -c /home/insouciant21/solution/Luogu/P3376.cc",
+  "file": "/home/insouciant21/solution/Luogu/P3376.cc"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa10048.cc.o -c /home/insouciant21/solution/UVa/UVa10048.cc",
+  "file": "/home/insouciant21/solution/UVa/UVa10048.cc"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2136.cpp.o -c /home/insouciant21/solution/Luogu/P2136.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2136.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2028.cpp.o -c /home/insouciant21/solution/Luogu/P2028.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P2028.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa12333.cpp.o -c /home/insouciant21/solution/UVa/UVa12333.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa12333.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/acwing/3786.cpp.o -c /home/insouciant21/solution/acwing/3786.cpp",
+  "file": "/home/insouciant21/solution/acwing/3786.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1044.cpp.o -c /home/insouciant21/solution/Luogu/P1044.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1044.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1243.cpp.o -c /home/insouciant21/solution/Luogu/P1243.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1243.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1004.cpp.o -c /home/insouciant21/solution/Luogu/P1004.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1004.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1016.cpp.o -c /home/insouciant21/solution/Luogu/P1016.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P1016.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P4677.cpp.o -c /home/insouciant21/solution/Luogu/P4677.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P4677.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P3369.cpp.o -c /home/insouciant21/solution/Luogu/P3369.cpp",
+  "file": "/home/insouciant21/solution/Luogu/P3369.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/UVa/UVa1479.cpp.o -c /home/insouciant21/solution/UVa/UVa1479.cpp",
+  "file": "/home/insouciant21/solution/UVa/UVa1479.cpp"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2010.cc.o -c /home/insouciant21/solution/Luogu/P2010.cc",
+  "file": "/home/insouciant21/solution/Luogu/P2010.cc"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P5594.cc.o -c /home/insouciant21/solution/Luogu/P5594.cc",
+  "file": "/home/insouciant21/solution/Luogu/P5594.cc"
+}
+]
