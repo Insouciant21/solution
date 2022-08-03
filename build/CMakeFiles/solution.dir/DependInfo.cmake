@@ -194,6 +194,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/insouciant21/solution/Luogu/P2397.cpp" "CMakeFiles/solution.dir/Luogu/P2397.cpp.o" "gcc" "CMakeFiles/solution.dir/Luogu/P2397.cpp.o.d"
   "/home/insouciant21/solution/Luogu/P2399.cpp" "CMakeFiles/solution.dir/Luogu/P2399.cpp.o" "gcc" "CMakeFiles/solution.dir/Luogu/P2399.cpp.o.d"
   "/home/insouciant21/solution/Luogu/P2424.cpp" "CMakeFiles/solution.dir/Luogu/P2424.cpp.o" "gcc" "CMakeFiles/solution.dir/Luogu/P2424.cpp.o.d"
+  "/home/insouciant21/solution/Luogu/P2482.cc" "CMakeFiles/solution.dir/Luogu/P2482.cc.o" "gcc" "CMakeFiles/solution.dir/Luogu/P2482.cc.o.d"
   "/home/insouciant21/solution/Luogu/P2548.cpp" "CMakeFiles/solution.dir/Luogu/P2548.cpp.o" "gcc" "CMakeFiles/solution.dir/Luogu/P2548.cpp.o.d"
   "/home/insouciant21/solution/Luogu/P2563.cpp" "CMakeFiles/solution.dir/Luogu/P2563.cpp.o" "gcc" "CMakeFiles/solution.dir/Luogu/P2563.cpp.o.d"
   "/home/insouciant21/solution/Luogu/P2574.cc" "CMakeFiles/solution.dir/Luogu/P2574.cc.o" "gcc" "CMakeFiles/solution.dir/Luogu/P2574.cc.o.d"

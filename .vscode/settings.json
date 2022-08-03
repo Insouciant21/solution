@@ -77,7 +77,10 @@
     "typeinfo": "cpp",
     "valarray": "cpp",
     "variant": "cpp",
-    "ccomplex": "cpp"
+    "ccomplex": "cpp",
+    "ranges": "cpp",
+    "span": "cpp",
+    "stacktrace": "cpp"
   },
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
@@ -177,5 +180,7 @@
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
   "C_Cpp.clang_format_sortIncludes": true,
-  "C_Cpp.formatting": "clangFormat"
+  "C_Cpp.formatting": "clangFormat",
+  "C_Cpp.autocompleteAddParentheses": true,
+  "C_Cpp.clang_format_path": ""
 }

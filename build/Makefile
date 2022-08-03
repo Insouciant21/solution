@@ -4593,6 +4593,30 @@ Luogu/P2424.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/solution.dir/build.make CMakeFiles/solution.dir/Luogu/P2424.cpp.s
 .PHONY : Luogu/P2424.cpp.s
 
+Luogu/P2482.o: Luogu/P2482.cc.o
+.PHONY : Luogu/P2482.o
+
+# target to build an object file
+Luogu/P2482.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/solution.dir/build.make CMakeFiles/solution.dir/Luogu/P2482.cc.o
+.PHONY : Luogu/P2482.cc.o
+
+Luogu/P2482.i: Luogu/P2482.cc.i
+.PHONY : Luogu/P2482.i
+
+# target to preprocess a source file
+Luogu/P2482.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/solution.dir/build.make CMakeFiles/solution.dir/Luogu/P2482.cc.i
+.PHONY : Luogu/P2482.cc.i
+
+Luogu/P2482.s: Luogu/P2482.cc.s
+.PHONY : Luogu/P2482.s
+
+# target to generate assembly for a file
+Luogu/P2482.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/solution.dir/build.make CMakeFiles/solution.dir/Luogu/P2482.cc.s
+.PHONY : Luogu/P2482.cc.s
+
 Luogu/P2548.o: Luogu/P2548.cpp.o
 .PHONY : Luogu/P2548.o
 
@@ -8592,6 +8616,9 @@ help:
 	@echo "... Luogu/P2424.o"
 	@echo "... Luogu/P2424.i"
 	@echo "... Luogu/P2424.s"
+	@echo "... Luogu/P2482.o"
+	@echo "... Luogu/P2482.i"
+	@echo "... Luogu/P2482.s"
 	@echo "... Luogu/P2548.o"
 	@echo "... Luogu/P2548.i"
 	@echo "... Luogu/P2548.s"

@@ -1643,5 +1643,10 @@
   "directory": "/home/insouciant21/solution/build",
   "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P1464.cc.o -c /home/insouciant21/solution/Luogu/P1464.cc",
   "file": "/home/insouciant21/solution/Luogu/P1464.cc"
+},
+{
+  "directory": "/home/insouciant21/solution/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/solution.dir/Luogu/P2482.cc.o -c /home/insouciant21/solution/Luogu/P2482.cc",
+  "file": "/home/insouciant21/solution/Luogu/P2482.cc"
 }
 ]
