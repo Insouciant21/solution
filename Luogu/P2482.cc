@@ -3,48 +3,66 @@
 using namespace std;
 
 struct Game {
-    int n, m;
+    int n {}, m {};
     struct Player {
         int ident; // MP 0 ZP 1 FP 2
-        int life;
-        list<int> cards;
+        int life = 4;
         // P 0 K 1 D 2 F 3 N 4 W 5 J 6 Z 7
-        bool equipped;
+        struct Card {
+            int type;
+            bool use;
+            Card() {
+                type = -1;
+                use = true;
+            }
+            Card(int a, bool b) : type(a), use(b) {};
+        };
+
+        vector<Card> cards;
+        bool equipped = false;
         Player() { ident = -1, life = 4, equipped = false; }
         Player(int a, int b, int c, int d, int e) {
             ident = a, life = 4;
-            cards.assign({b, c, d, e});
+            cards.emplace_back(b, true);
+            cards.emplace_back(c, true);
+            cards.emplace_back(d, true);
+            cards.emplace_back(e, true);
             if (ident == 0) showed = true;
-            lastAttacker = -1;
         }
-        bool showed = false;
-        bool likeF = false;
-        int lastAttacker;
+        bool showed = false, likeF = false;
+        bool useKill = false;
+        bool dead = false;
 
-        bool FPL() { return likeF && !showed; }
+        void clear() {
+            cards.clear();
+            equipped = false;
+        }
+
+        vector<Card>::iterator find(int type) {
+            for (auto it = cards.begin(); it != cards.end(); it++) {
+                if (!it->use) continue;
+                if (it->type == type) return it;
+            }
+            return cards.end();
+        }
+
+        void give(vector<Card>::iterator &x) { x->use = false; }
+
+        bool give(int card) {
+            auto p = find(card);
+            if (p == cards.end()) return false;
+            else give(p);
+            return true;
+        }
+
+        void jump() { showed = true; }
     };
-
-    int idx(char x) {
-        switch (x) {
-            case 'P': return 0;
-            case 'K': return 1;
-            case 'D': return 2;
-            case 'F': return 3;
-            case 'N': return 4;
-            case 'W': return 5;
-            case 'J': return 6;
-            case 'Z': return 7;
-            default: break;
-        }
-    }
 
     vector<Player> players;
 
     queue<int> pile;
-
-    int lastOne;
-
-    int mp;
+    int lastOne {};
+    int FP = 0;
 
     void init() {
         cin >> n >> m;
@@ -53,12 +71,24 @@ struct Game {
             if (s == "ZP") return 1;
             return 2;
         };
+        auto idx = [](char x) {
+            switch (x) {
+                case 'P': return 0;
+                case 'K': return 1;
+                case 'D': return 2;
+                case 'F': return 3;
+                case 'N': return 4;
+                case 'W': return 5;
+                case 'J': return 6;
+                default: return 7;
+            }
+        };
         for (int i = 0; i < n; i++) {
             string s;
             char a, b, c, d;
             cin >> s >> a >> b >> c >> d;
             players.emplace_back(name(s), idx(a), idx(b), idx(c), idx(d));
-            if (name(s) == 0) mp = i;
+            if (name(s) == 2) FP++;
         }
         for (int i = 0; i < m; i++) {
             char t;
@@ -68,427 +98,270 @@ struct Game {
         lastOne = pile.back();
     }
 
-    int win() { // -1 FP win 1 MP/ZP win 0 not yet
-        int a[3];
-        memset(a, 0, sizeof a);
-        for (auto i : players) a[i.ident] += (i.life > 0);
-        if (a[0] == 0) return -1;
-        if (a[2] == 0) return 1;
-        return 0;
+    void gameResult(int res) {
+        cout << ((res == 1) ? "MP" : "FP") << endl;
+        auto reIdx = [](int x) {
+            switch (x) {
+                case 0: return 'P';
+                case 1: return 'K';
+                case 2: return 'D';
+                case 3: return 'F';
+                case 4: return 'N';
+                case 5: return 'W';
+                case 6: return 'J';
+                default: return 'Z';
+            }
+        };
+        for (int i = 0; i < n; i++) {
+            Player &k = players[i];
+            if (k.dead) cout << "DEAD" << endl;
+            else {
+                for (const Player::Card &j : k.cards) {
+                    if (!j.use) continue;
+                    cout << reIdx(j.type) << " ";
+                }
+                cout << endl;
+            }
+        }
+        exit(0);
     }
 
-    int d(int a, int b) {
-        int p = a, dist = 0;
-        while (p != b) {
-            p++;
-            if (p == n) p = 0;
-            if (players[p].life > 0) dist++;
-        }
-        return dist;
+    void settle() {
+        if (players[0].dead) gameResult(2);
+        if (FP == 0) gameResult(1);
+    }
+
+    void die(int from, int target) {
+        Player &s = players[from];
+        Player &t = players[target];
+        t.dead = true;
+        if (t.ident == 2) FP--;
+        settle();
+        if (t.ident == 2) getCard(from, 3);
+        if (s.ident == 0 && t.ident == 1) s.clear();
     }
 
     void getCard(int who, int num) {
         while (num--) {
-            if (!pile.empty()) players[who].cards.push_back(pile.front()), pile.pop();
-            else players[who].cards.push_back(lastOne);
-        }
-    }
-
-    bool give(int target, int card) { // 1K 2D 6J
-        auto p = players[target].cards.begin();
-        while (p != players[target].cards.end()) {
-            if (*p == card) {
-                p = players[target].cards.erase(p);
-                return true;
+            if (!pile.empty()) {
+                players[who].cards.emplace_back(pile.front(), true);
+                pile.pop();
             }
-            p++;
+            else players[who].cards.emplace_back(lastOne, true);
         }
-        return false;
     }
 
-    void settle(int from, int death) {
-        switch (players[death].ident) {
-            case 0: result(); break;
-            case 1:
-                if (players[from].ident == 0) {
-                    players[from].equipped = false;
-                    players[from].cards.clear();
+    void useCard(int from, Player::Card &x) {
+        Player &s = players[from];
+        switch (x.type) {
+            case 0:
+                if (s.life < 4) {
+                    x.use = false;
+                    s.life++;
                 }
                 break;
-            case 2: getCard(from, 3); break;
+            case 1: {
+                int target = findKill(from);
+                if (target != -1) {
+                    x.use = false;
+                    kill(from, target);
+                }
+                break;
+            }
+            case 3: {
+                int target = findFight(from);
+                if (target != -1) {
+                    x.use = false;
+                    fight(from, target);
+                }
+                break;
+            }
+            case 4:
+            case 5: {
+                x.use = false;
+                IA(from, x.type - 3);
+                break;
+            }
+            case 7: {
+                x.use = false;
+                s.equipped = true;
+            }
         }
     }
 
-    bool survive(int target) {
-        auto p = players[target].cards.begin();
-        while (p != players[target].cards.end()) {
-            if (*p == 0) {
-                p = players[target].cards.erase(p);
-                players[target].life++;
+    int findKill(int from) {
+        Player &u = players[from];
+        if (u.useKill && !u.equipped) return -1;
+        if (u.ident == 0) {
+            for (int i = (from + 1) % n; i != from; i = (i + 1) % n) {
+                Player &v = players[i];
+                if (v.dead) continue;
+                if (v.likeF || (v.ident == 2 && v.showed)) return i;
+                else return -1;
             }
-            else p++;
         }
-        if (players[target].life > 0) return true;
-        else settle(players[target].lastAttacker, target);
-    }
-
-    void lifeReduce(int from, int target, int amount) {
-        players[target].life -= amount;
-        players[target].lastAttacker = from;
-        if (players[target].life <= 0) survive(target);
-    }
-
-    int identi(int id) {
-        vector<int> q1, q2;
-        for (int i = 0; i < players.size(); i++)
-            if (players[i].showed && players[i].ident == 2) q1.push_back(i);
-        for (int i = 0; i < players.size(); i++)
-            if (players[i].showed && players[i].ident == 1) q2.push_back(i);
-        q2.push_back(mp);
-        sort(q2.begin(), q2.end());
-        int flag = 0;
-        int identity = 0;
-        auto a1 = lower_bound(q2.begin(), q2.end(), id);
-        if (a1 != q2.end() && !(id < *a1)) identity = 1;
-        a1 = lower_bound(q1.begin(), q1.end(), id);
-        if (a1 != q1.end() && !(id < *a1)) identity = -1;
-        return identity;
-    }
-
-    bool invulnerable(int from) {
-        vector<int> q1;
-        for (int i = 0; i < players.size(); i++)
-            if (players[i].showed && players[i].ident == 2) q1.push_back(i);
-        int flag = 0;
-        for (int i = from;; i++) {
-            if (i == from && flag) break;
-            flag = 1;
-            if (i >= n) i = 0;
-            if (players[i].life <= 0) continue;
-            int ide = identi(i);
-            if (ide != 1 && players[i].ident != 2 && give(i, 6)) {
-                players[i].showed = true;
-                if (invulnerable(i)) return players[i].showed = false;
-                return true;
+        if (u.ident == 1) {
+            for (int i = (from + 1) % n; i != from; i = (i + 1) % n) {
+                Player &v = players[i];
+                if (v.dead) continue;
+                if (v.ident == 2 && v.showed) return i;
+                else return -1;
             }
-            if (ide != -1 && players[i].ident == 2 && !q1.empty() && give(i, 6)) {
-                players[i].showed = true;
-                if (invulnerable(i)) return players[i].showed = false;
-                return true;
+        }
+        if (u.ident == 2) {
+            for (int i = (from + 1) % n; i != from; i = (i + 1) % n) {
+                Player &v = players[i];
+                if (v.dead) continue;
+                if (v.ident != 2 && v.showed) return i;
+                else return -1;
+            }
+        }
+        return -1;
+    }
+
+    int findFight(int from) {
+        Player &u = players[from];
+        if (u.ident == 0) {
+            for (int i = (from + 1) % n; i != from; i = (i + 1) % n) {
+                Player &v = players[i];
+                if (v.dead) continue;
+                if (v.likeF || (v.ident == 2 && v.showed)) return i;
+            }
+        }
+        if (u.ident == 1) {
+            for (int i = (from + 1) % n; i != from; i = (i + 1) % n) {
+                Player &v = players[i];
+                if (v.dead) continue;
+                if (v.ident == 2 && v.showed) return i;
+            }
+        }
+        if (u.ident == 2) {
+            return 0;
+        }
+        return -1;
+    }
+
+    bool J(int from, int to) { // from 打我 to
+        Player &s = players[to];
+        if (!s.showed) return false;
+        bool flag = false;
+        for (int p = from; p != from || !flag; p = (p + 1) % n) {
+            Player &t = players[p];
+            if (t.dead) continue;
+            flag = true;
+            if (s.ident != 2 && t.ident == 2) continue;
+            if (s.ident == 2 && t.ident != 2) continue;
+            auto iter = t.find(6);
+            if (iter != t.cards.end()) {
+                t.give(iter), t.jump();
+                return !Js(p, to);
             }
         }
         return false;
     }
 
-    bool invul2(int from, int to) {
-        int identity = identi(to);
-        int flag = 0;
-        for (int i = from;; i++) {
-            if (i >= n) i = 0;
-            if (i == from && flag) break;
-            flag = 1;
-            if (players[i].life <= 0) continue;
-            if (identity == 1 && players[i].ident != 2 && give(i, 6)) {
-                players[i].showed = true;
-                if (invulnerable(i)) return players[i].showed = false;
-                return true;
-            }
-            if (identity == -1 && players[i].ident == 2 && give(i, 6)) {
-                players[i].showed = true;
-                if (invulnerable(i)) return players[i].showed = false;
-                return true;
+    bool Js(int from, int to) { //
+        Player &s = players[from];
+        for (int i = (from + 1) % n; i != from; i = (i + 1) % n) {
+            Player &t = players[i];
+            if (t.dead) continue;
+            if (s.ident != 2 && t.ident == 1) continue;
+            if (s.ident == t.ident && s.ident == 2) continue;
+            if (s.ident == 1 && t.ident != 2) continue;
+            auto iter = t.find(6);
+            if (iter != t.cards.end()) {
+                t.give(iter);
+                t.jump();
+                return !J(i, to);
             }
         }
         return false;
     }
 
-    void IA(int from, int mode) {
-        int flag = 0;
-        for (int i = from;; i++) {
-            if (i == from && flag) break;
-            if (i == from) continue;
-            if (i >= n) i = 0;
-            if (players[i].life <= 0) continue;
-            flag = 1;
-            if (invul2(from, i)) continue;
-            if (!give(i, mode)) {
-                if (!players[from].showed && i == mp) players[from].likeF = true;
-                lifeReduce(from, i, 1);
-            }
-        }
+    bool usability(int from, int t) {
+        Player &u = players[from];
+        if (t == 0 && u.life < 4) return true;
+        if (t == 1 && findKill(from) != -1) return true;
+        if (t == 3 && findFight(from) != -1) return true;
+        if (t == 4 || t == 5 || t==7) return true;
+        return false;
     }
 
-    void fight(int from, int to) {
-        if (invul2(from, to)) return;
-        int flag = 0;
-        if (from == mp && players[to].ident == 1) {
-            lifeReduce(from, to, 1);
-            return;
-        }
-        while (true) {
-            if (!give(to, 1)) {
-                flag = -1;
-                break;
-            }
-            if (!give(from, 1)) {
-                flag = 1;
-                break;
+    void turn(int p) {
+        Player &u = players[p];
+        getCard(p, 2);
+        bool c = true;
+        while (c) {
+            c = false;
+            for (auto i = u.cards.begin(); i != u.cards.end(); i++) {
+                if (!i->use) continue;
+                if (!usability(p, i->type)) continue;
+                useCard(p, *i);
+                if (u.dead) return;
+                i = u.cards.begin() - 1;
+                c = true;
             }
         }
-        if (flag == 1) lifeReduce(to, from, 1);
-        if (flag == -1) lifeReduce(from, to, 1);
+        u.useKill = false;
+    }
+
+    void lifeReduce(int from, int target) {
+        Player &u = players[target];
+        u.life--;
+        if (u.life == 0) {
+            auto iter = u.find(0);
+            if (iter == u.cards.end()) die(from, target);
+            else u.give(iter), u.life++;
+        }
     }
 
     void kill(int from, int to) {
-        if (!give(to, 2)) lifeReduce(from, to, 1);
+        Player &u = players[from], &v = players[to];
+        if (u.useKill && !u.equipped) return;
+        u.jump(), u.likeF = false;
+        u.useKill = true;
+        if (!v.give(2)) lifeReduce(from, to);
+    }
+
+    void fight(int from, int to) {
+        Player &u = players[from], &v = players[to];
+        u.jump(), u.likeF = false;
+        if (J(from, to)) return;
+        if (u.ident == 0 && v.ident == 1) {
+            lifeReduce(from, to);
+            return;
+        }
+        while (true) {
+            if (!v.give(1)) {
+                lifeReduce(from, to);
+                break;
+            }
+            if (!u.give(1)) {
+                lifeReduce(to, from);
+                break;
+            }
+        }
+    }
+
+    void IA(int from, int mode) {
+        for (int i = (from + 1) % n; i != from; i = (i + 1) % n) {
+            Player &u = players[i];
+            if (u.dead) continue;
+            if (J(from, i)) continue;
+            if (!u.give(mode)) {
+                lifeReduce(from, i);
+                if (u.ident == 0 && !players[from].showed) players[from].likeF = true;
+            }
+        }
     }
 
     void game() {
-        for (int i = 0; i < players.size(); i++) {
-            if (players[i].life <= 0) continue;
-            getCard(i, 2);
-            bool killed = false;
-            list<int>::iterator p = players[i].cards.begin();
-            switch (players[i].ident) {
-                case 0:
-                    while (p != players[i].cards.end()) {
-                        if (*p == 0) {
-                            if (players[i].life < 4) {
-                                p = players[i].cards.erase(p);
-                                players[i].life++;
-                            }
-                            else p++;
-                        }
-                        else if (*p == 1) {
-                            if (killed && !players[i].equipped) {
-                                p++;
-                                continue;
-                            }
-                            int flag = 0;
-                            int s = -1;
-                            for (int j = i;; j++) {
-                                if (j >= n) j = 0;
-                                if (j == i && flag) break;
-                                flag = 1;
-                                if ((players[j].FPL() || (players[j].showed && players[j].ident == 2)) &&
-                                    d(i, j) == 1) {
-                                    s = j;
-                                    break;
-                                }
-                            }
-                            if (s == -1) {
-                                p++;
-                                continue;
-                            }
-                            else {
-                                p = players[i].cards.erase(p);
-                                kill(i, s);
-                                if (players[i].cards.empty()) break;
-                            }
-                        }
-                        else if (*p == 2 || *p == 6) p++;
-                        else if (*p == 3) {
-                            int flag = 0;
-                            int s = -1;
-                            for (int j = i;; j++) {
-                                if (j >= n) j = 0;
-                                if (j == i && flag) break;
-                                flag = 1;
-                                if ((players[j].FPL() || (players[j].showed && players[j].ident == 2)) &&
-                                    d(i, j) == 1) {
-                                    s = j;
-                                    break;
-                                }
-                            }
-                            if (s == -1) {
-                                p++;
-                                continue;
-                            }
-                            else {
-                                p = players[i].cards.erase(p);
-                                fight(i, s);
-                                if (players[i].cards.empty()) break;
-                            }
-                        }
-                        else if (*p == 4 || *p == 5 || *p == 7) {
-                            int x = *p;
-                            p = players[i].cards.erase(p);
-                            if (x == 4 || x == 5) {
-                                IA(i, x - 3);
-                                if (players[i].cards.empty()) break;
-                            }
-                            if (x == 7) players[i].equipped = true;
-                        }
-                    }
-                    break;
-                case 1:
-                    while (p != players[i].cards.end()) {
-                        if (*p == 0) {
-                            if (players[i].life < 4) {
-                                p = players[i].cards.erase(p);
-                                players[i].life++;
-                            }
-                            else p++;
-                        }
-                        else if (*p == 1) {
-                            if (killed && !players[i].equipped) {
-                                p++;
-                                continue;
-                            }
-                            int flag = 0;
-                            int s = -1;
-                            for (int j = i;; j++) {
-                                if (j >= n) j = 0;
-                                if (j == i && flag) break;
-                                flag = 1;
-                                if ((players[j].showed && players[j].ident == 2) && d(i, j) == 1) {
-                                    s = j;
-                                    break;
-                                }
-                            }
-                            if (s == -1) {
-                                p++;
-                                continue;
-                            }
-                            else {
-                                p = players[i].cards.erase(p);
-                                kill(i, s);
-                            }
-                        }
-                        else if (*p == 2 || *p == 6) p++;
-                        else if (*p == 3) {
-                            int flag = 0;
-                            int s = -1;
-                            for (int j = i;; j++) {
-                                if (j >= n) j = 0;
-                                if (j == i && flag) break;
-                                flag = 1;
-                                if ((players[j].showed && players[j].ident == 2) && d(i, j) == 1) {
-                                    s = j;
-                                    break;
-                                }
-                            }
-                            if (s == -1) {
-                                p++;
-                                continue;
-                            }
-                            else {
-                                p = players[i].cards.erase(p);
-                                fight(i, s);
-                            }
-                        }
-                        else if (*p == 4 || *p == 5 || *p == 7) {
-                            int x = *p;
-                            p = players[i].cards.erase(p);
-                            if (x == 4 || x == 5) IA(i, x - 3);
-                            if (x == 7 && !players[i].equipped) players[i].equipped = true;
-                        }
-                    }
-                    break;
-                case 2:
-                    while (p != players[i].cards.end()) {
-                        if (*p == 0) {
-                            if (players[i].life < 4) {
-                                p = players[i].cards.erase(p);
-                                players[i].life++;
-                            }
-                            else p++;
-                        }
-                        else if (*p == 1) {
-                            if (killed && !players[i].equipped) {
-                                p++;
-                                continue;
-                            }
-                            int flag = 0;
-                            int s = -1;
-                            if (d(i, mp) == 1) s = mp;
-                            else {
-                                for (int j = i;; j++) {
-                                    if (j >= n) j = 0;
-                                    if (j == i && flag) break;
-                                    flag = 1;
-                                    if ((players[j].showed && players[j].ident == 1) && d(i, j) == 1) {
-                                        s = j;
-                                        break;
-                                    }
-                                }
-                            }
-                            if (s == -1) {
-                                p++;
-                                continue;
-                            }
-                            else {
-                                p = players[i].cards.erase(p);
-                                kill(i, s);
-                            }
-                        }
-                        else if (*p == 2 || *p == 6) p++;
-                        else if (*p == 3) {
-                            int flag = 0;
-                            int s = -1;
-                            if (d(i, mp) == 1) s == mp;
-                            else {
-                                for (int j = i;; j++) {
-                                    if (j >= n) j = 0;
-                                    if (j == i && flag) break;
-                                    flag = 1;
-                                    if ((players[j].showed && players[j].ident == 1) && d(i, j) == 1) {
-                                        s = j;
-                                        break;
-                                    }
-                                }
-                            }
-                            if (s == -1) {
-                                p++;
-                                continue;
-                            }
-                            else {
-                                p = players[i].cards.erase(p);
-                                fight(i, s);
-                            }
-                        }
-                        else if (*p == 4 || *p == 5 || *p == 7) {
-                            int x = *p;
-                            p = players[i].cards.erase(p);
-                            if (x == 4 || x == 5) IA(i, x - 3);
-                            if (x == 7 && !players[i].equipped) players[i].equipped = true;
-                        }
-                    }
-                    break;
-            }
+        int p = -1;
+        while (true) {
+            p = (p + 1) % n;
+            if (players[p].dead) continue;
+            turn(p);
         }
-    }
-
-    char reidx(int x) {
-        switch (x) {
-            case 0: return 'P';
-            case 1: return 'K';
-            case 2: return 'D';
-            case 3: return 'F';
-            case 4: return 'N';
-            case 5: return 'W';
-            case 6: return 'J';
-            case 7: return 'Z';
-            default: break;
-        }
-    }
-
-    void result() {
-        if (win() == 1) cout << "MP" << endl;
-        else cout << "FP" << endl;
-        for (auto i : players) {
-            if (i.life <= 0) {
-                cout << "DEAD" << endl;
-                continue;
-            }
-            auto p = i.cards.begin();
-            while (p != i.cards.end()) {
-                if (p != i.cards.begin()) cout << " ";
-                cout << reidx(*(p++));
-            }
-            cout << endl;
-        }
-        exit(0);
     }
 };
 
@@ -499,8 +372,5 @@ int main() {
 #endif
     Game pig;
     pig.init();
-    while (!pig.win()) {
-        pig.game();
-    }
-    pig.result();
+    pig.game();
 }

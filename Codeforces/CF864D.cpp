@@ -13,7 +13,7 @@ int cnt[200010];
 int num[200010];
 bool skip[200010];
 int n, ans;
-priority_queue<int, vector<int>, greater<>> q;
+priority_queue<int, vector<int>, greater<int >> q;
 
 int main() {
     scanf("%d", &n);
