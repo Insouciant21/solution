@@ -1,3 +1,0 @@
-/home/insouciant21/solution/build/CMakeFiles/solution.dir
-/home/insouciant21/solution/build/CMakeFiles/edit_cache.dir
-/home/insouciant21/solution/build/CMakeFiles/rebuild_cache.dir
