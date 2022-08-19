@@ -1,4 +1,4 @@
- <bits/stdc++.h>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -7,4 +7,5 @@ int main() {
     freopen("temp.in", "r", stdin);
     freopen("temp.out", "w", stdout);
 #endif
+
 }
