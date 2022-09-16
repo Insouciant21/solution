@@ -22,15 +22,14 @@ struct BigInteger {
             while (res.size() < width && i != int(num.size() - 1)) ans.insert(ans.begin(), '0');
             ans += res;
         }
-        cout << ans << endl;
-        if (len > 40) ans = ans.substr(0, 40);
-        string res;
-        for (char an : ans) {
-            res += an;
-            if (!f40.count(res)) f40[res] = s;
+        while (num.size() > 10) {
+            num.pop_back();
         }
+        if (len > 40) ans = ans.substr(0, 40);
+        if (!f40.count(ans)) f40[ans] = s;
     }
 };
+
 BigInteger operator+(BigInteger a, BigInteger b) {
     BigInteger res;
     a.num.resize(max(a.num.size(), b.num.size()));
@@ -59,16 +58,16 @@ int main() {
     freopen("test.out", "w", stdout);
 #endif
     int k = 0;
-    cin >> k;
+    // cin >> k;
     BigInteger a, b;
     a.num.push_back(1), b.num.push_back(1);
     a.addF40(0), b.addF40(1);
-    for (int i = 2; i <= k; i++) {
+    for (int i = 2; i <= 100000; i++) {
         a = a + b;
         swap(a, b);
-        cout << "f " << b << endl;
+        // cout << "f " << b << endl;
         if (i == 120) {
-            cout << "caught" << endl;
+            //  cout << "caught" << endl;
             int x = 1;
         }
         b.addF40(i);
