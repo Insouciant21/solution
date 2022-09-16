@@ -77,13 +77,16 @@
     "typeinfo": "cpp",
     "valarray": "cpp",
     "variant": "cpp",
-    "ccomplex": "cpp"
+    "ccomplex": "cpp",
+    "ranges": "cpp",
+    "span": "cpp",
+    "stacktrace": "cpp"
   },
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "C_Cpp.default.cppStandard": "c++14",
-  "C_Cpp.default.cStandard": "c11",
+  "C_Cpp.default.cStandard": "c17",
   "code-runner.clearPreviousOutput": true,
   "code-runner.fileDirectoryAsCwd": true,
   "code-runner.runInTerminal": true,
@@ -172,5 +175,12 @@
     "**/.*/**",
     "**/.vscode",
     "**/.vscode/**"
-  ]
+  ],
+  "editor.fontFamily": "'Cascadia Code PL','Droid Sans Mono', 'monospace', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 15,
+  "C_Cpp.clang_format_sortIncludes": true,
+  "C_Cpp.formatting": "clangFormat",
+  "C_Cpp.autocompleteAddParentheses": true,
+  "C_Cpp.clang_format_path": ""
 }
