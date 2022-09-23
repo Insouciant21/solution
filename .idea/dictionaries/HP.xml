@@ -4,8 +4,11 @@
       <w>dinic</w>
       <w>findset</w>
       <w>lenx</w>
+      <w>maxv</w>
       <w>mcmf</w>
       <w>minm</w>
+      <w>minv</w>
+      <w>modp</w>
     </words>
   </dictionary>
 </component>

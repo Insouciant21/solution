@@ -1,3 +1,5 @@
+// wa
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -29,15 +31,15 @@ int main() {
         }
         string ans = "L";
         bool failed = false;
-        cout<<"c"<<endl;
+        cout << "c" << endl;
         while (!p[0].empty() && !p[1].empty()) {
-            if (p[0].front() == p[0].back() || p[0].front() == p[1].back()) {
-                ans += "L";
-                if (p[0].front() == p[0].back()) p[0].pop_back();
-                else p[1].pop_back();
-                p[0].pop_front();
-            }
-            else if (p[1].front() == p[1].back() || p[1].front() == p[0].back()) {
+            if (!p[1].empty() && (p[0].front() == p[0].back() || !p[1].empty() && p[0].front() == p[1].back())) {
+                    ans += "L";
+                    if (p[0].front() == p[0].back()) p[0].pop_back();
+                    else p[1].pop_back();
+                    p[0].pop_front();
+                }
+            else if (!p[1].empty() && (p[1].front() == p[1].back() || (!p[0].empty() && p[1].front() == p[0].back()))) {
                 ans += "R";
                 if (p[1].front() == p[1].back()) p[1].pop_back();
                 else p[0].pop_back();
