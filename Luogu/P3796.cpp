@@ -3,6 +3,7 @@
 using namespace std;
 const int SIGMA = 26, MAXN = int(1e6) + 10;
 int n, ans[MAXN];
+map<int, string> k;
 
 struct AC {
     int ch[MAXN][SIGMA] {};
@@ -14,6 +15,7 @@ struct AC {
     void init() {
         sz = 1, fill_n(ch[0], SIGMA, 0);
         memset(ans, 0, sizeof ans);
+        k.clear();
     }
     static int idx(char c) { return c - 'a'; }
     void insert(const string &s) {
@@ -28,11 +30,12 @@ struct AC {
             u = ch[u][c];
         }
         val[u] = 1;
+        k[u] = s;
     }
 
     void mark(int j) {
         if (j) {
-            ans[j]++;
+            if (val[j]) ans[j]++;
             mark(last[j]);
         }
     }
@@ -72,13 +75,14 @@ struct AC {
         }
     }
 
-   void getRes() {
+    void getRes() {
         int mxm = -1;
         vector<int> pos;
-        for (int i = 1; i <= sz; i++) mxm = max(mxm, ans[i]);
+        for (int i = 1; i <= sz; i++) mxm = max(mxm, ans[i] * val[i]);
         for (int i = 1; i <= sz; i++)
             if (ans[i] == mxm) pos.push_back(i);
-
+        cout << mxm << endl;
+        for (int i : pos) cout << k[i] << endl;
     }
 };
 
@@ -91,7 +95,7 @@ int main() {
         cin >> n;
         if (n == 0) break;
         AC ac;
-        cin >> n;
+        ac.init();
         for (int i = 1; i <= n; i++) {
             string s;
             cin >> s;
