@@ -7,6 +7,7 @@ const int maxn = 1000;
 struct Edge {
     int u, v, w;
 };
+
 vector<Edge> edges;
 vector<int> E[maxn];
 int vx[maxn], W[maxn][maxn];
