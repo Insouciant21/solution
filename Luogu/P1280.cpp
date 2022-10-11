@@ -32,11 +32,11 @@ int main() {
     for (int i = 1; i <= k; i++) {
         int p, t;
         cin >> p >> t;
-        px[p].push_back(int(e.size()));
-        e.push_back({p, p + t - 1, 0});
+        px[p - 1].push_back(int(e.size()));
+        e.push_back({p - 1, p + t - 1, 0});
     }
-    for (int i = 1; i < n; i++)
+    for (int i = 0; i < n; i++)
         if (px[i].empty()) px[i].push_back(int(e.size())), e.push_back({i, i + 1, 1});
-    cout << DP(1) << endl;
+    cout << DP(0) << endl;
     return 0;
 }
