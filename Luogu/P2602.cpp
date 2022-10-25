@@ -3,19 +3,24 @@
 using namespace std;
 
 long long mem[20][20];
-string s;
+string num;
 
-long long dp(int i, bool is_limit, bool is_num, long long sum) {
-    if (i == s.length()) return mem[i][sum] = sum;
-    if (!is_limit && is_num && mem[i][sum] >= 0) return mem[i][sum];
+long long dp(int i, int sum, int digit, bool lim, bool is_num) {
+    if (!lim && !is_num && mem[i][sum] != -1) return mem[i][sum];
+    if (i == num.length()) return mem[i][sum] = sum;
     long long res = 0;
-    if (!is_num) res += dp(i + 1, false, false, sum);
-    int up = (is_limit) ? s[i] - '0' : 9;
-    for (int d = 1 - is_num; d <= up; d++) {
-        res += dp(i + 1, is_limit and d == s[i] - '0', true);
+    for (int d = 0; d <= 9; d++) {
+        if (lim && d > num[i] - '0') break;
+        res += dp(i + 1, sum + ((!is_num || d) && d == digit), digit, lim && d == num[i] - '0', is_num && d == 0);
     }
-    if (!is_limit && is_num) mem[i] = res;
+    if (!lim && !is_num) mem[i][sum] = res;
     return res;
+}
+
+long long work(int digit, long long g) {
+    num = to_string(g);
+    memset(mem, -1, sizeof mem);
+    return dp(0, 0, digit, true, true);
 }
 
 int main() {
@@ -25,11 +30,6 @@ int main() {
 #endif
     long long a, b;
     cin >> a >> b;
-    s = to_string(a - 1);
-    memset(mem, -1, sizeof mem);
-    long long k = dp(0, true, false);
-    memset(mem, -1, sizeof mem);
-    s = to_string(b);
-    cout << dp(0, true, false) - k << endl;
+    for (int i = 0; i <= 9; i++) cout << work(i, b) - work(i, a - 1) << " ";
     return 0;
 }
