@@ -2,6 +2,7 @@
   <dictionary name="insou">
     <words>
       <w>edpos</w>
+      <w>lastn</w>
       <w>maxq</w>
       <w>thres</w>
     </words>
