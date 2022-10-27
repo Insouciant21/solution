@@ -9,34 +9,33 @@ int n, m;
 struct Tower {
     int x;
     double y;
-    bool operator<(Tower &rhs) const { return x < rhs.x; }
+    bool operator<(Tower &rhs) const { return (x == rhs.x) ? y < rhs.y : x < rhs.x; }
 } a[maxn];
 int f[maxn];
 
 double dist(Tower &lhs, Tower &rhs) {
-    return sqrt((lhs.x - rhs.x) * (lhs.x - rhs.x) + (lhs.y - rhs.y) * (lhs.y - rhs.y));
+    return sqrt(1.0 * (lhs.x - rhs.x) * (lhs.x - rhs.x) + (lhs.y - rhs.y) * (lhs.y - rhs.y));
 }
 
 int fa(int x) {
     return f[x] == x ? x : f[x] = fa(f[x]);
 }
 
+void Union(int lhs, int rhs) {
+    int x = fa(lhs), y = fa(rhs);
+    if (x != y) f[x] = y;
+}
+
 bool check(double mid) {
     memset(f, 0, sizeof f);
     for (int i = 1; i <= m; i++) f[i] = i;
-    vector<int> px[maxn];
     for (int i = 1; i <= m; i++)
         for (int j = i + 1; j <= m; j++)
-            if (dist(a[i], a[j]) + eps <= 2 * mid && f[fa(i)] != f[fa(j)]) f[fa(j)] = f[fa(i)];
-    for (int i = 1; i <= m; i++) px[f[i]].push_back(i);
-    double minDist = 12930810;
-    for (int i = 1; i <= m; i++) {
-        if (minDist > max(a[px[f[i]].front()].x, n - a[px[f[i]].back()].x)) {
-            minDist = max(a[px[f[i]].front()].x, n - a[px[f[i]].back()].x);
-        }
-    }
-    if (minDist + eps <= mid) return true;
-    else return false;
+            if (dist(a[i], a[j]) - eps <= 2 * mid && fa(i) != fa(j)) Union(j, i);
+    for (int i = 1; i <= m; i++)
+        for (int j = 1; j <= m; j++)
+            if (fa(i) == fa(j) && a[i].x - mid <= 0 && a[j].x + mid >= n) return true;
+    return false;
 }
 
 int main() {
@@ -47,7 +46,7 @@ int main() {
     cin >> n >> m;
     for (int i = 1; i <= m; i++) cin >> a[i].x >> a[i].y;
     sort(a + 1, a + 1 + m);
-    double l = min(n - a[m].x, a[0].x), r = n;
+    double l = 0, r = n;
     double mid;
     while (l + eps < r) {
         mid = (l + r) / 2;
