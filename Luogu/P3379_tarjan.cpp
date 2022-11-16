@@ -16,7 +16,7 @@ int fa[maxn], cnt[maxn];
 int vis[maxn];
 
 int find(int x) {
-    return fa[x] == x ? x : find(x);
+    return fa[x] == x ? x : fa[x] = find(fa[x]);
 }
 
 void tarjan(int u) {
@@ -42,7 +42,7 @@ int main() {
     for (int i = 1, u, v; i < n; i++) {
         scanf("%d %d", &u, &v);
         e[u].push_back({u, v});
-        cnt[v]++;
+        e[v].push_back({v, u});
     }
     for (int i = 0, u, v; i < m; i++) {
         scanf("%d %d", &u, &v);
@@ -51,12 +51,8 @@ int main() {
         queryEdge[v].push_back(int(qe.size()));
         qe.push_back({v, u});
     }
-    int c = 0;
-    for (int i = 1; i <= n; i++) {
-        fa[i] = i;
-        if (cnt[i] == 0) c = i;
-    }
-    tarjan(c);
-    for (int i = 0; i < qe.size(); i += 2) cout << qe[i].LCA << endl;
+    for (int i = 1; i <= n; i++) fa[i] = i;
+    tarjan(s);
+    for (int i = 0; i < qe.size(); i += 2) printf("%d\n", qe[i].LCA);
     return 0;
 }

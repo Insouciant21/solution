@@ -2,7 +2,11 @@
   <dictionary name="Yeyuli">
     <words>
       <w>floodfill</w>
+      <w>hson</w>
       <w>maxc</w>
+      <w>maxd</w>
+      <w>numlist</w>
+      <w>pushdown</w>
       <w>spfa</w>
     </words>
   </dictionary>
