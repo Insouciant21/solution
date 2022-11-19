@@ -1,4 +1,4 @@
-test.*
+test*
 *.exe
 tmp.*
 temp*
@@ -6,3 +6,4 @@ temp*
 /cmake-build-debug/
 /Temp/
 build/
+test*.cpp
