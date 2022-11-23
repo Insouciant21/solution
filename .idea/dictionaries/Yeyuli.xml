@@ -1,10 +1,13 @@
 <component name="ProjectDictionaryState">
   <dictionary name="Yeyuli">
     <words>
+      <w>exgcd</w>
+      <w>fibx</w>
       <w>floodfill</w>
       <w>hson</w>
       <w>maxc</w>
       <w>maxd</w>
+      <w>maxr</w>
       <w>numlist</w>
       <w>pushdown</w>
       <w>spfa</w>
