@@ -16,7 +16,7 @@ int main() {
         for(int j=0;j<m;j++) {
             for(int p=0;p<m;p++) {
                 if (a[i] == b[j]) {
-                    f[i][j][p]
+                    f[i][j][p][0] = f[i-1][j][p][0]+f[i-1][j][p][1];
                 }
                 else {}
             }
