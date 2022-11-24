@@ -2,31 +2,29 @@
 
 using namespace std;
 const int maxn = 3e5 + 10, maxnum = 1e6 + 10;
-int a[maxn], d[maxn];
-int n, m;
-bitset<maxnum> numlist;
+int a[maxn], d[maxnum];
+int n, m, p[maxn], num[maxnum];
+bitset<maxnum> vis;
 void prime() {
-    numlist.set();
-    numlist[0] = false;
-    int g = int(sqrt(maxnum));
-    for (int i = 2; i < g; i++) {
-        if (numlist[i])
-            for (int j = i * i; j < maxnum; j += i) numlist[j] = false;
+    d[1] = 1;
+    int tot = 0;
+    for (int i = 2; i < maxnum; i++) {
+        if (!vis[i]) vis[i] = true, p[++tot] = i, d[i] = 2, num[i] = 1;
+        for (int j = 1; j <= tot && i <= maxnum / p[j]; j++) {
+            vis[p[j] * i] = true;
+            if (i % p[j] == 0) {
+                num[i * p[j]] = num[i] + 1;
+                d[i * p[j]] = d[i] / num[i * p[j]] * (num[i * p[j]] + 1);
+                break;
+            }
+            else num[i * p[j]] = 1, d[i * p[j]] = d[i] * 2;
+        }
     }
-}
-
-int cnt(int x) {
-    if (numlist[x]) return 1;
-    int res = 0, c = int(sqrt(x));
-    for (int i = 1; i <= c; i++)
-        if (x % i == 0) res += 2;
-    if (c * c == x) res--;
-    return res;
 }
 
 struct IntervalTree {
     long long sum[maxn * 4];
-    int maxd[maxn * 4];
+    long long maxd[maxn * 4];
     int ql, qr;
     void maintain(int o) {
         sum[o] = sum[o * 2] + sum[o * 2 + 1];
@@ -34,8 +32,7 @@ struct IntervalTree {
     }
     void buildTree(int o, int l, int r) {
         if (l == r) {
-            sum[o] = a[l];
-            maxd[o] = d[l];
+            sum[o] = maxd[o] = a[l];
             return;
         }
         int mid = (l + r) >> 1;
@@ -44,11 +41,10 @@ struct IntervalTree {
         maintain(o);
     }
     void edit(int o, int l, int r) {
-        if (ql <= l && r <= qr && maxd[o] == 1) return;
+        if (ql <= l && r <= qr && maxd[o] <= 2) return;
         if (l == r) {
-            sum[o] = d[l];
-            d[l] = cnt(d[l]);
-            maxd[o] = d[l];
+            sum[o] = d[sum[o]];
+            maxd[o] = sum[o];
         }
         else {
             int mid = (l + r) >> 1;
@@ -74,10 +70,7 @@ int main() {
 #endif
     scanf("%d %d", &n, &m);
     prime();
-    for (int i = 1; i <= n; i++) {
-        scanf("%d", a + i);
-        d[i] = cnt(a[i]);
-    }
+    for (int i = 1; i <= n; i++) scanf("%d", a + i);
     st.buildTree(1, 1, n);
     while (m--) {
         int opt;
