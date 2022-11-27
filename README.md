@@ -1,9 +1,5 @@
 # My Online Judge Solution Repository
 
-Restart
+AFO
 
-## About Template
-
-The `template.cpp` is for CPEdit.
-
-Gu...
+NOIP2022 T1 died
