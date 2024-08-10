@@ -1,9 +1,9 @@
 <toolSet name="External Tools">
   <tool name="C++ Compiler" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="true" showConsoleOnStdErr="true" synchronizeAfterRun="true">
     <exec>
-      <option name="COMMAND" value="C:\Program Files\JetBrains\CLion 2021.3.3\bin\mingw\bin\g++.exe" />
-      <option name="PARAMETERS" value="&quot;$FileName$&quot; -o $ProjectFileDir$\tempRun.exe -g" />
-      <option name="WORKING_DIRECTORY" value="$FilePath$" />
+      <option name="COMMAND" value="g++" />
+      <option name="PARAMETERS" value="&quot;$FileName$&quot; -o $ProjectFileDir$\.build\$FileNameWithoutExtension$.exe -g" />
+      <option name="WORKING_DIRECTORY" value="$FileDir$" />
     </exec>
   </tool>
   <tool name="C++ Runner" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="true" showConsoleOnStdErr="true" synchronizeAfterRun="true">

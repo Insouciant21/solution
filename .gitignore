@@ -7,3 +7,4 @@ temp*
 /Temp/
 build/
 test*.cpp
+/.build/
