@@ -6,6 +6,9 @@
         <build type="TOOL">
           <tool actionId="Tool_External Tools_C++ Compiler" />
         </build>
+        <clean type="TOOL">
+          <tool actionId="Tool_External Tools_C++ Cleaner" />
+        </clean>
       </configuration>
     </target>
   </component>

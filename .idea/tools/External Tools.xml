@@ -2,14 +2,14 @@
   <tool name="C++ Compiler" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="true" showConsoleOnStdErr="true" synchronizeAfterRun="true">
     <exec>
       <option name="COMMAND" value="g++" />
-      <option name="PARAMETERS" value="&quot;$FileName$&quot; -o $ProjectFileDir$\.build\$FileNameWithoutExtension$.exe -g" />
+      <option name="PARAMETERS" value="&quot;$FileName$&quot; -o $ProjectFileDir$\.build\run.exe -g -O2" />
       <option name="WORKING_DIRECTORY" value="$FileDir$" />
     </exec>
   </tool>
-  <tool name="C++ Runner" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="true" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+  <tool name="C++ Cleaner" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="true" showConsoleOnStdErr="true" synchronizeAfterRun="true">
     <exec>
-      <option name="COMMAND" value="tempRun.exe" />
-      <option name="PARAMETERS" />
+      <option name="COMMAND" value="cp" />
+      <option name="PARAMETERS" value=".build\run.exe .build\$FileNameWithoutAllExtensions$.exe" />
       <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
     </exec>
   </tool>

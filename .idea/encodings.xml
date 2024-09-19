@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/test.out" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Downloads/bookcodes/ch3/ranktree.cpp" charset="GBK" />
-    <file url="file://$USER_HOME$/Downloads/bookcodes/ch3/sequence2.cpp" charset="GBK" />
-    <file url="file://$USER_HOME$/Downloads/bookcodes/ch3/uva11922.cpp" charset="GBK" />
-    <file url="file://$USER_HOME$/Downloads/bookcodes/ch3/uva11992.cpp" charset="GBK" />
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/temp.cpp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tempRun.cpp" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

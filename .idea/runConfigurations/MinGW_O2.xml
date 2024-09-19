@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="MinGW O2" type="CLionExternalRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$FileNameWithoutExtension$" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" WORKING_DIR="file://$ProjectFileDir$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="solution" TARGET_NAME="MinGW" CONFIG_NAME="MinGW" RUN_PATH="tempRun.exe">
+  <configuration default="false" name="MinGW O2" type="CLionExternalRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$FileNameWithoutExtension$" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" WORKING_DIR="file://$ProjectFileDir$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="solution" TARGET_NAME="MinGW" CONFIG_NAME="MinGW" RUN_PATH="$PROJECT_DIR$/.build/run.exe">
     <method v="2">
       <option name="CLION.EXTERNAL.BUILD" enabled="true" />
     </method>
