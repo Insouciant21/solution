@@ -240,4 +240,6 @@ add_executable(solution ./AtCoder/AT1350.cpp
         Luogu/P4145.cpp Codeforces/CF483D.cpp Codeforces/CF920F.cpp Luogu/GSS4.cpp Luogu/GSS3.cpp  UVa/UVA10791.cpp UVa/UVA11582.cpp UVa/UVA10870.cpp Luogu/P1939.cpp Luogu/P2210.cpp Luogu/P1495.cpp UVa/UVa1077.cpp Luogu/P3366.cpp Luogu/P4047.cpp Luogu/P1967.cpp Luogu/P1113.cpp Luogu/P1064.cpp Luogu/P2679.cpp Luogu/P5149.cpp Luogu/P8820.cpp Luogu/P5020.cpp Luogu/P5021.cpp
         tempRun.cpp
         temp.cpp
+        Luogu/P3389.cpp
+        Luogu/P2455.cpp
 )
